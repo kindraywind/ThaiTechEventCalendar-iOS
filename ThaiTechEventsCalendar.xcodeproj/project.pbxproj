@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FFAF9D720410338000A99FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9D620410338000A99FE /* AppDelegate.swift */; };
+		9FFAF9D920410338000A99FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9D820410338000A99FE /* ViewController.swift */; };
+		9FFAF9DC20410338000A99FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DA20410338000A99FE /* Main.storyboard */; };
+		9FFAF9DE20410338000A99FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DD20410338000A99FE /* Assets.xcassets */; };
+		9FFAF9E120410338000A99FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DF20410338000A99FE /* LaunchScreen.storyboard */; };
+		9FFAF9EC20410338000A99FE /* ThaiTechEventsCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9EB20410338000A99FE /* ThaiTechEventsCalendarTests.swift */; };
+		9FFAF9F720410338000A99FE /* ThaiTechEventsCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9F620410338000A99FE /* ThaiTechEventsCalendarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FFAF9E820410338000A99FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FFAF9CB20410337000A99FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FFAF9D220410337000A99FE;
+			remoteInfo = ThaiTechEventsCalendar;
+		};
+		9FFAF9F320410338000A99FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FFAF9CB20410337000A99FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FFAF9D220410337000A99FE;
+			remoteInfo = ThaiTechEventsCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FFAF9D320410337000A99FE /* ThaiTechEventsCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiTechEventsCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFAF9D620410338000A99FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FFAF9D820410338000A99FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FFAF9DB20410338000A99FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FFAF9DD20410338000A99FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FFAF9E020410338000A99FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FFAF9E220410338000A99FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FFAF9E720410338000A99FE /* ThaiTechEventsCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThaiTechEventsCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFAF9EB20410338000A99FE /* ThaiTechEventsCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiTechEventsCalendarTests.swift; sourceTree = "<group>"; };
+		9FFAF9ED20410338000A99FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FFAF9F220410338000A99FE /* ThaiTechEventsCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThaiTechEventsCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFAF9F620410338000A99FE /* ThaiTechEventsCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiTechEventsCalendarUITests.swift; sourceTree = "<group>"; };
+		9FFAF9F820410338000A99FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FFAF9D020410337000A99FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFAF9E420410338000A99FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFAF9EF20410338000A99FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FFAF9CA20410337000A99FE = {
+			isa = PBXGroup;
+			children = (
+				9FFAF9D520410337000A99FE /* ThaiTechEventsCalendar */,
+				9FFAF9EA20410338000A99FE /* ThaiTechEventsCalendarTests */,
+				9FFAF9F520410338000A99FE /* ThaiTechEventsCalendarUITests */,
+				9FFAF9D420410337000A99FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FFAF9D420410337000A99FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAF9D320410337000A99FE /* ThaiTechEventsCalendar.app */,
+				9FFAF9E720410338000A99FE /* ThaiTechEventsCalendarTests.xctest */,
+				9FFAF9F220410338000A99FE /* ThaiTechEventsCalendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FFAF9D520410337000A99FE /* ThaiTechEventsCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAF9D620410338000A99FE /* AppDelegate.swift */,
+				9FFAF9D820410338000A99FE /* ViewController.swift */,
+				9FFAF9DA20410338000A99FE /* Main.storyboard */,
+				9FFAF9DD20410338000A99FE /* Assets.xcassets */,
+				9FFAF9DF20410338000A99FE /* LaunchScreen.storyboard */,
+				9FFAF9E220410338000A99FE /* Info.plist */,
+			);
+			path = ThaiTechEventsCalendar;
+			sourceTree = "<group>";
+		};
+		9FFAF9EA20410338000A99FE /* ThaiTechEventsCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAF9EB20410338000A99FE /* ThaiTechEventsCalendarTests.swift */,
+				9FFAF9ED20410338000A99FE /* Info.plist */,
+			);
+			path = ThaiTechEventsCalendarTests;
+			sourceTree = "<group>";
+		};
+		9FFAF9F520410338000A99FE /* ThaiTechEventsCalendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAF9F620410338000A99FE /* ThaiTechEventsCalendarUITests.swift */,
+				9FFAF9F820410338000A99FE /* Info.plist */,
+			);
+			path = ThaiTechEventsCalendarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FFAF9D220410337000A99FE /* ThaiTechEventsCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FFAF9FB20410338000A99FE /* Build configuration list for PBXNativeTarget "ThaiTechEventsCalendar" */;
+			buildPhases = (
+				9FFAF9CF20410337000A99FE /* Sources */,
+				9FFAF9D020410337000A99FE /* Frameworks */,
+				9FFAF9D120410337000A99FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThaiTechEventsCalendar;
+			productName = ThaiTechEventsCalendar;
+			productReference = 9FFAF9D320410337000A99FE /* ThaiTechEventsCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FFAF9E620410338000A99FE /* ThaiTechEventsCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FFAF9FE20410338000A99FE /* Build configuration list for PBXNativeTarget "ThaiTechEventsCalendarTests" */;
+			buildPhases = (
+				9FFAF9E320410338000A99FE /* Sources */,
+				9FFAF9E420410338000A99FE /* Frameworks */,
+				9FFAF9E520410338000A99FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FFAF9E920410338000A99FE /* PBXTargetDependency */,
+			);
+			name = ThaiTechEventsCalendarTests;
+			productName = ThaiTechEventsCalendarTests;
+			productReference = 9FFAF9E720410338000A99FE /* ThaiTechEventsCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FFAF9F120410338000A99FE /* ThaiTechEventsCalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FFAFA0120410338000A99FE /* Build configuration list for PBXNativeTarget "ThaiTechEventsCalendarUITests" */;
+			buildPhases = (
+				9FFAF9EE20410338000A99FE /* Sources */,
+				9FFAF9EF20410338000A99FE /* Frameworks */,
+				9FFAF9F020410338000A99FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FFAF9F420410338000A99FE /* PBXTargetDependency */,
+			);
+			name = ThaiTechEventsCalendarUITests;
+			productName = ThaiTechEventsCalendarUITests;
+			productReference = 9FFAF9F220410338000A99FE /* ThaiTechEventsCalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FFAF9CB20410337000A99FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = WM;
+				TargetAttributes = {
+					9FFAF9D220410337000A99FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9FFAF9E620410338000A99FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9FFAF9D220410337000A99FE;
+					};
+					9FFAF9F120410338000A99FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9FFAF9D220410337000A99FE;
+					};
+				};
+			};
+			buildConfigurationList = 9FFAF9CE20410337000A99FE /* Build configuration list for PBXProject "ThaiTechEventsCalendar" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FFAF9CA20410337000A99FE;
+			productRefGroup = 9FFAF9D420410337000A99FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FFAF9D220410337000A99FE /* ThaiTechEventsCalendar */,
+				9FFAF9E620410338000A99FE /* ThaiTechEventsCalendarTests */,
+				9FFAF9F120410338000A99FE /* ThaiTechEventsCalendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FFAF9D120410337000A99FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FFAF9E120410338000A99FE /* LaunchScreen.storyboard in Resources */,
+				9FFAF9DE20410338000A99FE /* Assets.xcassets in Resources */,
+				9FFAF9DC20410338000A99FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFAF9E520410338000A99FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFAF9F020410338000A99FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FFAF9CF20410337000A99FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FFAF9D920410338000A99FE /* ViewController.swift in Sources */,
+				9FFAF9D720410338000A99FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFAF9E320410338000A99FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FFAF9EC20410338000A99FE /* ThaiTechEventsCalendarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFAF9EE20410338000A99FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FFAF9F720410338000A99FE /* ThaiTechEventsCalendarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FFAF9E920410338000A99FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FFAF9D220410337000A99FE /* ThaiTechEventsCalendar */;
+			targetProxy = 9FFAF9E820410338000A99FE /* PBXContainerItemProxy */;
+		};
+		9FFAF9F420410338000A99FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FFAF9D220410337000A99FE /* ThaiTechEventsCalendar */;
+			targetProxy = 9FFAF9F320410338000A99FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FFAF9DA20410338000A99FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FFAF9DB20410338000A99FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FFAF9DF20410338000A99FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FFAF9E020410338000A99FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FFAF9F920410338000A99FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FFAF9FA20410338000A99FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FFAF9FC20410338000A99FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PRXSGPVD4P;
+				INFOPLIST_FILE = ThaiTechEventsCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.octto.ThaiTechEventsCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FFAF9FD20410338000A99FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PRXSGPVD4P;
+				INFOPLIST_FILE = ThaiTechEventsCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.octto.ThaiTechEventsCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9FFAF9FF20410338000A99FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PRXSGPVD4P;
+				INFOPLIST_FILE = ThaiTechEventsCalendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.octto.ThaiTechEventsCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThaiTechEventsCalendar.app/ThaiTechEventsCalendar";
+			};
+			name = Debug;
+		};
+		9FFAFA0020410338000A99FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PRXSGPVD4P;
+				INFOPLIST_FILE = ThaiTechEventsCalendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.octto.ThaiTechEventsCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThaiTechEventsCalendar.app/ThaiTechEventsCalendar";
+			};
+			name = Release;
+		};
+		9FFAFA0220410338000A99FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PRXSGPVD4P;
+				INFOPLIST_FILE = ThaiTechEventsCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.octto.ThaiTechEventsCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThaiTechEventsCalendar;
+			};
+			name = Debug;
+		};
+		9FFAFA0320410338000A99FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PRXSGPVD4P;
+				INFOPLIST_FILE = ThaiTechEventsCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.octto.ThaiTechEventsCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThaiTechEventsCalendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FFAF9CE20410337000A99FE /* Build configuration list for PBXProject "ThaiTechEventsCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FFAF9F920410338000A99FE /* Debug */,
+				9FFAF9FA20410338000A99FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FFAF9FB20410338000A99FE /* Build configuration list for PBXNativeTarget "ThaiTechEventsCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FFAF9FC20410338000A99FE /* Debug */,
+				9FFAF9FD20410338000A99FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FFAF9FE20410338000A99FE /* Build configuration list for PBXNativeTarget "ThaiTechEventsCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FFAF9FF20410338000A99FE /* Debug */,
+				9FFAFA0020410338000A99FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FFAFA0120410338000A99FE /* Build configuration list for PBXNativeTarget "ThaiTechEventsCalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FFAFA0220410338000A99FE /* Debug */,
+				9FFAFA0320410338000A99FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FFAF9CB20410337000A99FE /* Project object */;
+}
