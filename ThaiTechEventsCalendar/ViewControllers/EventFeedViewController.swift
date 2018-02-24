@@ -77,34 +77,8 @@ extension EventFeedViewController: UITableViewDataSource, UITableViewDelegate {
         if let indexPath = feedTableView.indexPathForSelectedRow {
             let dest = segue.destination as! EventDetailViewController
             dest.event = events[(indexPath.row)]
+            dest.modalPresentationCapturesStatusBarAppearance = true
         }
 
     }
 }
-//
-//extension EventFeedViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let itemWidth = UIScreen.main.bounds.width - 2 * xInset
-//        return CGSize(width: itemWidth, height: itemHeight)
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView,
-//                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! EventCollectionViewCell
-//        let event = events[indexPath.row]
-//        cell.updateUIWith(event)
-//
-//        return cell
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return events.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: "eventDetail", sender: nil)
-//    }
-//
-//
-//}

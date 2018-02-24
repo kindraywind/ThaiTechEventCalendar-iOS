@@ -58,7 +58,7 @@ class Event: Object {
         if timeJson[0]["to"]["minute"] == 0 { timeTo += "0" }
         if timeFrom.contains("null") { timeFrom = "" }
         if timeTo.contains("null") { timeTo = "" }
-        if timeFrom.isEmpty, timeTo.isEmpty { return "" }
+        if timeFrom.isEmpty, timeTo.isEmpty { return "N/A" }
         return "\(timeFrom) ~ \(timeTo)"
     }
 
@@ -89,6 +89,10 @@ class Location: Object {
         title = json["title"].stringValue
         url = json["url"].stringValue
     }
+
+    override static func primaryKey() -> String? {
+        return "url"
+    }
 }
 
 class Link: Object {
@@ -109,5 +113,9 @@ class Link: Object {
         url = json["url"].stringValue
         type = json["type"].stringValue
         price = json["price"].stringValue
+    }
+
+    override static func primaryKey() -> String? {
+        return "url"
     }
 }

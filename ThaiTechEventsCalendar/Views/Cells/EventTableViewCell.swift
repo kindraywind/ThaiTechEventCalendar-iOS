@@ -55,6 +55,7 @@ class EventTableViewCell: UITableViewCell {
         }
 
         topicTagListView.removeAllTags()
+        event.categories.forEach({ topicTagListView.addTag($0) })
         event.topics.forEach({ topicTagListView.addTag($0) })
     }
 

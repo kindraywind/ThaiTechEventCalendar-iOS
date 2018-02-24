@@ -1,1445 +1,1445 @@
-[ { "id": "functional-programming-in-python-by-thaipy-jan"
+ [ { "id": "functional-programming-in-python-by-thaipy-jan"
   , "start":
-    { "year": 2018
-    , "month": 1
-    , "date": 11
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 11
+  }
   , "end":
-    { "year": 2018
-    , "month": 1
-    , "date": 11
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 11
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "Python"
-    , "Functional Programming"
-    ]
+  [ "Python"
+   , "Functional Programming"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 18
-        , "minute": 30
-        }
-      , "to":
-        { "hour": 20
-        , "minute": 30
-        }
-      , "after": true
-      , "agenda": "Meetup"
-      }
-    ]
+  [ { "from":
+   { "hour": 18
+   , "minute": 30
+   }
+   , "to":
+   { "hour": 20
+   , "minute": 30
+   }
+   , "after": true
+   , "agenda": "Meetup"
+   }
+   ]
   , "title": "ThaiPy Bangkok Meetup — Functional Programming in Python and Panel on Women in Thai Tech"
   , "location":
-    { "title": "Bhiraj Tower"
-    , "url": "https://www.google.com/maps/place/BHIRAJ+TOWER+at+EmQuartier/@13.7314622,100.5672243,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29f01858d150f:0xbc0e87a22c16ae1c!8m2!3d13.731457!4d100.569413"
-    , "detail": "aCommerce HQ, 33rd floor"
-    }
+  { "title": "Bhiraj Tower"
+  , "url": "https://www.google.com/maps/place/BHIRAJ+TOWER+at+EmQuartier/@13.7314622,100.5672243,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29f01858d150f:0xbc0e87a22c16ae1c!8m2!3d13.731457!4d100.569413"
+  , "detail": "aCommerce HQ, 33rd floor"
+  }
   , "summary": "Meetup รายเดือนจากกลุ่ม ThaiPy - Bangkok Python Meetup สำหรับผู้ที่สนใจในภาษา Python ภายในงานจะมีการพูดคุยพบปะในบรรยากาศเป็นกันเอง เพื่อแลกเปลี่ยนความรู้และประสบการณ์ โดยหัวข้อที่จะพูดถึงจะเริ่มตั้งแต่ระดับ Beginner ไปจนถึง Advance"
   , "description": "- \"Every language needs its underscore: FP in Python\" - Alexander Schepanovski.\n- \"Panel Discussion: What it's like to a female in Thai tech\" - To help support the upcoming [Django Girls one day workshop 10 March 2018](https://djangogirls.org/bangkok/).\n- Short talks and lightning talks\n\nMonthly meetup for those using python, learning python of just py-curious. Python is one of more popular programming languages in the word and rising further, being used in fields such as web, science, big data, dev-ops and digital entertainment. We to have talks from beginners to advance and provide a friendly atmosphere to meet and network with your fellow pythonistas."
   , "links":
-    [ { "type": "rsvp"
-      , "url": "https://www.meetup.com/ThaiPy-Bangkok-Python-Meetup/events/245135592/"
-      , "title": "Meetup.com"
-      , "detail": "Free, snacks and prinks provided"
-      }
-    ]
+  [ { "type": "rsvp"
+   , "url": "https://www.meetup.com/ThaiPy-Bangkok-Python-Meetup/events/245135592/"
+   , "title": "Meetup.com"
+   , "detail": "Free, snacks and prinks provided"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-01/thaipy-functional-programming-in-python.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-01/thaipy-functional-programming-in-python.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "dependent-type-theory-meetup-january-2018"
+  }
+  , { "id": "dependent-type-theory-meetup-january-2018"
   , "start":
-    { "year": 2018
-    , "month": 1
-    , "date": 13
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 13
+  }
   , "end":
-    { "year": 2018
-    , "month": 1
-    , "date": 13
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 13
+  }
   , "categories":
-    [ "Workshop"
-    , "Meetup"
-    ]
+  [ "Workshop"
+   , "Meetup"
+   ]
   , "topics":
-    [ "Formal verification"
-    ]
+  [ "Formal verification"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 9
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 16
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": "Lecture/Tutorial"
-      }
-    , { "from":
-        { "hour": 16
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 17
-        , "minute": 0
-        }
-      , "after": true
-      , "agenda": "Meetup"
-      }
-    ]
+  [ { "from":
+   { "hour": 9
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 16
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": "Lecture/Tutorial"
+   }
+   , { "from":
+   { "hour": 16
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 17
+   , "minute": 0
+   }
+   , "after": true
+   , "agenda": "Meetup"
+   }
+   ]
   , "title": "Workshop on Formal Verification using Dependent Type Theory in Thai"
   , "location":
-    { "title": "Pronto Tools"
-    , "url": "https://www.google.com/maps/place/Pronto+Tools/@13.7922283,100.5425157,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29c10914e96d5:0x8e78f9849ffdbea8!8m2!3d13.7922231!4d100.5447044"
-    , "detail": null
-    }
+  { "title": "Pronto Tools"
+  , "url": "https://www.google.com/maps/place/Pronto+Tools/@13.7922283,100.5425157,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29c10914e96d5:0x8e78f9849ffdbea8!8m2!3d13.7922231!4d100.5447044"
+  , "detail": null
+  }
   , "summary": "ในการพัฒนาโปรแกรมบางประเภท เราต้องการความมั่นใจว่าโปรแกรมทำงาน “ถูกต้อง 100%”\nซึ่งการ “ทดสอบ” โปรแกรมเฉยๆ มันไม่พอ เราต้อง “พิสูจน์” ได้ว่าโปรแกรมทำงานถูกต้องในทุกกรณีที่เป็นไปได้\nDependent type theory เป็นวิธีนึง ซึ่งจะได้เรียนรู้กันในเวิร์คช็อปนี้"
   , "description": "In software engineering, every application requires a certain level of correctness; most of them are \"tested\" against some test suites, however, this turn out not to be sufficient for some application; this is because those test suites cannot \"guarantee\" 100% correctness. To solve such a problem, we need to \"prove\" that those applications are indeed correct. One way to formally verify it is to use dependent type theory where mathematical proof and computer program are the same things.\n\nIn this workshop, I would like to walk though dependent type theory by first, describe it as a functional programming, then how can we use this functional programming to do some logical reasoning. No background knowledge is required (apart from simple maths skill in secondary school), so everyone is welcome to attend. We will speak in Thai but every written material will be in English. There will be no registration fee, but please bring your food."
   , "links":
-    [ { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/122627418535428/"
-      , "title": "Facebook event"
-      , "detail": "Free, bring your own food."
-      }
-    ]
+  [ { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/122627418535428/"
+   , "title": "Facebook event"
+   , "detail": "Free, bring your own food."
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-01/dependent-type-theory-meetup.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-01/dependent-type-theory-meetup.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "bkk-web-101-angular-2-4-5-oh-my-41515114826"
+  }
+  , { "id": "bkk-web-101-angular-2-4-5-oh-my-41515114826"
   , "start":
-    { "year": 2018
-    , "month": 1
-    , "date": 16
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 16
+  }
   , "end":
-    { "year": 2018
-    , "month": 1
-    , "date": 16
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 16
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "Angular"
-    ]
+  [ "Angular"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 19
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 22
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 19
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 22
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "BKK WEB 101 - Angular 2, 4, 5, Oh My"
   , "location":
-    { "title": "Launchpad"
-    , "url": "https://www.google.com/maps/place/Launchpad+Co.,+Ltd/@13.7212933,100.5236788,19z/data=!3m1!4b1!4m5!3m4!1s0x30e298cdd6e8270d:0x7e9aa39655924697!8m2!3d13.721292!4d100.524226?hl=en"
-    , "detail": null
-    }
+  { "title": "Launchpad"
+  , "url": "https://www.google.com/maps/place/Launchpad+Co.,+Ltd/@13.7212933,100.5236788,19z/data=!3m1!4b1!4m5!3m4!1s0x30e298cdd6e8270d:0x7e9aa39655924697!8m2!3d13.721292!4d100.524226?hl=en"
+  , "detail": null
+  }
   , "summary": ""
   , "description": "This talk will cover all of the topics in the bulleted list by show casing an app to keep track of your favorite movies and discover new ones. This app will include the ability to login in and persist your movie list using Firebase. I will walk through the methods I used to create the app starting with the Angular CLI and how to best structure your code to make it scalable.\n\nJesse will cover the following topics: CLI, TypeScript, Modules, Components, Templates, Directives, Lifecycle hooks, Services, Routing, Observables, Forms, Pipes, HTTP Requests, Animations"
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://www.eventbrite.com/e/bkk-web-101-angular-2-4-5-oh-my-tickets-41515114826"
-      , "title": "Eventbrite"
-      , "price": "Free"
-      }
-    , { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/1781210951888915/"
-      , "title": "Facebook event"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://www.eventbrite.com/e/bkk-web-101-angular-2-4-5-oh-my-tickets-41515114826"
+   , "title": "Eventbrite"
+   , "price": "Free"
+   }
+   , { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/1781210951888915/"
+   , "title": "Facebook event"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-01/bkk-web-101-angular.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-01/bkk-web-101-angular.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "7peaks-meetup-246084420"
+  }
+  , { "id": "7peaks-meetup-246084420"
   , "start":
-    { "year": 2018
-    , "month": 1
-    , "date": 17
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 17
+  }
   , "end":
-    { "year": 2018
-    , "month": 1
-    , "date": 17
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 17
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "Azure"
-    , "Cloud"
-    ]
+  [ "Azure"
+   , "Cloud"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 19
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 21
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 19
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 21
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "7 Peaks Tech Events Bangkok — Scale your web application from local to global with Azure cloud"
   , "location":
-    { "title": "7 Peaks Software"
-    , "url": "https://www.google.com/maps/place/7+Peaks+Software/@13.739292,100.5552093,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29edcf8a9dcf5:0xcf0d1a437c55d078!8m2!3d13.739292!4d100.557398"
-    , "detail": "Dhammalert Building, 2nd floor"
-    }
+  { "title": "7 Peaks Software"
+  , "url": "https://www.google.com/maps/place/7+Peaks+Software/@13.739292,100.5552093,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29edcf8a9dcf5:0xcf0d1a437c55d078!8m2!3d13.739292!4d100.557398"
+  , "detail": "Dhammalert Building, 2nd floor"
+  }
   , "summary": "How to scale your web application from local market to global audience? Scalability, Performance, Availability, Security, Resiliency."
   , "description": "Raphael will present, through a simple case study, what are the best practices to scale globally your web application. Using AppServices, Auto-Scaling, DNS, CDN, Traffic Manager, Application Gateway, Blob Storage, Cosmos DB, SQL, Tables, Queues, Functions etc., we will reflect together how to design/scale our webapp to deliver the best performances."
   , "links":
-    [ { "type": "rsvp"
-      , "url": "https://www.meetup.com/7Peaks-Tech-Events-Bangkok/events/246084420/"
-      , "title": "Meetup.com"
-      }
-    ]
+  [ { "type": "rsvp"
+   , "url": "https://www.meetup.com/7Peaks-Tech-Events-Bangkok/events/246084420/"
+   , "title": "Meetup.com"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-01/7peaks-meetup-azure-cloud.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-01/7peaks-meetup-azure-cloud.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "docker-in-thai-meetup-january-2018"
+  }
+  , { "id": "docker-in-thai-meetup-january-2018"
   , "start":
-    { "year": 2018
-    , "month": 1
-    , "date": 17
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 17
+  }
   , "end":
-    { "year": 2018
-    , "month": 1
-    , "date": 17
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 17
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "Docker"
-    ]
+  [ "Docker"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 18
-        , "minute": 30
-        }
-      , "to":
-        { "hour": 21
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": "Talk / Networking"
-      }
-    ]
+  [ { "from":
+   { "hour": 18
+   , "minute": 30
+   }
+   , "to":
+   { "hour": 21
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": "Talk / Networking"
+   }
+   ]
   , "title": "Docker in Thai Meetup"
   , "location":
-    { "title": "GetLinks (Thailand)"
-    , "url": "https://www.google.com/maps/place/GetLinks+(Thailand)/@13.7315052,100.5581013,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29eddc5e7b307:0x969a71171a67b46a!8m2!3d13.7315!4d100.56029"
-    , "detail": "Lake Rajada Office Complex 10th Floor"
-    }
+  { "title": "GetLinks (Thailand)"
+  , "url": "https://www.google.com/maps/place/GetLinks+(Thailand)/@13.7315052,100.5581013,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29eddc5e7b307:0x969a71171a67b46a!8m2!3d13.7315!4d100.56029"
+  , "detail": "Lake Rajada Office Complex 10th Floor"
+  }
   , "summary": "พูดคุยกันเรื่อง Docker ในงาน Docker in Thai Meetup ครั้งที่สอง คราวนี้พูดถึงเรื่องการทำ Blue/Green Deployment ด้วย Docker ([คืออะไร?](http://www.somkiat.cc/blue-green-deployment/)) และเพิ่มเติมด้วยการคอนฟิก Liveness, Readiness ใน Kubernetes"
   , "description": "- Blue/Green micro service deployment using docker by K. Supaket\n- Liveness/Readyness with Kubernetes by K. Praparn"
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://www.eventpop.me/e/2822"
-      , "title": "Event Pop"
-      , "price": "Free (sold out)"
-      }
-    , { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/504227713281643/"
-      , "title": "Facebook event"
-      }
-    , { "type": "rsvp"
-      , "url": "https://events.docker.com/events/details/docker-bangkok-presents-docker-in-thai-meetup-january-2018"
-      , "title": "Docker.com"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://www.eventpop.me/e/2822"
+   , "title": "Event Pop"
+   , "price": "Free (sold out)"
+   }
+   , { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/504227713281643/"
+   , "title": "Facebook event"
+   }
+   , { "type": "rsvp"
+   , "url": "https://events.docker.com/events/details/docker-bangkok-presents-docker-in-thai-meetup-january-2018"
+   , "title": "Docker.com"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-01/docker-in-thai-meetup.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-01/docker-in-thai-meetup.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "kiwi-com-talks-meetup-246060093"
+  }
+  , { "id": "kiwi-com-talks-meetup-246060093"
   , "start":
-    { "year": 2018
-    , "month": 1
-    , "date": 22
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 22
+  }
   , "end":
-    { "year": 2018
-    , "month": 1
-    , "date": 22
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 22
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "JavaScript"
-    ]
+  [ "JavaScript"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 17
-        , "minute": 30
-        }
-      , "to":
-        { "hour": 20
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 17
+   , "minute": 30
+   }
+   , "to":
+   { "hour": 20
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "Kiwi.com talks — Let’s talk about JavaScript beyond the web"
   , "location":
-    { "title": "The Hive Thonglor"
-    , "url": "https://www.google.com/maps/place/The+Hive+Thonglor/@13.7320056,100.574429,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29e55a95f6f93:0xf9a8634f35bf33a6!8m2!3d13.7320004!4d100.5766177"
-    , "detail": "Meet us at the rooftop garden"
-    }
+  { "title": "The Hive Thonglor"
+  , "url": "https://www.google.com/maps/place/The+Hive+Thonglor/@13.7320056,100.574429,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29e55a95f6f93:0xf9a8634f35bf33a6!8m2!3d13.7320004!4d100.5766177"
+  , "detail": "Meet us at the rooftop garden"
+  }
   , "summary": "We are group of digital nomads from Kiwi.com travelling to Bangkok in January 2018 who would be pleased to share acquired knowledge about developing JavaScript apps with the others."
   , "description": "JavaScript world has exceeded the limits of browser environment and it's present in backend & mobile app world as well. Come and hear what we have learned so far while using latest technologies like Next.js, GraphQL or React Native.\n\n- Next.js by Michal Sanger\n- GraphQL by Martin Zlamal\n- Building mobile app with React Native by Václav Šír"
   , "links":
-    [ { "type": "rsvp"
-      , "url": "https://www.meetup.com/Kiwi-com-talks-The-age-of-JavaScript/events/246060093/"
-      , "title": "Meetup.com"
-      }
-    ]
+  [ { "type": "rsvp"
+   , "url": "https://www.meetup.com/Kiwi-com-talks-The-age-of-JavaScript/events/246060093/"
+   , "title": "Meetup.com"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-01/kiwi-com-talks.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-01/kiwi-com-talks.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "bkkhack-243386059"
+  }
+  , { "id": "bkkhack-243386059"
   , "start":
-    { "year": 2018
-    , "month": 1
-    , "date": 25
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 25
+  }
   , "end":
-    { "year": 2018
-    , "month": 1
-    , "date": 25
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 25
+  }
   , "categories":
-    [ "Codefest"
-    ]
+  [ "Codefest"
+   ]
   , "topics":
-    [ "Hack Night"
-    ]
+  [ "Hack Night"
+   ]
   , "time": null
   , "title": "BKK/hack Hack Night"
   , "location":
-    { "title": "อาคาร 100 ปี วิศวฯ จุฬาฯ"
-    , "url": "https://www.google.com/maps/place/%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3+100+%E0%B8%9B%E0%B8%B5+%E0%B8%A7%E0%B8%B4%E0%B8%A8%E0%B8%A7%E0%B8%AF+%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%AF/@13.7373391,100.5308892,17z/data=!4m8!1m2!2m1!1z4Lit4Liy4LiE4Liy4LijIDEwMCDguJvguLUg4Lin4Li04Lio4Lin4LivIOC4iOC4uOC4rOC4suC4rw!3m4!1s0x30e29ed5c73c4281:0x1d308f75b16d208f!8m2!3d13.736365!4d100.5339478"
-    , "detail": "[Enginex: Coworking Space of CU Intania](https://www.facebook.com/pages/Enginex-Coworking-Space-of-CU-Intania/1145859865449291), 6th floor"
-    }
+  { "title": "อาคาร 100 ปี วิศวฯ จุฬาฯ"
+  , "url": "https://www.google.com/maps/place/%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3+100+%E0%B8%9B%E0%B8%B5+%E0%B8%A7%E0%B8%B4%E0%B8%A8%E0%B8%A7%E0%B8%AF+%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%AF/@13.7373391,100.5308892,17z/data=!4m8!1m2!2m1!1z4Lit4Liy4LiE4Liy4LijIDEwMCDguJvguLUg4Lin4Li04Lio4Lin4LivIOC4iOC4uOC4rOC4suC4rw!3m4!1s0x30e29ed5c73c4281:0x1d308f75b16d208f!8m2!3d13.736365!4d100.5339478"
+  , "detail": "[Enginex: Coworking Space of CU Intania](https://www.facebook.com/pages/Enginex-Coworking-Space-of-CU-Intania/1145859865449291), 6th floor"
+  }
   , "summary": "ไม่ว่าคุณอยากจะเขียนภาษาอะไร Python, Ruby, JavaScript, Scala, PHP, Prolog คุณมาได้เลย อยากทำ Arduino ก็ขนมาได้ ถ้าอยากหาทีมสำหรับทำโปรเจค open source หรือหาคนช่วยโปรเจคงานอดิเรกของคุณจัดมาเลย! จะเขียนภาษาไหน ระดับใดก็ได้ มีกฎข้อเดียวคือคุณต้องเอาเครื่องมาเอง"
   , "description": "An event for all the coding/maker community. Any language, any level. The only rule is you must bring a laptop.\n\nWe seek to foster a welcoming cross-cultural community of hackers in and around BKK. Share your knowledge and learn from others, in a relaxed but hands-on setting.\n\nThis Meetup group focuses on participatory events—hacking is doing, not listening to presentations. Bring your own hobby projects, contribute to open source together, ask questions you encounter in your work."
   , "links":
-    [ { "type": "rsvp"
-      , "url": "https://www.meetup.com/bkkhack/events/243386059/"
-      , "title": "Meetup.com"
-      , "detail": "Free"
-      }
-    ]
+  [ { "type": "rsvp"
+   , "url": "https://www.meetup.com/bkkhack/events/243386059/"
+   , "title": "Meetup.com"
+   , "detail": "Free"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-01/bkkhack.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-01/bkkhack.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "jsconf-asia-2018"
+  }
+  , { "id": "jsconf-asia-2018"
   , "start":
-    { "year": 2018
-    , "month": 1
-    , "date": 25
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 25
+  }
   , "end":
-    { "year": 2018
-    , "month": 1
-    , "date": 27
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 27
+  }
   , "categories":
-    [ "Conference"
-    ]
+  [ "Conference"
+   ]
   , "topics":
-    [ "JavaScript"
-    ]
+  [ "JavaScript"
+   ]
   , "time": null
   , "title": "JSConf.Asia 2018"
   , "location":
-    { "title": "Singapore"
-    , "detail": "[Capitol Theatre](https://www.google.com/maps/place/Capitol+Theatre/@1.2935154,103.8491291,17z/data=!3m2!4b1!5s0x31da19a6aee41b9b:0xdd2c699900dbf180!4m5!3m4!1s0x31da19a41e0fc24d:0x6ede36ccc2300a68!8m2!3d1.29351!4d103.8513178); [Shangri-La Rasa Sentosa Hotel](https://www.google.com/maps/place/Shangri-La's+Rasa+Sentosa+Resort+%26+Spa,+Singapore/@1.2577265,103.80783,17z/data=!4m16!1m10!4m9!1m0!1m6!1m2!1s0x31da1bf0985ea1ed:0xb36c305d75a03941!2s101+Siloso+Road,+Shangri-La's+Rasa+Sentosa+Resort+%26+Spa,+Singapore,+Singapore+098970!2m2!1d103.8100187!2d1.2577211!3e0!3m4!1s0x31da1bf0985ea1ed:0xb36c305d75a03941!8m2!3d1.2577211!4d103.8100187)"
-    }
+  { "title": "Singapore"
+  , "detail": "[Capitol Theatre](https://www.google.com/maps/place/Capitol+Theatre/@1.2935154,103.8491291,17z/data=!3m2!4b1!5s0x31da19a6aee41b9b:0xdd2c699900dbf180!4m5!3m4!1s0x31da19a41e0fc24d:0x6ede36ccc2300a68!8m2!3d1.29351!4d103.8513178); [Shangri-La Rasa Sentosa Hotel](https://www.google.com/maps/place/Shangri-La's+Rasa+Sentosa+Resort+%26+Spa,+Singapore/@1.2577265,103.80783,17z/data=!4m16!1m10!4m9!1m0!1m6!1m2!1s0x31da1bf0985ea1ed:0xb36c305d75a03941!2s101+Siloso+Road,+Shangri-La's+Rasa+Sentosa+Resort+%26+Spa,+Singapore,+Singapore+098970!2m2!1d103.8100187!2d1.2577211!3e0!3m4!1s0x31da1bf0985ea1ed:0xb36c305d75a03941!8m2!3d1.2577211!4d103.8100187)"
+  }
   , "summary": "งาน JavaScript ที่ใหญ่ที่สุดในเอเชียตะวันออกเฉียงใต้\nจะได้เจอคนจาก Microsoft, Mozilla, … ด้วย\nงานนี้คนไทยไปเยอะ (30 กว่าคน) เลยใส่ไว้ในปฏิทินนี้ด้วย"
   , "description": "JSConf.Asia 2018 is a 3 day long celebration of the web technology and design. It is the sixth edition of Southeast Asia’s most influential community event from developers for developers with the aim to educate, inspire and entertain around open source and the web."
   , "links":
-    [ { "type": "website"
-      , "url": "https://2018.jsconf.asia/"
-      , "title": "2018.jsconf.asia"
-      }
-    , { "type": "ticket"
-      , "url": "https://events.pouchnation.com/event/jsconfasia2018"
-      , "title": "Buy tickets"
-      , "price": "1090 SGD"
-      }
-    , { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/111499759572747/"
-      , "title": "Facebook event"
-      }
-    ]
+  [ { "type": "website"
+   , "url": "https://2018.jsconf.asia/"
+   , "title": "2018.jsconf.asia"
+   }
+   , { "type": "ticket"
+   , "url": "https://events.pouchnation.com/event/jsconfasia2018"
+   , "title": "Buy tickets"
+   , "price": "1090 SGD"
+   }
+   , { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/111499759572747/"
+   , "title": "Facebook event"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-01/jsconf-asia-2018.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-01/jsconf-asia-2018.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "insurtech-ignite-workshop"
+  }
+  , { "id": "insurtech-ignite-workshop"
   , "start":
-    { "year": 2018
-    , "month": 1
-    , "date": 27
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 27
+  }
   , "end":
-    { "year": 2018
-    , "month": 1
-    , "date": 27
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 27
+  }
   , "categories":
-    [ "Workshop"
-    ]
+  [ "Workshop"
+   ]
   , "topics":
-    [ "Insurtech"
-    ]
+  [ "Insurtech"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 9
-        , "minute": 30
-        }
-      , "to":
-        { "hour": 18
-        , "minute": 30
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 9
+   , "minute": 30
+   }
+   , "to":
+   { "hour": 18
+   , "minute": 30
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "Insurtech Ignite Workshop"
   , "location":
-    { "title": "CU Innovation Hub"
-    , "url": "https://www.google.com/maps/place/CU+Innovation+Hub/@13.7426771,100.5257938,17z/data=!3m1!4b1!4m5!3m4!1s0x30e2992ce63a9795:0x30d3c8c1558d1354!8m2!3d13.7426719!4d100.5279825"
-    , "detail": null
-    }
+  { "title": "CU Innovation Hub"
+  , "url": "https://www.google.com/maps/place/CU+Innovation+Hub/@13.7426771,100.5257938,17z/data=!3m1!4b1!4m5!3m4!1s0x30e2992ce63a9795:0x30d3c8c1558d1354!8m2!3d13.7426719!4d100.5279825"
+  , "detail": null
+  }
   , "summary": ""
   , "description": "Insurtech Ignite Workshop จัดขึ้นเพื่อผู้ที่สนใจจะมาร่วมฟัง เทคนิค แบบเจาะลึก และอัพเดตเทรนต์ด้าน Insurance Industry, Future of Business with Big Data, AI, Automation พร้อมกิจกรรม Networking ในวันที่ 27 มกราคม 2561 นี้"
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://dev.wi.th/event/insurtech-ignite-workshop"
-      , "title": "Devcamp"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://dev.wi.th/event/insurtech-ignite-workshop"
+   , "title": "Devcamp"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-01/insurtech-ignite-workshop.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-01/insurtech-ignite-workshop.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "google-cloud-onboard-bangkok-2018"
+  }
+  , { "id": "google-cloud-onboard-bangkok-2018"
   , "start":
-    { "year": 2018
-    , "month": 1
-    , "date": 30
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 30
+  }
   , "end":
-    { "year": 2018
-    , "month": 1
-    , "date": 30
-    }
+  { "year": 2018
+  , "month": 1
+  , "date": 30
+  }
   , "categories":
-    [ "Workshop"
-    ]
+  [ "Workshop"
+   ]
   , "topics":
-    [ "Google Cloud Platform"
-    , "Cloud"
-    ]
+  [ "Google Cloud Platform"
+   , "Cloud"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 8
-        , "minute": 30
-        }
-      , "to":
-        { "hour": 17
-        , "minute": 30
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 8
+   , "minute": 30
+   }
+   , "to":
+   { "hour": 17
+   , "minute": 30
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "Google Cloud OnBoard Bangkok 2018"
   , "location":
-    { "title": "Centara Grand at CentralWorld"
-    , "url": "https://www.google.com/maps/place/Centara+Grand+at+CentralWorld/@13.7477222,100.5365583,17z/data=!3m1!4b1!4m5!3m4!1s0x30e2992f7809567f:0xccc050cff0e7d234!8m2!3d13.747717!4d100.538747"
-    , "detail": "Convention Centre B2, 22nd Floor"
-    }
+  { "title": "Centara Grand at CentralWorld"
+  , "url": "https://www.google.com/maps/place/Centara+Grand+at+CentralWorld/@13.7477222,100.5365583,17z/data=!3m1!4b1!4m5!3m4!1s0x30e2992f7809567f:0xccc050cff0e7d234!8m2!3d13.747717!4d100.538747"
+  , "detail": "Convention Centre B2, 22nd Floor"
+  }
   , "summary": "งานสัมมนา Google Cloud OnBoard นี้เป็นงานสัมมนาฟรีที่วิทยากรจาก Google จะมาแนะนำเทคโนโลยีของ Google Cloud Platform งานนี้เหมาะกับทั้ง IT Managers, Systems Engineers and Operations professionals, Developers, Solution Architects, และผู้ที่สนใจในเทคโนโลยีของ Google ทุกคน"
   , "description": "Cloud OnBoard is a free full-day instructor-led enablement and training event that will provide you with a step-by-step technical introduction to the Google Cloud Platform (GCP). Through a combination of instructor-led presentations and hands-on labs, you will learn how to get started with Google App Engine, Datastore, Storage, Container Engine, Compute Engine and Network, Big Data and Machine Learning."
   , "links":
-    [ { "type": "website"
-      , "url": "https://cloudplatformonline.com/2018-onboard-bkk.html"
-      , "title": "Google Cloud"
-      }
-    , { "type": "ticket"
-      , "url": "https://cloudplatformonline.com/2018-onboard-bkk.html#register"
-      , "title": "Google Cloud"
-      , "price": "Free"
-      }
-    ]
+  [ { "type": "website"
+   , "url": "https://cloudplatformonline.com/2018-onboard-bkk.html"
+   , "title": "Google Cloud"
+   }
+   , { "type": "ticket"
+   , "url": "https://cloudplatformonline.com/2018-onboard-bkk.html#register"
+   , "title": "Google Cloud"
+   , "price": "Free"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-01/google-cloud-onboard-bangkok.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-01/google-cloud-onboard-bangkok.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "insurtech-ignite-hackathon"
+  }
+  , { "id": "insurtech-ignite-hackathon"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 3
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 3
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 4
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 4
+  }
   , "categories":
-    [ "Hackathon"
-    ]
+  [ "Hackathon"
+   ]
   , "topics":
-    [ "Insurtech"
-    ]
+  [ "Insurtech"
+   ]
   , "time": null
   , "title": "Insurtech Ignite Hackathon"
   , "location":
-    { "title": "CU Innovation Hub"
-    , "url": "https://www.google.com/maps/place/CU+Innovation+Hub/@13.7426771,100.5257938,17z/data=!3m1!4b1!4m5!3m4!1s0x30e2992ce63a9795:0x30d3c8c1558d1354!8m2!3d13.7426719!4d100.5279825"
-    , "detail": null
-    }
+  { "title": "CU Innovation Hub"
+  , "url": "https://www.google.com/maps/place/CU+Innovation+Hub/@13.7426771,100.5257938,17z/data=!3m1!4b1!4m5!3m4!1s0x30e2992ce63a9795:0x30d3c8c1558d1354!8m2!3d13.7426719!4d100.5279825"
+  , "detail": null
+  }
   , "summary": "การแข่งขันพัฒนาซอฟต์แวร์ และเทคโนโลยีที่ท้าทายที่สุดครั้งหนึ่งของประเทศไทย พร้อมโอกาสในการพัฒนาธุรกิจ และนวัตกรรมร่วมกับ บริษัทประกันภัยชั้นนำของประเทศ ชิงรางวัลกว่า 100,000 บาท ในวันที่ 3 กุมภาพันธ์ - 4 กุมภาพันธ์ 2561"
   , "description": "InsurTech Ignite Hackthon ครั้งแรกของบริษัทประกันภัยชั้นนำ  ของประเทศ ที่รวมตัวกันภายใต้ สมาคมประกันวินาศภัยไทย จัด Hackathon ให้สตาร์ทอัพและผู้ประกอบการรุ่นใหม่เข้ามามีส่วนร่วมในการพัฒนานวัตกรรมที่เกี่ยวข้องกับการประกันภัย ชิงรางวัลรวมมูลค่า 100,000 บาท พร้อมรับการบ่มเพาะเป็นระยะเวลา 2 เดือน และมีโอกาสได้พัฒนานวัตกรรมร่วมกับบริษัทประกันภัยชั้นนำของประเทศ"
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://dev.wi.th/event/insurtech-ignite-hackathon"
-      , "title": "Devcamp"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://dev.wi.th/event/insurtech-ignite-hackathon"
+   , "title": "Devcamp"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/insurtech-ignite-hackathon.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/insurtech-ignite-hackathon.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "thaipy-feb-2018"
+  }
+  , { "id": "thaipy-feb-2018"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 8
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 8
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 8
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 8
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "Ruby"
-    , "Python"
-    ]
+  [ "Ruby"
+   , "Python"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 18
-        , "minute": 30
-        }
-      , "to":
-        { "hour": 20
-        , "minute": 30
-        }
-      , "after": true
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 18
+   , "minute": 30
+   }
+   , "to":
+   { "hour": 20
+   , "minute": 30
+   }
+   , "after": true
+   , "agenda": null
+   }
+   ]
   , "title": "ThaiPy Bangkok Meetup: Ruby for Python Devs + Insecure Things to Avoid in Python"
   , "location":
-    { "title": "Bhiraj Tower"
-    , "url": "https://www.google.com/maps/place/BHIRAJ+TOWER+at+EmQuartier/@13.7314622,100.5672243,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29f01858d150f:0xbc0e87a22c16ae1c!8m2!3d13.731457!4d100.569413"
-    , "detail": "aCommerce HQ, 33rd floor"
-    }
+  { "title": "Bhiraj Tower"
+  , "url": "https://www.google.com/maps/place/BHIRAJ+TOWER+at+EmQuartier/@13.7314622,100.5672243,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29f01858d150f:0xbc0e87a22c16ae1c!8m2!3d13.731457!4d100.569413"
+  , "detail": "aCommerce HQ, 33rd floor"
+  }
   , "summary": "This is for anyone who likes beauty and productivity with their code."
   , "description": "- \"Ruby for python developers\" - Dan Itsara (Glazziq)\n- \"Some insecure things to avoid in python\" - Dominik 'Disconnect3d' Czarnota (Collective Sense)"
   , "links":
-    [ { "type": "rsvp"
-      , "url": "https://www.meetup.com/ThaiPy-Bangkok-Python-Meetup/events/246228255/"
-      , "title": "Meetup.com"
-      , "detail": "Free, snacks and drinks provided"
-      }
-    ]
+  [ { "type": "rsvp"
+   , "url": "https://www.meetup.com/ThaiPy-Bangkok-Python-Meetup/events/246228255/"
+   , "title": "Meetup.com"
+   , "detail": "Free, snacks and drinks provided"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/thaipy-feb-2018.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/thaipy-feb-2018.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "tech-at-agoda-19-metaprogramming"
+  }
+  , { "id": "tech-at-agoda-19-metaprogramming"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 10
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 10
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 10
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 10
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ ".NET"
-    , "Scala"
-    ]
+  [ ".NET"
+   , "Scala"
+   ]
   , "time": null
   , "title": "TechAtAgoda - Metaprogramming"
   , "location":
-    { "title": "The Offices at Centralworld"
-    , "url": "https://www.google.com/maps/place/The+Offices+At+Central+World/@13.7461805,100.5388239,17z/data=!3m1!5s0x30e29ecfc46acedb:0xdb78b1e7e3812c1!4m8!1m2!2m1!1sBangkok,+The+Offices+At+Central+World,+Bangkok,+meetup1,+th!3m4!1s0x30e29ecfd2620337:0xe3abefcb26228c94!8m2!3d13.7457892!4d100.5380479"
-    , "detail": null
-    }
+  { "title": "The Offices at Centralworld"
+  , "url": "https://www.google.com/maps/place/The+Offices+At+Central+World/@13.7461805,100.5388239,17z/data=!3m1!5s0x30e29ecfc46acedb:0xdb78b1e7e3812c1!4m8!1m2!2m1!1sBangkok,+The+Offices+At+Central+World,+Bangkok,+meetup1,+th!3m4!1s0x30e29ecfd2620337:0xe3abefcb26228c94!8m2!3d13.7457892!4d100.5380479"
+  , "detail": null
+  }
   , "summary": "Monthly Meetup from Agoda, One of Fanciest Tech Company in Thailand. We was thinking a lot about how to start a new year and what topic to choose. So, finally... First topic of 2018 year is Metaprogramming. Tada! We gonna focus on Roslyn and Scalameta:"
   , "description": "[Roslyn](https://github.com/dotnet/roslyn) \"Getting started with Roslyn analyzers\" by Krisztian Bodrogi, Senior Software Engineer at Agoda. Introduction to Roslyn (.NET Compiler Platform) and Roslyn diagnostic analyzers to build static analyzers for your project. Krisztian will explain how the platform works and show some examples for Roslyn API.\n\n[Scalameta](http://scalameta.org/) Senior Software Developer at Agoda, Bartosz Bąbol (Bartek) will share his experience in Metaprogramming: \"Magic at Compile Time. Metaprogramming in Scala\". You can also check out his impressive blog to find some cool stuff about fun with Scalameta (http://www.bbartosz.com/)"
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://www.meetup.com/TechAtAgoda/events/246665015/"
-      , "title": "Meetup.com"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://www.meetup.com/TechAtAgoda/events/246665015/"
+   , "title": "Meetup.com"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/tech-at-agoda-19-metaprogramming.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/tech-at-agoda-19-metaprogramming.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "wordcamp-bangkok-2018"
+  }
+  , { "id": "wordcamp-bangkok-2018"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 17
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 17
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 18
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 18
+  }
   , "categories":
-    [ "Conference"
-    ]
+  [ "Conference"
+   ]
   , "topics":
-    [ "WordPress"
-    ]
+  [ "WordPress"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 8
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 17
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 8
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 17
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "WordCamp Bangkok 2018"
   , "location":
-    { "title": "มหาวิทยาลัยสยาม"
-    , "url": "https://www.google.com/maps/place/Siam+University/@13.7182852,100.450954,17z/data=!3m1!4b1!4m5!3m4!1s0x30e2983b3ccda6b9:0x7160b277b60e7199!8m2!3d13.71828!4d100.453148"
-    , "detail": null
-    }
+  { "title": "มหาวิทยาลัยสยาม"
+  , "url": "https://www.google.com/maps/place/Siam+University/@13.7182852,100.450954,17z/data=!3m1!4b1!4m5!3m4!1s0x30e2983b3ccda6b9:0x7160b277b60e7199!8m2!3d13.71828!4d100.453148"
+  , "detail": null
+  }
   , "summary": "WordCamp เป็นงานสัมมนาของ WordPress ที่เปิดโอกาสให้ทุกคนที่มีความสนใจเรื่องราวเกี่ยวกับ WordPress อาทิเช่น บล็อกเกอร์, นักพัฒนา, นักออกแบบ, นักการตลาด, เจ้าของธุรกิจ, ผู้บริหาร, นักศึกษา และจากสาขาอื่นๆทั่วประเทศให้ได้มาพบปะ และทำกิจกรรมร่วมกัน"
   , "description": "17 กุมภาพันธ์ - Contributor Day วันที่ทุกคนมาแจมกัน เพื่อ Contribute ให้กับ WordPress เราจะได้เรียนรู้ว่าเราสามารถมีส่วนช่วยพัฒนา WordPress ให้ดีขึ้นได้อย่างไร\n\n18 กุมภาพันธ์ - Conference Day เข้าร่วมฟังหัวข้อการบรรยายต่างๆที่เกี่ยวข้องกับ WordPress ครอบคลุมตั้งแต่ ผู้เริ่มต้นใช้งาน, บล็อกเกอร์, นักพัฒนา, นักออกแบบ และคนที่ทำธุรกิจ รวมไปถึงกิจกรรมต่างๆ ที่จะช่วยให้คุณได้พบกับเพื่อนใหม่ๆ"
   , "links":
-    [ { "type": "website"
-      , "url": "https://2018.bangkok.wordcamp.org"
-      , "title": "2018.bangkok.wordcamp.org"
-      }
-    , { "type": "ticket"
-      , "url": "https://2018.bangkok.wordcamp.org/tickets/"
-      , "title": "2018.bangkok.wordcamp.org"
-      , "price": "FREE for Contributor Day, 300 THB for Conference Day"
-      }
-    , { "type": "rsvp"
-      , "url": "https://web.facebook.com/events/365647900565474/"
-      , "title": "Facebook Event"
-      }
-    ]
+  [ { "type": "website"
+   , "url": "https://2018.bangkok.wordcamp.org"
+   , "title": "2018.bangkok.wordcamp.org"
+   }
+   , { "type": "ticket"
+   , "url": "https://2018.bangkok.wordcamp.org/tickets/"
+   , "title": "2018.bangkok.wordcamp.org"
+   , "price": "FREE for Contributor Day, 300 THB for Conference Day"
+   }
+   , { "type": "rsvp"
+   , "url": "https://web.facebook.com/events/365647900565474/"
+   , "title": "Facebook Event"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/wordcamp-bangkok-2018.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/wordcamp-bangkok-2018.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "thoughtworks-ux-vs-ba-2981"
+  }
+  , { "id": "thoughtworks-ux-vs-ba-2981"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 21
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 21
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 21
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 21
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "UX"
-    , "BA"
-    ]
+  [ "UX"
+   , "BA"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 18
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 22
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 18
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 22
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "ลั่นกลองรบ : ศึกระหว่าง User Experience กับ Business Analyst"
   , "location":
-    { "title": "BIG Co-working Space"
-    , "url": "https://www.google.com/maps/place/BIG+Co-working+Space/@13.7566867,100.571952,15z/data=!4m5!3m4!1s0x0:0xf2124609ad0be030!8m2!3d13.7566867!4d100.571952"
-    , "detail": null
-    }
+  { "title": "BIG Co-working Space"
+  , "url": "https://www.google.com/maps/place/BIG+Co-working+Space/@13.7566867,100.571952,15z/data=!4m5!3m4!1s0x0:0xf2124609ad0be030!8m2!3d13.7566867!4d100.571952"
+  , "detail": null
+  }
   , "summary": "ThoughtWorks Talks Tech #1 มาพร้อมกับ ความเข้มข้น ของหัวข้อสนทนาเพื่อการสร้างซอฟแวร์ที่ดีที่สุด เมื่อฝั่งของธุรกิจ (Business Analyst) และตัวแทนของผู้ใช้ (User Experience) ต้องห้ำหั่นกันเพื่อเป็นตัวแทนเสียงของแต่ละฝ่าย เราจะทำกันอย่างไร เพื่อสร้างอนาคตที่ดีที่สุดของซอฟแวร์ร่วมกัน"
   , "description": "จำเป็นหรือไม่ ที่งานจะต้องมี Business Analyst / User Experience คนๆ นี้ สำคัญอย่างไร? เป็นไปได้หรือไม่ที่ เราจะเป็นทั้ง Business Analyst และ User Experience พร้อมๆ กัน? เมื่อความต้องการของทั้งสองฝ่ายต่างกันอย่างสุดขั้ว เราจะทำอย่างไรเพื่อให้งานของเราออกมาดีที่สุด? บทเรียนเจ็บๆ และเทคนิคจากผู้เชี่ยวชาญ\n\nมาร่วมลั่นกลองรบในงานครั้งนี้ที่จะสร้างความตื่นเต้น เสียงหัวเราะ ความสนุก ไปพร้อมกับการได้ความรู้ของการพัฒนาซอฟแวร์ให้จบ กับที่นี่ ThoughtWorks Tech Talk #1"
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://www.eventpop.me/e/2981"
-      , "title": "Event Pop"
-      , "price": "FREE"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://www.eventpop.me/e/2981"
+   , "title": "Event Pop"
+   , "price": "FREE"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/thoughtworks-ux-vs-ba.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/thoughtworks-ux-vs-ba.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "7peaks-meetup-246897327"
+  }
+  , { "id": "7peaks-meetup-246897327"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 22
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 22
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 22
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 22
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "Blockchain"
-    , "Ethereum"
-    ]
+  [ "Blockchain"
+   , "Ethereum"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 19
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 21
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 19
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 21
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "7 Peaks Tech Events Bangkok — Let's Build a Decentralised Blockchain App on Ethereum"
   , "location":
-    { "title": "7 Peaks Software"
-    , "url": "https://www.google.com/maps/place/7+Peaks+Software/@13.739292,100.5552093,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29edcf8a9dcf5:0xcf0d1a437c55d078!8m2!3d13.739292!4d100.557398"
-    , "detail": "Dhammalert Building, 2nd floor"
-    }
+  { "title": "7 Peaks Software"
+  , "url": "https://www.google.com/maps/place/7+Peaks+Software/@13.739292,100.5552093,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29edcf8a9dcf5:0xcf0d1a437c55d078!8m2!3d13.739292!4d100.557398"
+  , "detail": "Dhammalert Building, 2nd floor"
+  }
   , "summary": "On this workshop, we'll build together a very simple decentralised application, on top of Ethereum."
   , "description": "We'll demystify all the complexity nowadays surrounding the Blockchain topic, and in a short time, with simple tools, we'll build a Blockchain application on top of the Ethereum test network."
   , "links":
-    [ { "type": "rsvp"
-      , "url": "https://www.meetup.com/7Peaks-Tech-Events-Bangkok/events/246897327/"
-      , "title": "Meetup.com"
-      }
-    , { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/2025335341040804/"
-      , "title": "Facebook Event"
-      }
-    ]
+  [ { "type": "rsvp"
+   , "url": "https://www.meetup.com/7Peaks-Tech-Events-Bangkok/events/246897327/"
+   , "title": "Meetup.com"
+   }
+   , { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/2025335341040804/"
+   , "title": "Facebook Event"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/7peaks-meetup.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/7peaks-meetup.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "bkkhack-243386060"
+  }
+  , { "id": "bkkhack-243386060"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 22
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 22
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 22
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 22
+  }
   , "categories":
-    [ "Codefest"
-    ]
+  [ "Codefest"
+   ]
   , "topics":
-    [ "Hack Night"
-    ]
+  [ "Hack Night"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 18
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 22
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 18
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 22
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "BKK/hack Hack Night"
   , "location":
-    { "title": "Learn Hub"
-    , "url": "https://www.google.com/maps/place/Learn+Hub/@13.7444559,100.5315245,17z/data=!4m8!1m2!2m1!1slearn+hub%2B!3m4!1s0x30e29ed20f89d211:0x810d7dd9fa79451d!8m2!3d13.74532!4d100.534531"
-    , "detail": "Bangkok Bank (Siam), 4th floor"
-    }
+  { "title": "Learn Hub"
+  , "url": "https://www.google.com/maps/place/Learn+Hub/@13.7444559,100.5315245,17z/data=!4m8!1m2!2m1!1slearn+hub%2B!3m4!1s0x30e29ed20f89d211:0x810d7dd9fa79451d!8m2!3d13.74532!4d100.534531"
+  , "detail": "Bangkok Bank (Siam), 4th floor"
+  }
   , "summary": "ไม่ว่าคุณอยากจะเขียนภาษาอะไร Python, Ruby, JavaScript, Scala, PHP, Prolog คุณมาได้เลย อยากทำ Arduino ก็ขนมาได้ ถ้าอยากหาทีมสำหรับทำโปรเจค open source หรือหาคนช่วยโปรเจคงานอดิเรกของคุณจัดมาเลย! จะเขียนภาษาไหน ระดับใดก็ได้ มีกฎข้อเดียวคือคุณต้องเอาเครื่องมาเอง"
   , "description": "An event for all the coding/maker community. Any language, any level. The only rule is you must bring a laptop.\n\nWe seek to foster a welcoming cross-cultural community of hackers in and around BKK. Share your knowledge and learn from others, in a relaxed but hands-on setting.\n\nThis Meetup group focuses on participatory events—hacking is doing, not listening to presentations. Bring your own hobby projects, contribute to open source together, ask questions you encounter in your work."
   , "links":
-    [ { "type": "rsvp"
-      , "url": "https://www.meetup.com/bkkhack/events/243386060/"
-      , "title": "Meetup.com"
-      , "detail": "Free"
-      }
-    ]
+  [ { "type": "rsvp"
+   , "url": "https://www.meetup.com/bkkhack/events/243386060/"
+   , "title": "Meetup.com"
+   , "detail": "Free"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/bkkhack.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/bkkhack.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "codecampvn-blockchain2018"
+  }
+  , { "id": "codecampvn-blockchain2018"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 24
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 24
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 24
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 24
+  }
   , "categories":
-    [ "Conference"
-    ]
+  [ "Conference"
+   ]
   , "topics":
-    [ "Blockchain"
-    ]
+  [ "Blockchain"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 19
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 22
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 19
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 22
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "Blockchain Developers new trend in 2018"
   , "location":
-    { "url": "https://www.google.com/maps/place/The+Knowledge+Exchange:+KX/@13.720493,100.4961223,17z/data=!3m1!4b1!4m5!3m4!1s0x30e298ee5d02d0a3:0xe2511ae461733d57!8m2!3d13.7204878!4d100.498311"
-    , "title": "The Knowledge Exchange: KX"
-    }
+  { "url": "https://www.google.com/maps/place/The+Knowledge+Exchange:+KX/@13.720493,100.4961223,17z/data=!3m1!4b1!4m5!3m4!1s0x30e298ee5d02d0a3:0xe2511ae461733d57!8m2!3d13.7204878!4d100.498311"
+  , "title": "The Knowledge Exchange: KX"
+  }
   , "summary": "The more popular blockchain / distributed ledger systems sharing in this event: Hyperledger, stellar & IOTA. Junior & Senior blockchain engineers encourage to join this workshop."
   , "description": "Welcome To Block Chain Zone. A distributed ledger is defined as a peer-to-peer network, which uses a defined consensus mechanism to prevent modification of an ordered series of time-stamped records\n\nTopics: Hyperledger Fabric + Kurbenetes: Scaling architecture; Stellar: Overview Architecture development; IOTA: Architecture of blockchain 3.0; Ethereum: Solidity in 2018"
   , "links":
-    [ { "type": "website"
-      , "url": "http://codecampvn.me/blockchain2018"
-      , "title": "codecampvn.me"
-      }
-    , { "type": "ticket"
-      , "url": "http://codecampvn.me/payment?workshop=5a814a722a0f7b8849a918cf"
-      , "title": "codecampvn.me"
-      , "price": "FREE"
-      }
-    , { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/142821576521958/"
-      , "title": "Facebook Event"
-      }
-    ]
+  [ { "type": "website"
+   , "url": "http://codecampvn.me/blockchain2018"
+   , "title": "codecampvn.me"
+   }
+   , { "type": "ticket"
+   , "url": "http://codecampvn.me/payment?workshop=5a814a722a0f7b8849a918cf"
+   , "title": "codecampvn.me"
+   , "price": "FREE"
+   }
+   , { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/142821576521958/"
+   , "title": "Facebook Event"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/codecampvn-blockchain2018.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/codecampvn-blockchain2018.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "hashgraph-pre-hackathon-206634573226076"
+  }
+  , { "id": "hashgraph-pre-hackathon-206634573226076"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 24
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 24
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 25
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 25
+  }
   , "categories":
-    [ "Codefest"
-    , "Hackathon"
-    ]
+  [ "Codefest"
+   , "Hackathon"
+   ]
   , "topics":
-    [ "Hashgraph"
-    ]
+  [ "Hashgraph"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 9
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 17
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 9
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 17
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "Hashgraph Pre-Hackathon"
   , "location":
-    { "title": "Geeky Base"
-    , "url": "https://www.google.com/maps/place/Geeky+Base/@13.8523194,100.5803435,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29d2386568ec7:0xdf0eb043fcd08544!8m2!3d13.8523142!4d100.5825322"
-    }
+  { "title": "Geeky Base"
+  , "url": "https://www.google.com/maps/place/Geeky+Base/@13.8523194,100.5803435,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29d2386568ec7:0xdf0eb043fcd08544!8m2!3d13.8523142!4d100.5825322"
+  }
   , "summary": "เขาว่ามันดูดีกว่า Blockchain ดีกว่ายังไงไม่มีใครรู้ เรามาลอง ลงมือทำกันดีกว่า"
   , "description": "สำหรับท่านที่สนใจงานที่เน้นแต่ เขียนโค้ด ไม่เน้น presentation ก็สองมือล้วงกระเป๋า สองเท้าก้าวเข้ามาครับ 24-25 เดือนนี้ที่ Geeky Base"
   , "links":
-    [ { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/206634573226076/"
-      , "title": "Facebook Event"
-      }
-    ]
+  [ { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/206634573226076/"
+   , "title": "Facebook Event"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/hashgraph-pre-hackathon.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/hashgraph-pre-hackathon.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "asia-pacific-ethereum-meetup-20180225"
+  }
+  , { "id": "asia-pacific-ethereum-meetup-20180225"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 25
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 25
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 25
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 25
+  }
   , "categories":
-    [ "Conference"
-    , "Meetup"
-    ]
+  [ "Conference"
+   , "Meetup"
+   ]
   , "topics":
-    [ "Blockchain"
-    , "Ethereum"
-    ]
+  [ "Blockchain"
+   , "Ethereum"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 9
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 17
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 9
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 17
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "Asia-Pacific Ethereum Community Meetup"
   , "location":
-    { "title": "KX - Knowledge Exchange Center"
-    , "url": "https://www.google.com/maps/place/The+Knowledge+Exchange:+KX/@13.7204878,100.4961223,17z/data=!3m1!4b1!4m5!3m4!1s0x30e298ee5d02d0a3:0xe2511ae461733d57!8m2!3d13.7204878!4d100.498311"
-    }
+  { "title": "KX - Knowledge Exchange Center"
+  , "url": "https://www.google.com/maps/place/The+Knowledge+Exchange:+KX/@13.7204878,100.4961223,17z/data=!3m1!4b1!4m5!3m4!1s0x30e298ee5d02d0a3:0xe2511ae461733d57!8m2!3d13.7204878!4d100.498311"
+  }
   , "summary": ""
   , "description": "The event covers Ethereum-based technology sharing, discussions on some wonderful use cases\nand the development of various Asia-Pacific Ethereum communities, etc. The confirmed guests\ninclude Vitalik Buterin, Karl Floersch, OmiseGo Team and other developers and various Ethereum\ncommunity representatives (from China, Korea, Singapore, America, Japan etc.), founders of\nexcellent Ethereum-based projects, well-known investors and enterprise representatives in\nthis sector."
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://baoming.in"
-      , "title": "Information & Ticketing Site"
-      , "price": "$35"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://baoming.in"
+   , "title": "Information & Ticketing Site"
+   , "price": "$35"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/asia-pacific-ethereum-meetup.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/asia-pacific-ethereum-meetup.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "ruby-tuesday-1-246894729"
+  }
+  , { "id": "ruby-tuesday-1-246894729"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 27
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 27
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 27
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 27
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "Ruby"
-    ]
+  [ "Ruby"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 19
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 20
-        , "minute": 30
-        }
-      , "after": true
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 19
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 20
+   , "minute": 30
+   }
+   , "after": true
+   , "agenda": null
+   }
+   ]
   , "title": "Ruby Tuesday #1"
   , "location":
-    { "url": "https://www.google.com/maps/place/LINK+Collaboration+Space/@13.7394434,100.519722,17z/data=!3m1!4b1!4m5!3m4!1s0x30e299312368f6eb:0x822246345e9e0e3b!8m2!3d13.7394382!4d100.5219107"
-    , "title": "LINK Collaboration Space"
-    }
+  { "url": "https://www.google.com/maps/place/LINK+Collaboration+Space/@13.7394434,100.519722,17z/data=!3m1!4b1!4m5!3m4!1s0x30e299312368f6eb:0x822246345e9e0e3b!8m2!3d13.7394382!4d100.5219107"
+  , "title": "LINK Collaboration Space"
+  }
   , "summary": "Ruby Tuesday is an event to gather all who are interested in the programming language Ruby. Whether you're an expert or a beginner, you're welcome to join."
   , "description": "This will be our very first time holding at Link co-working space - see below for the address. There will be two short talks, with plenty of time to mingle and meet other Ruby developers and friendly tech people.\n\n- Talk 1: Getting Started with Rails and Docker - Dan Itsara from Glazziq\n\n- Talk 2: Coding with Ruby on Sketchup - Khun Yuthana Tubtimtong creator of Quicksketch, QuickNano, Qprecast & Qestimate"
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://www.meetup.com/ruby-tuesdays-bangkok/events/246894729/"
-      , "title": "Meetup"
-      }
-    , { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/1538831062867110/"
-      , "title": "Facebook Event"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://www.meetup.com/ruby-tuesdays-bangkok/events/246894729/"
+   , "title": "Meetup"
+   }
+   , { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/1538831062867110/"
+   , "title": "Facebook Event"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/ruby-tuesday-1.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/ruby-tuesday-1.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "tencent-thailand-open-house-8"
+  }
+  , { "id": "tencent-thailand-open-house-8"
   , "start":
-    { "year": 2018
-    , "month": 2
-    , "date": 27
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 27
+  }
   , "end":
-    { "year": 2018
-    , "month": 2
-    , "date": 27
-    }
+  { "year": 2018
+  , "month": 2
+  , "date": 27
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "Web"
-    , "Math"
-    ]
+  [ "Web"
+   , "Math"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 18
-        , "minute": 30
-        }
-      , "to":
-        { "hour": 21
-        , "minute": 30
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 18
+   , "minute": 30
+   }
+   , "to":
+   { "hour": 21
+   , "minute": 30
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "Tencent Thailand Open House # 8 : MATH PROGRAMMING & WEB ASSEMBLY"
   , "location":
-    { "url": "https://www.google.com/maps/place/Tencent+(Thailand)+Company+Limited/@13.7871852,100.5723683,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29dd2d7bef373:0xda2e847cc72274b4!8m2!3d13.7871852!4d100.574557"
-    , "title": "Tencent (Thailand) Company Limited"
-    , "detail": "อาคารเมืองไทย-ภัทร คอมเพล็กซ์ (อาคาร A) ชั้น 16"
-    }
+  { "url": "https://www.google.com/maps/place/Tencent+(Thailand)+Company+Limited/@13.7871852,100.5723683,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29dd2d7bef373:0xda2e847cc72274b4!8m2!3d13.7871852!4d100.574557"
+  , "title": "Tencent (Thailand) Company Limited"
+  , "detail": "อาคารเมืองไทย-ภัทร คอมเพล็กซ์ (อาคาร A) ชั้น 16"
+  }
   , "summary": "ไม่ว่าคุณจะเป็นโปรแกรมเมอร์, Tester, PM, นักศึกษา หรือใครก็ตามในโลกดิจิตัล นี่คืออีกโอกาสดีที่คุณจะได้สัมผัสกับผู้มีประสบการณ์ตรงและเพื่อนร่วมอุดมการณ์อย่างใกล้ชิด!"
   , "description": "- Math <- Abstraction -> Programming — I'Boss (Supanat Potiwarakorn), ผู้มีความเชื่อว่าซอฟต์แวร์ที่ดีเกิดจากทีมงานที่มีความสุข\n\n- For the love of WebAssembly — Phoom (Phoomparin Mano), นักพัฒนาอายุน้อย ที่ชื่นชอบการพัฒนาซอฟต์แวร์และผู้คนเพื่อชีวิตที่ดีขึ้น"
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://www.eventpop.me/e/3034"
-      , "title": "Event Pop"
-      , "price": "FREE"
-      }
-    , { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/2073397532701007/"
-      , "title": "Facebook Event"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://www.eventpop.me/e/3034"
+   , "title": "Event Pop"
+   , "price": "FREE"
+   }
+   , { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/2073397532701007/"
+   , "title": "Facebook Event"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-02/tencent-thailand-open-house-8.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-02/tencent-thailand-open-house-8.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "international-open-data-day-2018-221503615089896"
+  }
+  , { "id": "international-open-data-day-2018-221503615089896"
   , "start":
-    { "year": 2018
-    , "month": 3
-    , "date": 3
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 3
+  }
   , "end":
-    { "year": 2018
-    , "month": 3
-    , "date": 3
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 3
+  }
   , "categories":
-    [ "Hackathon"
-    ]
+  [ "Hackathon"
+   ]
   , "topics":
-    [ "Open Data"
-    ]
+  [ "Open Data"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 10
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 18
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 10
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 18
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "International Open Data Day Bangkok 2018 — Opendata Hackathon : Civic Engagement"
   , "location":
-    { "title": "TK Park"
-    , "url": "https://www.google.com/maps/place/Thailand+Knowledge+Park+(TK+Park)/@13.7468988,100.5362244,17z/data=!3m2!4b1!5s0x30e29ecfc46acedb:0xdb78b1e7e3812c1!4m5!3m4!1s0x30e29ecfe7e2048b:0x70c06d7f845c6e1e!8m2!3d13.7468936!4d100.5384131"
-    }
+  { "title": "TK Park"
+  , "url": "https://www.google.com/maps/place/Thailand+Knowledge+Park+(TK+Park)/@13.7468988,100.5362244,17z/data=!3m2!4b1!5s0x30e29ecfc46acedb:0xdb78b1e7e3812c1!4m5!3m4!1s0x30e29ecfe7e2048b:0x70c06d7f845c6e1e!8m2!3d13.7468936!4d100.5384131"
+  }
   , "summary": "ขอเชิญผู้ที่สนใจ เข้าร่วมกิจกรรม Opendata Hackathon : Civic Engagement โดยเสนอแนวคิดการทำต้นแบบ (prototype) แอปพลิเคชั่น หรือ ร่วมกันหาหรือสร้างชุดข้อมูล (dataset) เพื่อเป็นประโยชน์ต่อการเลือกตั้งทั้งระดับประเทศ และ ระดับท้องถิ่น และ การสร้างความโปร่งใสในการทำงานของภาครัฐ"
   , "description": "International Open data Day คือวันที่กลุ่มชุมชนที่สนใจเรื่องระบบข้อมูลแบบเปิด (Open Data) ทั่วโลก ร่วมกันจัดกิจกรรมเช่น การพัฒนาแอพลิเคชั่น การเปิดข้อมูลสู่สาธารณะ Hackathon การใช้ข้อมูลแบบเปิดมาวิเคราะห์เพื่อให้เป็นประโยชน์ต่อสาธารณะ ทั้งนี้เพื่อเป็นการสนับสนุนและส่งเสริมให้เกิดนโยบายเปิดเผยข้อมูล (Open Data) ทั้งในภาครัฐ ภาคเอกชน และภาคประชาสังคม ในปี 2561 นี้ International Open Data Day ตรงกับวันเสาร์ที่ 3 มีนาคม 2561 ซึ่งกว่า 80 เมืองทั่วโลกจะมีการจัดกิจกรรมขึ้นพร้อมเพรียงกัน ในประเทศไทยสถาบันเทคโนโลยีเพื่อนวัตกรรมสังคม (Social Technology Institute) มูลนิธิกองทุนไทย มูลนิธิเพื่ออินเตอร์เน็ตและวัฒนธรรมพลเมือง National Democratic Institute (NDI), Friedrich Naumann Foundation (FNF) และ Blognone จะได้ร่วมกันจัดกิจกรรม International Opendata Day ที่อุทยานการเรียนรู้ TK Park (องค์การมหาชน) กรุงเทพฯ\n\n\"ยินดีต้อนรับทุกคน\" มาร่วมกิจกรรม Hackathon เราต้อนรับทุกคนที่อยากสร้างการเปลี่ยนแปลง ไม่ว่าจะเป็น โปรแกรมเมอร์ data scientist นักออกแบบ สื่อมวลชน ข้าราชการ นักกฎหมาย ผู้ประกอบการเพื่อสังคม นักกิจกรรมสังคม และผู้ที่สนใจ"
   , "links":
-    [ { "type": "website"
-      , "url": "https://sites.google.com/socialtech.or.th/opendataday2018/home"
-      , "title": "International Open Data Day Bangkok 2018"
-      }
-    , { "type": "ticket"
-      , "url": "https://www.eventbrite.com/e/opendata-hackathon-civic-engagement-tickets-43121660046?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing"
-      , "price": "FREE"
-      , "title": "Eventbrite"
-      }
-    , { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/221503615089896/"
-      , "title": "Facebook"
-      }
-    ]
+  [ { "type": "website"
+   , "url": "https://sites.google.com/socialtech.or.th/opendataday2018/home"
+   , "title": "International Open Data Day Bangkok 2018"
+   }
+   , { "type": "ticket"
+   , "url": "https://www.eventbrite.com/e/opendata-hackathon-civic-engagement-tickets-43121660046?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing"
+   , "price": "FREE"
+   , "title": "Eventbrite"
+   }
+   , { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/221503615089896/"
+   , "title": "Facebook"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-03/international-open-data-day-2018.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-03/international-open-data-day-2018.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "bangkok-raspberry-jam-2018"
+  }
+  , { "id": "bangkok-raspberry-jam-2018"
   , "start":
-    { "year": 2018
-    , "month": 3
-    , "date": 4
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 4
+  }
   , "end":
-    { "year": 2018
-    , "month": 3
-    , "date": 4
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 4
+  }
   , "categories":
-    [ "Workshop"
-    , "Meetup"
-    ]
+  [ "Workshop"
+   , "Meetup"
+   ]
   , "topics":
-    [ "Raspberry Pi"
-    ]
+  [ "Raspberry Pi"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 10
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 19
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 10
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 19
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "Bangkok Raspberry Jam 2018"
   , "location":
-    { "url": "https://www.google.com/maps/place/PINN+Creative+Space/@13.7597009,100.5667648,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29e8c7622d085:0xe4943f3c7f49e0d2!8m2!3d13.7596957!4d100.5689535"
-    , "title": "PINN Creative Space"
-    }
+  { "url": "https://www.google.com/maps/place/PINN+Creative+Space/@13.7597009,100.5667648,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29e8c7622d085:0xe4943f3c7f49e0d2!8m2!3d13.7596957!4d100.5689535"
+  , "title": "PINN Creative Space"
+  }
   , "summary": "งานเพื่อพบปะสังสรรค์และแสดงผลงานของกลุ่มคนที่สนใจใช้งาน Raspberry Pi และมีการจัด Workshop เพื่อให้ความรู้เกี่ยวกับการใช้งาน Raspberry Pi ให้กับผู้ที่สนใจโดยไม่มีค่าใช้จ่าย และภายในงานจะมีการจำหน่ายบอร์ด Raspberry Pi และอุปกรณ์ต่างๆ สำหรับผู้ที่สนใจอีกด้วย"
   , "description": "PINN Creative Space ได้จัดกิจกรรม “Bangkok Raspberry Jam Big Birthday Weekend 2018” ในวันอาทิตย์ที่ 4 มีนาคม 2561 ซึ่งเป็นวันที่ Raspberry Pi มีอายุครบ 6 ขวบปีพอดี โดยในระยะเวลา 6 ปีที่ผ่านมาจำนวนผู้ใช้งาน Raspberry Pi ในประเทศไทยได้เพิ่มมากขึ้น ทั้งใช้งานในงานอดิเรก ใช้เพื่อการสอน และใช้ในการผลิตเป็นผลิตภัณฑ์ต่างๆอย่างมากมาย\n\nเพื่อเป็นการเฉลิมฉลองให้กับการครบรอบนี้ ทาง Pinn Creative Space ได้จัดงานเพื่อพบปะสังสรรค์และแสดงผลงานของกลุ่มคนที่สนใจใช้งาน Raspberry Pi และมีการจัด Workshop เพื่อให้ความรู้เกี่ยวกับการใช้งาน Raspberry Pi ให้กับผู้ที่สนใจโดยไม่มีค่าใช้จ่าย(นำเครื่องคอมพิวเตอร์ส่วนตัวมาสำหรับการอบรมด้วยตัวเอง) และภายในงานจะมีการจำหน่ายบอร์ด Raspberry Pi และอุปกรณ์ต่างๆสำหรับผู้ที่สนใจอยากเข้ามาศึกษาและใช้งาน Raspberry Pi อีกด้วย"
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://www.eventpop.me/e/2987-pinn-raspberryjam_6"
-      , "title": "Event Pop"
-      , "price": "FREE"
-      }
-    , { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/167276634091530/"
-      , "title": "Facebook Event"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://www.eventpop.me/e/2987-pinn-raspberryjam_6"
+   , "title": "Event Pop"
+   , "price": "FREE"
+   }
+   , { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/167276634091530/"
+   , "title": "Facebook Event"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-03/bangkok-raspberry-jam-2018.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-03/bangkok-raspberry-jam-2018.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "bkk-web-pwa-meetup-42703818270"
+  }
+  , { "id": "bkk-web-pwa-meetup-42703818270"
   , "start":
-    { "year": 2018
-    , "month": 3
-    , "date": 6
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 6
+  }
   , "end":
-    { "year": 2018
-    , "month": 3
-    , "date": 6
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 6
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "Web"
-    , "Mobile"
-    , "JavaScript"
-    ]
+  [ "Web"
+   , "Mobile"
+   , "JavaScript"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 19
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 22
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 19
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 22
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "BKK Web Meetup — Progressive Web Apps (PWA) — Mobile app's future"
   , "location":
-    { "title": "Launchpad Co., Ltd"
-    , "url": "https://www.google.com/maps/place/Launchpad+Co.,+Ltd/@13.721292,100.5220373,17z/data=!3m1!4b1!4m5!3m4!1s0x30e298cdd6e8270d:0x7e9aa39655924697!8m2!3d13.721292!4d100.524226"
-    , "detail": null
-    }
+  { "title": "Launchpad Co., Ltd"
+  , "url": "https://www.google.com/maps/place/Launchpad+Co.,+Ltd/@13.721292,100.5220373,17z/data=!3m1!4b1!4m5!3m4!1s0x30e298cdd6e8270d:0x7e9aa39655924697!8m2!3d13.721292!4d100.524226"
+  , "detail": null
+  }
   , "summary": "In his talk, Warat will answer the following questions: What is Progressive web app? Why should you use it? and How can PWA help you with your business?"
   , "description": "Lately, there’s been a lot of buzz around PWAs with many claiming it to be future of web development, especially in terms of mobile devices. At its core, a Progressive Web App (PWA) is simply a web application that uses modern web techniques to deliver a native app-like experience to users. These are web applications with progressive enhancement to implement features like caching, background sync, and push notifications.\n\nWarat Wongmaneekit is currently the Product Owner of ThothZocial, The Largest company provied social data analytics in Thailand. also he is the first Google Developer Expert for Web Technologies in Thailand. He has a 7 year experience in web development and public speaking about web Technology. Over the 5 years he provided more than 40 talk about web technology in many web community. Lately he has been quite interested about Progressive web apps, played a lot with it and now wants to share his experience."
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://www.eventbrite.com/e/progressive-web-apps-pwa-mobile-apps-future-tickets-42703818270"
-      , "title": "eventbrite.com"
-      , "price": "FREE"
-      }
-    , { "type": "rsvp"
-      , "url": "https://www.facebook.com/events/195556101180309/"
-      , "title": "Facebook Event"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://www.eventbrite.com/e/progressive-web-apps-pwa-mobile-apps-future-tickets-42703818270"
+   , "title": "eventbrite.com"
+   , "price": "FREE"
+   }
+   , { "type": "rsvp"
+   , "url": "https://www.facebook.com/events/195556101180309/"
+   , "title": "Facebook Event"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-03/bkk-web-pwa-meetup.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-03/bkk-web-pwa-meetup.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "thaipy-bangkok-meetup-246773984"
+  }
+  , { "id": "thaipy-bangkok-meetup-246773984"
   , "start":
-    { "year": 2018
-    , "month": 3
-    , "date": 8
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 8
+  }
   , "end":
-    { "year": 2018
-    , "month": 3
-    , "date": 8
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 8
+  }
   , "categories":
-    [ "Meetup"
-    ]
+  [ "Meetup"
+   ]
   , "topics":
-    [ "Python"
-    ]
+  [ "Python"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 18
-        , "minute": 30
-        }
-      , "to":
-        { "hour": 20
-        , "minute": 30
-        }
-      , "after": true
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 18
+   , "minute": 30
+   }
+   , "to":
+   { "hour": 20
+   , "minute": 30
+   }
+   , "after": true
+   , "agenda": null
+   }
+   ]
   , "title": "ThaiPy Bangkok Meetup: AI Camera Security + Production monitoring and logging"
   , "location":
-    { "title": "Bhiraj Tower"
-    , "url": "https://www.google.com/maps/place/BHIRAJ+TOWER+at+EmQuartier/@13.7314622,100.5672243,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29f01858d150f:0xbc0e87a22c16ae1c!8m2!3d13.731457!4d100.569413"
-    , "detail": "aCommerce HQ, 33rd floor"
-    }
+  { "title": "Bhiraj Tower"
+  , "url": "https://www.google.com/maps/place/BHIRAJ+TOWER+at+EmQuartier/@13.7314622,100.5672243,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29f01858d150f:0xbc0e87a22c16ae1c!8m2!3d13.731457!4d100.569413"
+  , "detail": "aCommerce HQ, 33rd floor"
+  }
   , "summary": "Monthly meetup for those using python, learning python of just py-curious. Python is one of more popular programming languages in the word and rising further, being used in fields such as web, science, big data, dev-ops and digital entertainment."
   , "description": "- \"AI Camera Security Surveillance using Python\" - TaeWoo Kim (One Smart Lab)\n\n- \"Centralised logging and monitoring of production deployments\" - Pinnapong Silpsakulsuk (aCommerce)"
   , "links":
-    [ { "type": "ticket"
-      , "url": "https://www.meetup.com/ThaiPy-Bangkok-Python-Meetup/events/246773984/"
-      , "title": "Meetup"
-      }
-    ]
+  [ { "type": "ticket"
+   , "url": "https://www.meetup.com/ThaiPy-Bangkok-Python-Meetup/events/246773984/"
+   , "title": "Meetup"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-03/thaipy-ai-camera-security-production-monitoring-and-logging.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-03/thaipy-ai-camera-security-production-monitoring-and-logging.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "django-girls-bangkok-march-2018"
+  }
+  , { "id": "django-girls-bangkok-march-2018"
   , "start":
-    { "year": 2018
-    , "month": 3
-    , "date": 24
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 24
+  }
   , "end":
-    { "year": 2018
-    , "month": 3
-    , "date": 24
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 24
+  }
   , "categories":
-    [ "Workshop"
-    ]
+  [ "Workshop"
+   ]
   , "topics":
-    [ "Django"
-    ]
+  [ "Django"
+   ]
   , "time": null
   , "title": "Django Girls Bangkok"
   , "location":
-    { "url": "https://www.google.com/maps/place/Learn+Hub/@13.74532,100.5323423,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29ed20f89d211:0x810d7dd9fa79451d!8m2!3d13.74532!4d100.534531"
-    , "title": "LearnHub Co-Learning Space"
-    }
+  { "url": "https://www.google.com/maps/place/Learn+Hub/@13.74532,100.5323423,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29ed20f89d211:0x810d7dd9fa79451d!8m2!3d13.74532!4d100.534531"
+  , "title": "LearnHub Co-Learning Space"
+  }
   , "summary": "If you are a woman and want to learn how to make websites, we have good news for you: we are holding a one-day workshop for beginners!"
   , "description": "We believe the IT industry will greatly benefit from bringing more women into technology. We want to give you an opportunity to learn how to program and become one of us – women programmers!\n\nIf you are a woman, know English and have a laptop, you can apply for our event! Don't worry, you don't need to know any technical stuff – our workshop is for people who are new to programming.\n\nAs a workshop attendee you will attend a **one-day Django workshop** during which you will create your first website!"
   , "links":
-    [ { "type": "website"
-      , "url": "https://djangogirls.org/bangkok/"
-      , "title": "Django Girls Bangkok"
-      }
-    ]
+  [ { "type": "website"
+   , "url": "https://djangogirls.org/bangkok/"
+   , "title": "Django Girls Bangkok"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-03/django-girls-bangkok.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-03/django-girls-bangkok.md"
+  , "line": 1
+  , "column": 1
   }
-, { "id": "bkkhack-bpthjpyxfbmc"
+  }
+  , { "id": "bkkhack-bpthjpyxfbmc"
   , "start":
-    { "year": 2018
-    , "month": 3
-    , "date": 29
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 29
+  }
   , "end":
-    { "year": 2018
-    , "month": 3
-    , "date": 29
-    }
+  { "year": 2018
+  , "month": 3
+  , "date": 29
+  }
   , "categories":
-    [ "Codefest"
-    ]
+  [ "Codefest"
+   ]
   , "topics":
-    [ "Hack Night"
-    ]
+  [ "Hack Night"
+   ]
   , "time":
-    [ { "from":
-        { "hour": 19
-        , "minute": 0
-        }
-      , "to":
-        { "hour": 23
-        , "minute": 0
-        }
-      , "after": false
-      , "agenda": null
-      }
-    ]
+  [ { "from":
+   { "hour": 19
+   , "minute": 0
+   }
+   , "to":
+   { "hour": 23
+   , "minute": 0
+   }
+   , "after": false
+   , "agenda": null
+   }
+   ]
   , "title": "BKK/hack Hack Night"
   , "location":
-    { "title": "Learn Hub"
-    , "url": "https://www.google.com/maps/place/Learn+Hub/@13.7444559,100.5315245,17z/data=!4m8!1m2!2m1!1slearn+hub%2B!3m4!1s0x30e29ed20f89d211:0x810d7dd9fa79451d!8m2!3d13.74532!4d100.534531"
-    , "detail": "Bangkok Bank (Siam), 4th floor"
-    }
+  { "title": "Learn Hub"
+  , "url": "https://www.google.com/maps/place/Learn+Hub/@13.7444559,100.5315245,17z/data=!4m8!1m2!2m1!1slearn+hub%2B!3m4!1s0x30e29ed20f89d211:0x810d7dd9fa79451d!8m2!3d13.74532!4d100.534531"
+  , "detail": "Bangkok Bank (Siam), 4th floor"
+  }
   , "summary": "ไม่ว่าคุณอยากจะเขียนภาษาอะไร Python, Ruby, JavaScript, Scala, PHP, Prolog คุณมาได้เลย อยากทำ Arduino ก็ขนมาได้ ถ้าอยากหาทีมสำหรับทำโปรเจค open source หรือหาคนช่วยโปรเจคงานอดิเรกของคุณจัดมาเลย! จะเขียนภาษาไหน ระดับใดก็ได้ มีกฎข้อเดียวคือคุณต้องเอาเครื่องมาเอง"
   , "description": "An event for all the coding/maker community. Any language, any level. The only rule is you must bring a laptop.\n\nWe seek to foster a welcoming cross-cultural community of hackers in and around BKK. Share your knowledge and learn from others, in a relaxed but hands-on setting.\n\nThis Meetup group focuses on participatory events—hacking is doing, not listening to presentations. Bring your own hobby projects, contribute to open source together, ask questions you encounter in your work."
   , "links":
-    [ { "type": "rsvp"
-      , "url": "https://www.meetup.com/bkkhack/events/bpthjpyxfbmc/"
-      , "title": "Meetup.com"
-      , "detail": "Free"
-      }
-    ]
+  [ { "type": "rsvp"
+   , "url": "https://www.meetup.com/bkkhack/events/bpthjpyxfbmc/"
+   , "title": "Meetup.com"
+   , "detail": "Free"
+   }
+   ]
   , "declared":
-    { "filename": "data/2018-03/bkkhack.md"
-    , "line": 1
-    , "column": 1
-    }
+  { "filename": "data/2018-03/bkkhack.md"
+  , "line": 1
+  , "column": 1
   }
-]
+  }
+  ]
