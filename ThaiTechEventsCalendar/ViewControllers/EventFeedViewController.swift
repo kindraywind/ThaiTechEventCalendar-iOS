@@ -13,28 +13,20 @@ import VegaScrollFlowLayout
 import SwiftyJSON
 import DeckTransition
 
-// MARK: - Configurable constants
-private let itemHeight: CGFloat = 170
-private let lineSpacing: CGFloat = 20
-private let xInset: CGFloat = 10
-private let topInset: CGFloat = 10
-
 class EventFeedViewController: UIViewController {
-    fileprivate let cellId = "EventCollectionViewCell"
-    @IBOutlet private weak var collectionView: UICollectionView!
+    @IBOutlet weak var feedTableView: UITableView!
+
     let realm = try! Realm() //やばいよ
     let events = try! Realm()
         .objects(Event.self)
         .sorted(byKeyPath: "start", ascending: false)
+    let nib = UINib(nibName: "EventTableViewCell", bundle: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print(realm.configuration.fileURL ?? "")
-        let nib = UINib(nibName: cellId, bundle: nil)
-        collectionView.register( nib, forCellWithReuseIdentifier: cellId)
-        collectionView.contentInset.bottom = itemHeight
         populate()
-        configureCollectionViewLayout()
+        feedTableView.register(nib, forCellReuseIdentifier: "EventTableViewCell")
         setUpNavBar()
     }
 
@@ -44,16 +36,6 @@ class EventFeedViewController: UIViewController {
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
         }
-    }
-
-    private func configureCollectionViewLayout() {
-        guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
-        layout.minimumLineSpacing = lineSpacing
-        layout.sectionInset = UIEdgeInsets(top: topInset, left: 0, bottom: 0, right: 0)
-        let itemWidth = UIScreen.main.bounds.width - 2 * xInset
-//        layout.itemSize = CGSize(width: itemWidth, height: itemHeight)
-        layout.estimatedItemSize = CGSize(width: itemWidth, height: itemHeight)
-        collectionView.collectionViewLayout.invalidateLayout()
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,36 +57,54 @@ class EventFeedViewController: UIViewController {
 
 }
 
-extension EventFeedViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemWidth = UIScreen.main.bounds.width - 2 * xInset
-        return CGSize(width: itemWidth, height: itemHeight)
-    }
-
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! EventCollectionViewCell
-        let event = events[indexPath.row]
-        cell.updateUIWith(event)
-
-        return cell
-    }
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+extension EventFeedViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return events.count
     }
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as! EventTableViewCell
+        let event = events[indexPath.row]
+        cell.updateUIWith(event)
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "eventDetail", sender: nil)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPaths = collectionView.indexPathsForSelectedItems,
-            let indexPath = indexPaths.first {
+        if let indexPath = feedTableView.indexPathForSelectedRow {
             let dest = segue.destination as! EventDetailViewController
             dest.event = events[(indexPath.row)]
         }
 
     }
 }
+//
+//extension EventFeedViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let itemWidth = UIScreen.main.bounds.width - 2 * xInset
+//        return CGSize(width: itemWidth, height: itemHeight)
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView,
+//                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! EventCollectionViewCell
+//        let event = events[indexPath.row]
+//        cell.updateUIWith(event)
+//
+//        return cell
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return events.count
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        performSegue(withIdentifier: "eventDetail", sender: nil)
+//    }
+//
+//
+//}

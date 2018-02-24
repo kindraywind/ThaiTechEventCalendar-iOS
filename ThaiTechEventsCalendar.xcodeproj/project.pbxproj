@@ -18,6 +18,8 @@
 		9F4CD08C20417D5D00528E66 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD08B20417D5D00528E66 /* DetailTableViewCell.swift */; };
 		9F4CD08E20419D2200528E66 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD08D20419D2200528E66 /* ColorUtils.swift */; };
 		9F4CD0902041A80600528E66 /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD08F2041A80600528E66 /* SummaryTableViewCell.swift */; };
+		9F4CD0932041B52000528E66 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD0912041B52000528E66 /* EventTableViewCell.swift */; };
+		9F4CD0942041B52000528E66 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4CD0922041B52000528E66 /* EventTableViewCell.xib */; };
 		9F4E83BB2041074100CFE046 /* calendar.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F4E83BA2041074100CFE046 /* calendar.json */; };
 		9F4E83BC2041074100CFE046 /* calendar.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F4E83BA2041074100CFE046 /* calendar.json */; };
 		9F4E83BF2041255A00CFE046 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E83BE2041255A00CFE046 /* Event.swift */; };
@@ -60,6 +62,8 @@
 		9F4CD08B20417D5D00528E66 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		9F4CD08D20419D2200528E66 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
 		9F4CD08F2041A80600528E66 /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
+		9F4CD0912041B52000528E66 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		9F4CD0922041B52000528E66 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		9F4E83BA2041074100CFE046 /* calendar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = calendar.json; sourceTree = "<group>"; };
 		9F4E83BE2041255A00CFE046 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9FFAF9D320410337000A99FE /* ThaiTechEventsCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiTechEventsCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +147,8 @@
 				9F0BC95F20412CD400568153 /* EventCollectionViewCell.xib */,
 				9F4CD08B20417D5D00528E66 /* DetailTableViewCell.swift */,
 				9F4CD08F2041A80600528E66 /* SummaryTableViewCell.swift */,
+				9F4CD0912041B52000528E66 /* EventTableViewCell.swift */,
+				9F4CD0922041B52000528E66 /* EventTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4CD0942041B52000528E66 /* EventTableViewCell.xib in Resources */,
 				9FFAF9E120410338000A99FE /* LaunchScreen.storyboard in Resources */,
 				9FFAF9DE20410338000A99FE /* Assets.xcassets in Resources */,
 				9FFAF9DC20410338000A99FE /* Main.storyboard in Resources */,
@@ -541,6 +548,7 @@
 				9F0BC95B20412C2600568153 /* EventFeedViewController.swift in Sources */,
 				9F1C8D5D20415AE10016E72E /* DateUtils.swift in Sources */,
 				9F4E83BF2041255A00CFE046 /* Event.swift in Sources */,
+				9F4CD0932041B52000528E66 /* EventTableViewCell.swift in Sources */,
 				9FFAF9D720410338000A99FE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

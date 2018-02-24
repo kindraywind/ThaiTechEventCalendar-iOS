@@ -34,35 +34,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XIl-nn-xpC">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jFj-pC-CuC">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="38S-Vr-z6b">
-                                    <size key="itemSize" width="50" height="100"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
                                 <connections>
-                                    <outlet property="dataSource" destination="7ef-Vb-z1V" id="QF4-nh-ajd"/>
-                                    <outlet property="delegate" destination="7ef-Vb-z1V" id="Lwz-Ce-DsR"/>
+                                    <outlet property="dataSource" destination="7ef-Vb-z1V" id="j7C-jt-ERn"/>
+                                    <outlet property="delegate" destination="7ef-Vb-z1V" id="tXl-yl-v89"/>
                                 </connections>
-                            </collectionView>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="XIl-nn-xpC" firstAttribute="centerY" secondItem="8VV-hO-mFP" secondAttribute="centerY" id="SE0-2t-dzA"/>
-                            <constraint firstItem="8VV-hO-mFP" firstAttribute="bottom" secondItem="XIl-nn-xpC" secondAttribute="bottom" id="SsL-C8-bMR"/>
-                            <constraint firstItem="XIl-nn-xpC" firstAttribute="leading" secondItem="8VV-hO-mFP" secondAttribute="leading" id="foI-ht-emA"/>
-                            <constraint firstItem="XIl-nn-xpC" firstAttribute="top" secondItem="8VV-hO-mFP" secondAttribute="top" id="otS-4x-7rB"/>
-                            <constraint firstItem="XIl-nn-xpC" firstAttribute="centerX" secondItem="8VV-hO-mFP" secondAttribute="centerX" id="yfm-gn-L6c"/>
+                            <constraint firstItem="8VV-hO-mFP" firstAttribute="trailing" secondItem="jFj-pC-CuC" secondAttribute="trailing" id="RRy-r4-TRF"/>
+                            <constraint firstItem="jFj-pC-CuC" firstAttribute="centerX" secondItem="8VV-hO-mFP" secondAttribute="centerX" id="Xoo-Ry-bcQ"/>
+                            <constraint firstItem="jFj-pC-CuC" firstAttribute="centerY" secondItem="8VV-hO-mFP" secondAttribute="centerY" id="a8q-mb-8bm"/>
+                            <constraint firstItem="8VV-hO-mFP" firstAttribute="bottom" secondItem="jFj-pC-CuC" secondAttribute="bottom" id="akf-rQ-HbN"/>
+                            <constraint firstItem="jFj-pC-CuC" firstAttribute="leading" secondItem="8VV-hO-mFP" secondAttribute="leading" id="mj9-Ok-XwX"/>
+                            <constraint firstItem="jFj-pC-CuC" firstAttribute="top" secondItem="8VV-hO-mFP" secondAttribute="top" id="y4H-M0-fTO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8VV-hO-mFP"/>
                     </view>
                     <navigationItem key="navigationItem" id="31V-f7-XTh"/>
                     <connections>
-                        <outlet property="collectionView" destination="XIl-nn-xpC" id="nY2-hb-71T"/>
+                        <outlet property="feedTableView" destination="jFj-pC-CuC" id="ySz-Xp-hYU"/>
                         <segue destination="Phq-dR-upj" kind="custom" identifier="eventDetail" customClass="DeckSegue" customModule="DeckTransition" id="DId-1n-Vks"/>
                     </connections>
                 </viewController>
@@ -153,7 +147,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F62-KM-iB4">
-                                                    <rect key="frame" x="15" y="36" width="345" height="56"/>
+                                                    <rect key="frame" x="15" y="36" width="345" height="47.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ods-hN-6A7"/>
                                                     </constraints>
@@ -164,7 +158,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ovp-8T-fop" firstAttribute="top" secondItem="Vzx-9p-H8d" secondAttribute="top" constant="16" id="GD7-tP-nJJ"/>
-                                                <constraint firstAttribute="bottom" secondItem="F62-KM-iB4" secondAttribute="bottom" constant="8" id="GIP-ay-NtW"/>
+                                                <constraint firstAttribute="bottom" secondItem="F62-KM-iB4" secondAttribute="bottom" constant="16" id="GIP-ay-NtW"/>
                                                 <constraint firstAttribute="trailing" secondItem="F62-KM-iB4" secondAttribute="trailing" constant="15" id="ILR-q7-m2W"/>
                                                 <constraint firstItem="ovp-8T-fop" firstAttribute="height" secondItem="aPc-VN-3I2" secondAttribute="height" constant="8" id="ToL-8O-56q"/>
                                                 <constraint firstItem="F62-KM-iB4" firstAttribute="leading" secondItem="Vzx-9p-H8d" secondAttribute="leading" constant="15" id="UE5-tT-OJb"/>
@@ -205,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ed7-3g-fGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1472.8" y="701.19940029985014"/>
+            <point key="canvasLocation" x="823" y="770"/>
         </scene>
     </scenes>
     <resources>

@@ -1,5 +1,5 @@
 //
-//  EventCollectionViewCell.swift
+//  EventTableViewCell.swift
 //  ThaiTechEventsCalendar
 //
 //  Created by Woramet Muangsiri on 2/24/18.
@@ -9,12 +9,13 @@
 import UIKit
 import TagListView
 
-class EventCollectionViewCell: UICollectionViewCell {
+class EventTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var weekDayLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var topicTagListView: TagListView!
+    @IBOutlet weak var wrapperView: UIView!
 
     let dateFormatter = DateFormatter()
     let weekdayFormatter = DateFormatter()
@@ -22,11 +23,11 @@ class EventCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        layer.cornerRadius = 14
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 0.3
-        layer.shadowOffset = CGSize(width: 0, height: 5)
-        layer.masksToBounds = false
+        wrapperView.layer.cornerRadius = 14
+        wrapperView.layer.shadowColor = UIColor.black.cgColor
+        wrapperView.layer.shadowOpacity = 0.3
+        wrapperView.layer.shadowOffset = CGSize(width: 0, height: 5)
+        wrapperView.layer.masksToBounds = false
         topicTagListView.textFont = UIFont.systemFont(ofSize: 15)
         topicTagListView.alignment = .left // possible values are .Left, .Center, and .Right
 
@@ -57,16 +58,10 @@ class EventCollectionViewCell: UICollectionViewCell {
         event.topics.forEach({ topicTagListView.addTag($0) })
     }
 
-    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-        if !isHeightCalculated {
-            setNeedsLayout()
-            layoutIfNeeded()
-            let size = contentView.systemLayoutSizeFitting(layoutAttributes.size)
-            var newFrame = layoutAttributes.frame
-            newFrame.size.width = CGFloat(ceilf(Float(size.width)))
-            layoutAttributes.frame = newFrame
-            isHeightCalculated = true
-        }
-        return layoutAttributes
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
+
 }

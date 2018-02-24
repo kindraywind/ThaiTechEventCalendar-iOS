@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14081.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventTableViewCell" rowHeight="133" id="KGk-i7-Jjw" customClass="EventTableViewCell" customModule="ThaiTechEventsCalendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pg-N6-qyf">
+                        <rect key="frame" x="10" y="10" width="380" height="169.5"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCo-F6-qkd" userLabel="DescContainer">
+                                <rect key="frame" x="83" y="0.0" width="297" height="169.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blockchain Developers new trend in 2018" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5E6-hi-Qbn">
+                                        <rect key="frame" x="8" y="8" width="281" height="42.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" red="0.9568462968" green="0.57094234229999996" blue="0.0061058429999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLX-ym-Avc">
+                                        <rect key="frame" x="8" y="50.5" width="281" height="86.5"/>
+                                        <string key="text">The more popular blockchain / distributed ledger systems sharing in this event: Hyperledger, stellar &amp; IOTA. Junior &amp; Senior blockchain engineers encourage to join this workshop.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrQ-dc-efZ" customClass="TagListView" customModule="TagListView">
+                                        <rect key="frame" x="8" y="139" width="281" height="30.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                                <color key="value" red="0.98098474739999997" green="0.9710124135" blue="0.82066601510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" red="0.9568462968" green="0.57094234229999996" blue="0.0061058429999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                <color key="value" red="0.9568462968" green="0.57094234229999996" blue="0.0061058429999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5E6-hi-Qbn" secondAttribute="trailing" constant="8" id="4kG-Y7-9Yd"/>
+                                    <constraint firstAttribute="trailing" secondItem="XrQ-dc-efZ" secondAttribute="trailing" constant="8" id="6Y9-Tm-xaK"/>
+                                    <constraint firstItem="XrQ-dc-efZ" firstAttribute="top" secondItem="gLX-ym-Avc" secondAttribute="bottom" constant="2" id="DDB-9S-Iaw"/>
+                                    <constraint firstItem="5E6-hi-Qbn" firstAttribute="leading" secondItem="PCo-F6-qkd" secondAttribute="leading" constant="8" id="ElD-64-rDG"/>
+                                    <constraint firstAttribute="trailing" secondItem="gLX-ym-Avc" secondAttribute="trailing" constant="8" id="O7V-Ia-91f"/>
+                                    <constraint firstItem="XrQ-dc-efZ" firstAttribute="leading" secondItem="PCo-F6-qkd" secondAttribute="leading" constant="8" id="PFE-oc-5BC"/>
+                                    <constraint firstItem="gLX-ym-Avc" firstAttribute="top" secondItem="5E6-hi-Qbn" secondAttribute="bottom" id="QrE-HH-N0N"/>
+                                    <constraint firstAttribute="bottom" secondItem="XrQ-dc-efZ" secondAttribute="bottom" id="Vir-QV-gjx"/>
+                                    <constraint firstItem="5E6-hi-Qbn" firstAttribute="top" secondItem="PCo-F6-qkd" secondAttribute="top" constant="8" id="dbw-Rx-0wN"/>
+                                    <constraint firstItem="gLX-ym-Avc" firstAttribute="leading" secondItem="PCo-F6-qkd" secondAttribute="leading" constant="8" id="eT8-az-HZr"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="ezZ-Dk-EBm"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRM-CA-gyE" userLabel="DateContainer">
+                                <rect key="frame" x="0.0" y="0.0" width="83" height="169.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB 27 ~ FEB 28" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="v70-3K-Dzb">
+                                        <rect key="frame" x="8" y="8" width="75" height="42.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAT-SUN" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNS-e4-oXC">
+                                        <rect key="frame" x="8" y="60.5" width="75" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="v70-3K-Dzb" firstAttribute="top" secondItem="XRM-CA-gyE" secondAttribute="top" constant="8" id="2hZ-1w-j09"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="BQT-gA-GzU"/>
+                                    <constraint firstAttribute="trailing" secondItem="v70-3K-Dzb" secondAttribute="trailing" id="UyS-Ug-khg"/>
+                                    <constraint firstItem="TNS-e4-oXC" firstAttribute="leading" secondItem="XRM-CA-gyE" secondAttribute="leading" constant="8" id="dEg-bk-Xcc"/>
+                                    <constraint firstAttribute="trailing" secondItem="TNS-e4-oXC" secondAttribute="trailing" id="dqo-Td-UJc"/>
+                                    <constraint firstItem="TNS-e4-oXC" firstAttribute="top" secondItem="v70-3K-Dzb" secondAttribute="bottom" constant="10" id="fCP-fl-EiY"/>
+                                    <constraint firstItem="v70-3K-Dzb" firstAttribute="leading" secondItem="XRM-CA-gyE" secondAttribute="leading" constant="8" id="wkR-TC-ycm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PCo-F6-qkd" firstAttribute="leading" secondItem="XRM-CA-gyE" secondAttribute="trailing" id="0Hc-P6-m5v"/>
+                            <constraint firstAttribute="bottom" secondItem="XRM-CA-gyE" secondAttribute="bottom" id="5gI-n8-8xJ"/>
+                            <constraint firstItem="XRM-CA-gyE" firstAttribute="top" secondItem="8pg-N6-qyf" secondAttribute="top" id="6XY-EZ-pjb"/>
+                            <constraint firstAttribute="bottom" secondItem="PCo-F6-qkd" secondAttribute="bottom" id="CCO-BI-6R6"/>
+                            <constraint firstItem="PCo-F6-qkd" firstAttribute="top" secondItem="8pg-N6-qyf" secondAttribute="top" id="Gvp-n1-x0q"/>
+                            <constraint firstItem="XRM-CA-gyE" firstAttribute="leading" secondItem="8pg-N6-qyf" secondAttribute="leading" id="J9d-DL-vDp"/>
+                            <constraint firstItem="XRM-CA-gyE" firstAttribute="width" secondItem="8pg-N6-qyf" secondAttribute="width" multiplier="0.22" id="aXO-1Z-WeX"/>
+                            <constraint firstAttribute="trailing" secondItem="PCo-F6-qkd" secondAttribute="trailing" id="rDF-kH-xBG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8pg-N6-qyf" secondAttribute="trailing" constant="10" id="4FY-K8-aRQ"/>
+                    <constraint firstItem="8pg-N6-qyf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RtP-GH-DM8"/>
+                    <constraint firstAttribute="bottom" secondItem="8pg-N6-qyf" secondAttribute="bottom" constant="10" id="w1g-E1-98H"/>
+                    <constraint firstItem="8pg-N6-qyf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="wwk-GC-Hkk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="dateLabel" destination="v70-3K-Dzb" id="xTY-ZD-anm"/>
+                <outlet property="summaryLabel" destination="gLX-ym-Avc" id="Hp6-qu-Ej2"/>
+                <outlet property="titleLabel" destination="5E6-hi-Qbn" id="hul-bJ-25Z"/>
+                <outlet property="topicTagListView" destination="XrQ-dc-efZ" id="EcU-n3-SxQ"/>
+                <outlet property="weekDayLabel" destination="TNS-e4-oXC" id="KSZ-7d-WRR"/>
+                <outlet property="wrapperView" destination="8pg-N6-qyf" id="Tnz-If-1tw"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="107"/>
+        </tableViewCell>
+    </objects>
+</document>

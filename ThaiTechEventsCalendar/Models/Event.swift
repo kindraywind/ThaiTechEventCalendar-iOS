@@ -42,12 +42,24 @@ class Event: Object {
         location = Location(json["location"])
         start = parseDate(json["start"])
         summary = json["summary"].stringValue
-//        time =
+        time = parseTime(json["time"])
         title = json["title"].stringValue
 
         json["categories"].arrayValue.forEach({ categories.append($0.stringValue) })
         json["links"].arrayValue.forEach({ links.append(Link($0)) })
         json["topics"].arrayValue.forEach({ topics.append($0.stringValue) })
+    }
+
+    private func parseTime(_ timeJson: JSON) -> String {
+        var timeFrom = "\(timeJson[0]["from"]["hour"]):\(timeJson[0]["from"]["minute"])"
+        var timeTo = "\(timeJson[0]["to"]["hour"]):\(timeJson[0]["to"]["minute"])"
+
+        if timeJson[0]["from"]["minute"] == 0 { timeFrom += "0" }
+        if timeJson[0]["to"]["minute"] == 0 { timeTo += "0" }
+        if timeFrom.contains("null") { timeFrom = "" }
+        if timeTo.contains("null") { timeTo = "" }
+        if timeFrom.isEmpty, timeTo.isEmpty { return "" }
+        return "\(timeFrom) ~ \(timeTo)"
     }
 
     private func parseDate(_ dateJson: JSON) -> Date {
@@ -56,7 +68,7 @@ class Event: Object {
         dateComponents.month = dateJson["month"].intValue
         dateComponents.day = dateJson["date"].intValue
         dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
-        let userCalendar = Calendar.current // user calendar
+        let userCalendar = Calendar.current
 
         return userCalendar.date(from: dateComponents) ?? Date()
     }

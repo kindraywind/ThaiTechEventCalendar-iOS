@@ -80,6 +80,16 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource 
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.section == 0 ,
+            indexPath.row == 2,
+            let location = event.location,
+            let url = URL(string: location.url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+        if indexPath.section == 1,
+            let url = URL(string: event.links[indexPath.row].url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
 
     // MARK: - Cell configures (Will be moved to proper place.)
@@ -91,11 +101,13 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource 
             cell.detailLabel.text = DateUtils.dateString(fromDate: event.start, toDate: event.end)
             cell.iconImageView.image = UIImage(named: "calendar")
         case 1:
-            cell.detailLabel.text = "15.00 - 18.00"
+            cell.detailLabel.text = event.time
             cell.iconImageView.image = UIImage(named: "clock")
+            if event.time.isEmpty { cell.isHidden = true }
         case 2:
             if let location = event.location {
                 cell.detailLabel.text = location.title
+                cell.tag = 1
                 cell.detailLabel.textColor = UIColor.TTOrange()
                 cell.iconImageView.image = UIImage(named: "map-pin")
             }
@@ -125,7 +137,6 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource 
         linkAttributedString.append(type)
         linkAttributedString.append(price)
 
-//        cell.textLabel?.text = "\(event.links[indexPath.row].title) (\(event.links[indexPath.row].type))"
         cell.textLabel?.attributedText = linkAttributedString
         return cell
     }
@@ -142,13 +153,4 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource 
         cell.descLabel.text = event.desc
         return cell
     }
-
-//    private func configureSectionDescCell(_  tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "linkCell", for: indexPath)
-//
-//        cell.textLabel?.text = event.desc
-//        cell.textLabel?.numberOfLines = 0
-//
-//        return cell
-//    }
 }
