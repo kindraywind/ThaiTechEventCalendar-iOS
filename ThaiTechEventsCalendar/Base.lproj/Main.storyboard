@@ -1,24 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FpH-KY-O2Q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14081.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="lPO-Zj-59s">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="FpH-KY-O2Q" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EnY-kj-cTN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7ef-Vb-z1V" kind="relationship" relationship="rootViewController" id="5IA-db-lTS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zug-87-5mG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1027" y="770"/>
+        </scene>
+        <!--Event Feed View Controller-->
+        <scene sceneID="G1t-NQ-as3">
+            <objects>
+                <viewController id="7ef-Vb-z1V" customClass="EventFeedViewController" customModule="ThaiTechEventsCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n9G-0N-cx7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XIl-nn-xpC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="38S-Vr-z6b">
+                                    <size key="itemSize" width="50" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7ef-Vb-z1V" id="QF4-nh-ajd"/>
+                                    <outlet property="delegate" destination="7ef-Vb-z1V" id="Lwz-Ce-DsR"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XIl-nn-xpC" firstAttribute="centerY" secondItem="8VV-hO-mFP" secondAttribute="centerY" id="SE0-2t-dzA"/>
+                            <constraint firstItem="8VV-hO-mFP" firstAttribute="bottom" secondItem="XIl-nn-xpC" secondAttribute="bottom" id="SsL-C8-bMR"/>
+                            <constraint firstItem="XIl-nn-xpC" firstAttribute="leading" secondItem="8VV-hO-mFP" secondAttribute="leading" id="foI-ht-emA"/>
+                            <constraint firstItem="XIl-nn-xpC" firstAttribute="top" secondItem="8VV-hO-mFP" secondAttribute="top" id="otS-4x-7rB"/>
+                            <constraint firstItem="XIl-nn-xpC" firstAttribute="centerX" secondItem="8VV-hO-mFP" secondAttribute="centerX" id="yfm-gn-L6c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8VV-hO-mFP"/>
                     </view>
+                    <navigationItem key="navigationItem" id="31V-f7-XTh"/>
+                    <connections>
+                        <outlet property="collectionView" destination="XIl-nn-xpC" id="nY2-hb-71T"/>
+                        <segue destination="Phq-dR-upj" kind="custom" identifier="eventDetail" customClass="DeckSegue" customModule="DeckTransition" id="DId-1n-Vks"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jqe-Yz-JKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-258.39999999999998" y="769.56521739130437"/>
+        </scene>
+        <!--Heyoooo-->
+        <scene sceneID="XBR-vN-0t5">
+            <objects>
+                <viewController storyboardIdentifier="detailVC" id="Phq-dR-upj" customClass="EventDetailViewController" customModule="ThaiTechEventsCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YyG-vy-UyZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="1FX-xR-BOv">
+                                <rect key="frame" x="0.5" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailCell" id="Fah-jb-Bm7" customClass="DetailTableViewCell" customModule="ThaiTechEventsCalendar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="detailCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fah-jb-Bm7" id="fAV-vb-tJo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="4G9-Hm-dnZ">
+                                                    <rect key="frame" x="8" y="10" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="BBH-iD-CAs"/>
+                                                        <constraint firstAttribute="height" constant="24" id="iCm-FY-4Rn"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fge-MS-ge1">
+                                                    <rect key="frame" x="40" y="7" width="320" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="lgl-xM-FLc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fge-MS-ge1" firstAttribute="leading" secondItem="4G9-Hm-dnZ" secondAttribute="trailing" constant="8" id="GZu-Mx-puM"/>
+                                                <constraint firstAttribute="trailing" secondItem="fge-MS-ge1" secondAttribute="trailing" constant="15" id="LzT-J9-exI"/>
+                                                <constraint firstItem="4G9-Hm-dnZ" firstAttribute="centerY" secondItem="fAV-vb-tJo" secondAttribute="centerY" id="Ni4-eB-SLN"/>
+                                                <constraint firstItem="fge-MS-ge1" firstAttribute="top" secondItem="fAV-vb-tJo" secondAttribute="top" constant="7" id="PRE-g9-t0z"/>
+                                                <constraint firstItem="fge-MS-ge1" firstAttribute="centerY" secondItem="fAV-vb-tJo" secondAttribute="centerY" id="UGz-Ya-Ves"/>
+                                                <constraint firstItem="4G9-Hm-dnZ" firstAttribute="leading" secondItem="fAV-vb-tJo" secondAttribute="leading" constant="8" id="d5v-Gl-a2r"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailLabel" destination="fge-MS-ge1" id="w87-ht-cSO"/>
+                                            <outlet property="iconImageView" destination="4G9-Hm-dnZ" id="QlA-GQ-ZcG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="linkCell" id="m8i-mK-VJK">
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m8i-mK-VJK" id="SPV-eK-p5z">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryCell" rowHeight="100" id="Zch-j4-PIQ" customClass="SummaryTableViewCell" customModule="ThaiTechEventsCalendar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="143.5" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zch-j4-PIQ" id="Vzx-9p-H8d">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovp-8T-fop">
+                                                    <rect key="frame" x="15" y="16" width="5" height="8"/>
+                                                    <color key="backgroundColor" red="0.87013977766036987" green="0.88223451375961304" blue="0.89462554454803467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="6nq-7K-K4s"/>
+                                                        <constraint firstAttribute="width" constant="5" id="oXt-VC-YbL"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPc-VN-3I2">
+                                                    <rect key="frame" x="36" y="20" width="324" height="0.0"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="U6v-rF-7Mz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.41450494527816772" green="0.45037573575973511" blue="0.49202084541320801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F62-KM-iB4">
+                                                    <rect key="frame" x="15" y="36" width="345" height="56"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ods-hN-6A7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ovp-8T-fop" firstAttribute="top" secondItem="Vzx-9p-H8d" secondAttribute="top" constant="16" id="GD7-tP-nJJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="F62-KM-iB4" secondAttribute="bottom" constant="8" id="GIP-ay-NtW"/>
+                                                <constraint firstAttribute="trailing" secondItem="F62-KM-iB4" secondAttribute="trailing" constant="15" id="ILR-q7-m2W"/>
+                                                <constraint firstItem="ovp-8T-fop" firstAttribute="height" secondItem="aPc-VN-3I2" secondAttribute="height" constant="8" id="ToL-8O-56q"/>
+                                                <constraint firstItem="F62-KM-iB4" firstAttribute="leading" secondItem="Vzx-9p-H8d" secondAttribute="leading" constant="15" id="UE5-tT-OJb"/>
+                                                <constraint firstAttribute="trailing" secondItem="aPc-VN-3I2" secondAttribute="trailing" constant="15" id="ZRq-pS-mc8"/>
+                                                <constraint firstItem="aPc-VN-3I2" firstAttribute="leading" secondItem="ovp-8T-fop" secondAttribute="trailing" constant="16" id="cIZ-Bn-g8H"/>
+                                                <constraint firstItem="aPc-VN-3I2" firstAttribute="top" secondItem="Vzx-9p-H8d" secondAttribute="top" constant="20" id="hAq-2f-rgb"/>
+                                                <constraint firstItem="ovp-8T-fop" firstAttribute="leading" secondItem="Vzx-9p-H8d" secondAttribute="leading" constant="15" id="mQT-GX-uuG"/>
+                                                <constraint firstItem="F62-KM-iB4" firstAttribute="top" secondItem="ovp-8T-fop" secondAttribute="bottom" constant="12" id="zmA-bo-JPm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descLabel" destination="F62-KM-iB4" id="W7j-Mi-ng3"/>
+                                            <outlet property="grayView" destination="ovp-8T-fop" id="alt-td-5EA"/>
+                                            <outlet property="summaryLabel" destination="aPc-VN-3I2" id="VwL-Gy-UAP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Phq-dR-upj" id="FeK-OP-Plb"/>
+                                    <outlet property="delegate" destination="Phq-dR-upj" id="XJd-Xk-Zol"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1FX-xR-BOv" firstAttribute="width" secondItem="YyG-vy-UyZ" secondAttribute="width" id="7gV-j3-m1A"/>
+                            <constraint firstItem="8bx-91-5ep" firstAttribute="bottom" secondItem="1FX-xR-BOv" secondAttribute="bottom" id="7oV-gc-bE7"/>
+                            <constraint firstItem="1FX-xR-BOv" firstAttribute="top" secondItem="8bx-91-5ep" secondAttribute="top" id="may-xu-Tpw"/>
+                            <constraint firstItem="1FX-xR-BOv" firstAttribute="centerX" secondItem="8bx-91-5ep" secondAttribute="centerX" id="nAi-dh-P8r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8bx-91-5ep"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Heyoooo" id="Wp3-9U-Oi4"/>
+                    <connections>
+                        <outlet property="detailTableView" destination="1FX-xR-BOv" id="HTv-9b-Hym"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ed7-3g-fGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472.8" y="701.19940029985014"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calendar" width="37" height="37"/>
+    </resources>
 </document>
