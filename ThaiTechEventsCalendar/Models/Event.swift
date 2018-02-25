@@ -67,6 +67,8 @@ class Event: Object {
         dateComponents.year = dateJson["year"].intValue
         dateComponents.month = dateJson["month"].intValue
         dateComponents.day = dateJson["date"].intValue
+        dateComponents.hour = 23
+        dateComponents.minute = 59
         dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
         let userCalendar = Calendar.current
 

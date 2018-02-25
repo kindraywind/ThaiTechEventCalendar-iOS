@@ -9,6 +9,7 @@
 import UIKit
 import Tabman
 import Pageboy
+import RealmSwift
 
 class EventTabViewController: TabmanViewController {
     var viewControllers = [UIViewController]()
@@ -17,7 +18,7 @@ class EventTabViewController: TabmanViewController {
         configureUIBar()
         populateVC()
     }
-    
+
     private func configureUIBar() {
         bar.style = .bar
         bar.location = .top
@@ -29,15 +30,47 @@ class EventTabViewController: TabmanViewController {
             appearance.indicator.useRoundedCorners = true
         })
     }
-    
+
     private func populateVC() {
     let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-    let upcomingEventNavVC = storyboard.instantiateViewController(withIdentifier: "eventDetailNav")
-    let pastEventNavVC = storyboard.instantiateViewController(withIdentifier: "eventDetailNav")
-    
+    guard let upcomingEventNavVC = storyboard.instantiateViewController(withIdentifier: "eventDetailNav") as? UINavigationController,
+        let pastEventNavVC = storyboard.instantiateViewController(withIdentifier: "eventDetailNav") as? UINavigationController,
+        let upcomingVC = upcomingEventNavVC.viewControllers.first as? EventFeedViewController,
+        let pastEventVC = pastEventNavVC.viewControllers.first as? EventFeedViewController,
+        let upcomingEvents = upcomingEvents(),
+        let pastEvents = pastEvents() else {
+            return
+        }
+
+    upcomingVC.events = upcomingEvents
+    upcomingVC.title = "Upcoming Events"
+    pastEventVC.events = pastEvents
+    pastEventVC.title = "Past events"
     viewControllers.append(upcomingEventNavVC)
     viewControllers.append(pastEventNavVC)
     self.dataSource = self
+    }
+
+    private func upcomingEvents() -> Results<Event>? {
+        guard let realm = try? Realm() else {
+            return nil
+        }
+        let upcomingPredicate = NSPredicate(format: "start >= %@", Date() as NSDate)
+        return realm
+            .objects(Event.self)
+            .filter(upcomingPredicate)
+            .sorted(byKeyPath: "start", ascending: true)
+    }
+
+    private func pastEvents() -> Results<Event>? {
+        guard let realm = try? Realm() else {
+            return nil
+        }
+        let pastPredicate = NSPredicate(format: "start < %@", Date() as NSDate)
+        return realm
+            .objects(Event.self)
+            .filter(pastPredicate)
+            .sorted(byKeyPath: "start", ascending: true)
     }
 
     override func didReceiveMemoryWarning() {

@@ -15,25 +15,41 @@ import DeckTransition
 class EventFeedViewController: UIViewController {
     @IBOutlet weak var feedTableView: UITableView!
 
-    let realm = try! Realm() //やばいよ
-    let events = try! Realm()
-        .objects(Event.self)
-        .sorted(byKeyPath: "start", ascending: false)
+    let realm = try! Realm()
+    var events: Results<Event>! //やばいよ、 dependency injectionの方がいいよ。
     let nib = UINib(nibName: "EventTableViewCell", bundle: nil)
+    var notificationToken: NotificationToken? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print(realm.configuration.fileURL ?? "")
         populate()
+        configureRealmNotification()
         feedTableView.register(nib, forCellReuseIdentifier: "EventTableViewCell")
-        setUpNavBar()
     }
 
-    private func setUpNavBar() {
-        navigationItem.title = "Event list"
-        navigationController?.view.backgroundColor = UIColor.white
-        if #available(iOS 11.0, *) {
-            navigationController?.navigationBar.prefersLargeTitles = true
+    private func configureRealmNotification() {
+        // Observe Results Notifications
+        notificationToken = events.observe { [weak self] (changes: RealmCollectionChange) in
+            guard let tableView = self?.feedTableView else { return }
+            switch changes {
+            case .initial:
+                // Results are now populated and can be accessed without blocking the UI
+                tableView.reloadData()
+            case .update(_, let deletions, let insertions, let modifications):
+                // Query results have changed, so apply them to the UITableView
+                tableView.beginUpdates()
+                tableView.insertRows(at: insertions.map({ IndexPath(row: $0, section: 0) }),
+                                     with: .automatic)
+                tableView.deleteRows(at: deletions.map({ IndexPath(row: $0, section: 0)}),
+                                     with: .automatic)
+                tableView.reloadRows(at: modifications.map({ IndexPath(row: $0, section: 0) }),
+                                     with: .automatic)
+                tableView.endUpdates()
+            case .error(let error):
+                // An error occurred while opening the Realm file on the background worker thread
+                fatalError("\(error)")
+            }
         }
     }
 
@@ -52,6 +68,10 @@ class EventFeedViewController: UIViewController {
         try! realm.write {
             json.arrayValue.forEach({ realm.add(Event($0), update: true) })
         }
+    }
+
+    deinit {
+        notificationToken?.invalidate()
     }
 
 }
