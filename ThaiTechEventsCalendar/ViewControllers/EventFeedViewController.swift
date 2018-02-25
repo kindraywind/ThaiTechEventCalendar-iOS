@@ -18,12 +18,11 @@ class EventFeedViewController: UIViewController {
     let realm = try! Realm()
     var events: Results<Event>! //やばいよ、 dependency injectionの方がいいよ。
     let nib = UINib(nibName: "EventTableViewCell", bundle: nil)
-    var notificationToken: NotificationToken? = nil
+    var notificationToken: NotificationToken?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print(realm.configuration.fileURL ?? "")
-        populate()
         configureRealmNotification()
         feedTableView.register(nib, forCellReuseIdentifier: "EventTableViewCell")
     }
@@ -56,18 +55,6 @@ class EventFeedViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Populate dummy data
-    private func populate() {
-        guard let path = Bundle.main.path(forResource: "calendar", ofType: "json"),
-        let jsonString = try? String(contentsOfFile: path, encoding: String.Encoding.utf8) else {
-            return
-        }
-        let json = JSON(parseJSON: jsonString)
-        try! realm.write {
-            json.arrayValue.forEach({ realm.add(Event($0), update: true) })
-        }
     }
 
     deinit {
