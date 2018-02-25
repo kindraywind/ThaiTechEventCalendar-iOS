@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		087A04B2D5F844BAA06EE506 /* Pods_ThaiTechEventsCalendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C868BFE9A3704BBB614A84 /* Pods_ThaiTechEventsCalendarTests.framework */; };
-		760434C12C7A89C65CCEA26A /* Pods_ThaiTechEventsCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CDD7AECE903E7292CB600F /* Pods_ThaiTechEventsCalendar.framework */; };
-		7AD172D69D39737CBAE9E329 /* Pods_ThaiTechEventsCalendarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C1E41C9D191CFE5B4A9854 /* Pods_ThaiTechEventsCalendarUITests.framework */; };
+		58C61425DC39C549AE99DB5A /* Pods_ThaiTechEventsCalendarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175794C997D66312D244A494 /* Pods_ThaiTechEventsCalendarUITests.framework */; };
+		7AD9C244CD05C023A302FED2 /* Pods_ThaiTechEventsCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB6DBD4FAEDAEFB81B3824D /* Pods_ThaiTechEventsCalendar.framework */; };
 		9F0BC95B20412C2600568153 /* EventFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BC95A20412C2600568153 /* EventFeedViewController.swift */; };
 		9F1C8D5D20415AE10016E72E /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C8D5B2041595A0016E72E /* DateUtils.swift */; };
 		9F4CD08A204172AE00528E66 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD089204172AE00528E66 /* EventDetailViewController.swift */; };
@@ -36,6 +35,7 @@
 		9FFAF9E120410338000A99FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DF20410338000A99FE /* LaunchScreen.storyboard */; };
 		9FFAF9EC20410338000A99FE /* ThaiTechEventsCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9EB20410338000A99FE /* ThaiTechEventsCalendarTests.swift */; };
 		9FFAF9F720410338000A99FE /* EventFeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9F620410338000A99FE /* EventFeedViewControllerTests.swift */; };
+		F00AF86568834E1FEB350DC6 /* Pods_ThaiTechEventsCalendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EAE1EE5FAA4624FE904C96 /* Pods_ThaiTechEventsCalendarTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00C868BFE9A3704BBB614A84 /* Pods_ThaiTechEventsCalendarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThaiTechEventsCalendarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26E831FDD8B502F9A9584027 /* Pods-ThaiTechEventsCalendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendarTests/Pods-ThaiTechEventsCalendarTests.release.xcconfig"; sourceTree = "<group>"; };
-		80CDD7AECE903E7292CB600F /* Pods_ThaiTechEventsCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThaiTechEventsCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		831CD6A795EFB0A386AC28F2 /* Pods-ThaiTechEventsCalendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		125CA02BDC9B95E3646679BA /* Pods-ThaiTechEventsCalendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		175794C997D66312D244A494 /* Pods_ThaiTechEventsCalendarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThaiTechEventsCalendarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		379B0BE05E83DEB6CB62E1F6 /* Pods-ThaiTechEventsCalendarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendarTests/Pods-ThaiTechEventsCalendarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		63621FA63788ABDBFE5F4EA5 /* Pods-ThaiTechEventsCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendar/Pods-ThaiTechEventsCalendar.release.xcconfig"; sourceTree = "<group>"; };
+		986ABCB2BBC6BC4FA275EE68 /* Pods-ThaiTechEventsCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendar/Pods-ThaiTechEventsCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+		9D44A6EA160339593C6DDCB4 /* Pods-ThaiTechEventsCalendarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9F0BC95A20412C2600568153 /* EventFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFeedViewController.swift; sourceTree = "<group>"; };
 		9F1C8D5B2041595A0016E72E /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		9F4CD089204172AE00528E66 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
@@ -90,11 +92,9 @@
 		9FFAF9F220410338000A99FE /* ThaiTechEventsCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThaiTechEventsCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFAF9F620410338000A99FE /* EventFeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFeedViewControllerTests.swift; sourceTree = "<group>"; };
 		9FFAF9F820410338000A99FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA0B237189D062393BBBE59F /* Pods-ThaiTechEventsCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendar/Pods-ThaiTechEventsCalendar.release.xcconfig"; sourceTree = "<group>"; };
-		B19757AEA8908559D99BF22A /* Pods-ThaiTechEventsCalendarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendarTests/Pods-ThaiTechEventsCalendarTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C5A00F707CAE3CCB4CDD56E5 /* Pods-ThaiTechEventsCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendar/Pods-ThaiTechEventsCalendar.debug.xcconfig"; sourceTree = "<group>"; };
-		D0C1E41C9D191CFE5B4A9854 /* Pods_ThaiTechEventsCalendarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThaiTechEventsCalendarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F29DE1143354A06B73945489 /* Pods-ThaiTechEventsCalendarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A72A37BC968FFB57CD54E378 /* Pods-ThaiTechEventsCalendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendarTests/Pods-ThaiTechEventsCalendarTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5EAE1EE5FAA4624FE904C96 /* Pods_ThaiTechEventsCalendarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThaiTechEventsCalendarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB6DBD4FAEDAEFB81B3824D /* Pods_ThaiTechEventsCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThaiTechEventsCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				760434C12C7A89C65CCEA26A /* Pods_ThaiTechEventsCalendar.framework in Frameworks */,
+				7AD9C244CD05C023A302FED2 /* Pods_ThaiTechEventsCalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				087A04B2D5F844BAA06EE506 /* Pods_ThaiTechEventsCalendarTests.framework in Frameworks */,
+				F00AF86568834E1FEB350DC6 /* Pods_ThaiTechEventsCalendarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,21 +118,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AD172D69D39737CBAE9E329 /* Pods_ThaiTechEventsCalendarUITests.framework in Frameworks */,
+				58C61425DC39C549AE99DB5A /* Pods_ThaiTechEventsCalendarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D410A2435E7D88E3B0EBB30 /* Frameworks */ = {
+		6EDAC53510CCB1E500653530 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				80CDD7AECE903E7292CB600F /* Pods_ThaiTechEventsCalendar.framework */,
-				00C868BFE9A3704BBB614A84 /* Pods_ThaiTechEventsCalendarTests.framework */,
-				D0C1E41C9D191CFE5B4A9854 /* Pods_ThaiTechEventsCalendarUITests.framework */,
+				986ABCB2BBC6BC4FA275EE68 /* Pods-ThaiTechEventsCalendar.debug.xcconfig */,
+				63621FA63788ABDBFE5F4EA5 /* Pods-ThaiTechEventsCalendar.release.xcconfig */,
+				379B0BE05E83DEB6CB62E1F6 /* Pods-ThaiTechEventsCalendarTests.debug.xcconfig */,
+				A72A37BC968FFB57CD54E378 /* Pods-ThaiTechEventsCalendarTests.release.xcconfig */,
+				125CA02BDC9B95E3646679BA /* Pods-ThaiTechEventsCalendarUITests.debug.xcconfig */,
+				9D44A6EA160339593C6DDCB4 /* Pods-ThaiTechEventsCalendarUITests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		9F0BC95920412C0F00568153 /* ViewControllers */ = {
@@ -207,8 +210,8 @@
 				9FFAF9EA20410338000A99FE /* ThaiTechEventsCalendarTests */,
 				9FFAF9F520410338000A99FE /* ThaiTechEventsCalendarUITests */,
 				9FFAF9D420410337000A99FE /* Products */,
-				B5D205CA261CA77D08F31186 /* Pods */,
-				3D410A2435E7D88E3B0EBB30 /* Frameworks */,
+				6EDAC53510CCB1E500653530 /* Pods */,
+				ECBC62D505D656F021711FC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,17 +264,14 @@
 			path = ThaiTechEventsCalendarUITests;
 			sourceTree = "<group>";
 		};
-		B5D205CA261CA77D08F31186 /* Pods */ = {
+		ECBC62D505D656F021711FC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C5A00F707CAE3CCB4CDD56E5 /* Pods-ThaiTechEventsCalendar.debug.xcconfig */,
-				AA0B237189D062393BBBE59F /* Pods-ThaiTechEventsCalendar.release.xcconfig */,
-				B19757AEA8908559D99BF22A /* Pods-ThaiTechEventsCalendarTests.debug.xcconfig */,
-				26E831FDD8B502F9A9584027 /* Pods-ThaiTechEventsCalendarTests.release.xcconfig */,
-				831CD6A795EFB0A386AC28F2 /* Pods-ThaiTechEventsCalendarUITests.debug.xcconfig */,
-				F29DE1143354A06B73945489 /* Pods-ThaiTechEventsCalendarUITests.release.xcconfig */,
+				FFB6DBD4FAEDAEFB81B3824D /* Pods_ThaiTechEventsCalendar.framework */,
+				C5EAE1EE5FAA4624FE904C96 /* Pods_ThaiTechEventsCalendarTests.framework */,
+				175794C997D66312D244A494 /* Pods_ThaiTechEventsCalendarUITests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,13 +281,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FFAF9FB20410338000A99FE /* Build configuration list for PBXNativeTarget "ThaiTechEventsCalendar" */;
 			buildPhases = (
-				3654DC0C8793238B7F960F31 /* [CP] Check Pods Manifest.lock */,
+				701D202689BF42374174EC55 /* [CP] Check Pods Manifest.lock */,
 				9FB86CC3204126120090803F /* SwiftLint */,
 				9FFAF9CF20410337000A99FE /* Sources */,
 				9FFAF9D020410337000A99FE /* Frameworks */,
 				9FFAF9D120410337000A99FE /* Resources */,
-				C93244FECA09FEF5FC62BC7F /* [CP] Embed Pods Frameworks */,
-				0402F282D51DFDE24721958E /* [CP] Copy Pods Resources */,
+				C3529D69B1B119A181E46979 /* [CP] Embed Pods Frameworks */,
+				42D476D175CFCFCB517664A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,12 +302,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FFAF9FE20410338000A99FE /* Build configuration list for PBXNativeTarget "ThaiTechEventsCalendarTests" */;
 			buildPhases = (
-				A2A2AA97A40CEC3374189C23 /* [CP] Check Pods Manifest.lock */,
+				0E275824DE41DC720B2A165D /* [CP] Check Pods Manifest.lock */,
 				9FFAF9E320410338000A99FE /* Sources */,
 				9FFAF9E420410338000A99FE /* Frameworks */,
 				9FFAF9E520410338000A99FE /* Resources */,
-				7A5A45C8E2CFBE7320B474D6 /* [CP] Embed Pods Frameworks */,
-				49BE1203FBB6EFF0E6B9277F /* [CP] Copy Pods Resources */,
+				6AB3BEFE256F114FE0FA9227 /* [CP] Embed Pods Frameworks */,
+				5B5774807351BD5465D51C3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,12 +323,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FFAFA0120410338000A99FE /* Build configuration list for PBXNativeTarget "ThaiTechEventsCalendarUITests" */;
 			buildPhases = (
-				2F2C89231CEC31F312BECFCE /* [CP] Check Pods Manifest.lock */,
+				721985D180CBB23CB695E3C2 /* [CP] Check Pods Manifest.lock */,
 				9FFAF9EE20410338000A99FE /* Sources */,
 				9FFAF9EF20410338000A99FE /* Frameworks */,
 				9FFAF9F020410338000A99FE /* Resources */,
-				D1FB0B95A057C8774F63F1FC /* [CP] Embed Pods Frameworks */,
-				4BFD90BDFDF6A06B41EFA9F5 /* [CP] Copy Pods Resources */,
+				821FD4BBA16DFB8AE6A57BB2 /* [CP] Embed Pods Frameworks */,
+				EEA401240077487086030759 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -418,7 +418,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0402F282D51DFDE24721958E /* [CP] Copy Pods Resources */ = {
+		0E275824DE41DC720B2A165D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThaiTechEventsCalendarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42D476D175CFCFCB517664A4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -433,37 +451,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendar/Pods-ThaiTechEventsCalendar-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2F2C89231CEC31F312BECFCE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3654DC0C8793238B7F960F31 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		49BE1203FBB6EFF0E6B9277F /* [CP] Copy Pods Resources */ = {
+		5B5774807351BD5465D51C3E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -478,22 +466,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendarTests/Pods-ThaiTechEventsCalendarTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4BFD90BDFDF6A06B41EFA9F5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A5A45C8E2CFBE7320B474D6 /* [CP] Embed Pods Frameworks */ = {
+		6AB3BEFE256F114FE0FA9227 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -506,6 +479,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendarTests/Pods-ThaiTechEventsCalendarTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		701D202689BF42374174EC55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThaiTechEventsCalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		721985D180CBB23CB695E3C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThaiTechEventsCalendarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		821FD4BBA16DFB8AE6A57BB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9FB86CC3204126120090803F /* SwiftLint */ = {
@@ -522,49 +546,55 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
-		A2A2AA97A40CEC3374189C23 /* [CP] Check Pods Manifest.lock */ = {
+		C3529D69B1B119A181E46979 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C93244FECA09FEF5FC62BC7F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendar/Pods-ThaiTechEventsCalendar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/AutoInsetter/AutoInsetter.framework",
+				"${BUILT_PRODUCTS_DIR}/DeckTransition/DeckTransition.framework",
+				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Tabman/Tabman.framework",
+				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AutoInsetter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeckTransition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tabman.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendar/Pods-ThaiTechEventsCalendar-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D1FB0B95A057C8774F63F1FC /* [CP] Embed Pods Frameworks */ = {
+		EEA401240077487086030759 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -758,7 +788,7 @@
 		};
 		9FFAF9FC20410338000A99FE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5A00F707CAE3CCB4CDD56E5 /* Pods-ThaiTechEventsCalendar.debug.xcconfig */;
+			baseConfigurationReference = 986ABCB2BBC6BC4FA275EE68 /* Pods-ThaiTechEventsCalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -774,7 +804,7 @@
 		};
 		9FFAF9FD20410338000A99FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA0B237189D062393BBBE59F /* Pods-ThaiTechEventsCalendar.release.xcconfig */;
+			baseConfigurationReference = 63621FA63788ABDBFE5F4EA5 /* Pods-ThaiTechEventsCalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -790,7 +820,7 @@
 		};
 		9FFAF9FF20410338000A99FE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B19757AEA8908559D99BF22A /* Pods-ThaiTechEventsCalendarTests.debug.xcconfig */;
+			baseConfigurationReference = 379B0BE05E83DEB6CB62E1F6 /* Pods-ThaiTechEventsCalendarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -808,7 +838,7 @@
 		};
 		9FFAFA0020410338000A99FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26E831FDD8B502F9A9584027 /* Pods-ThaiTechEventsCalendarTests.release.xcconfig */;
+			baseConfigurationReference = A72A37BC968FFB57CD54E378 /* Pods-ThaiTechEventsCalendarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -826,7 +856,7 @@
 		};
 		9FFAFA0220410338000A99FE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 831CD6A795EFB0A386AC28F2 /* Pods-ThaiTechEventsCalendarUITests.debug.xcconfig */;
+			baseConfigurationReference = 125CA02BDC9B95E3646679BA /* Pods-ThaiTechEventsCalendarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -843,7 +873,7 @@
 		};
 		9FFAFA0320410338000A99FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F29DE1143354A06B73945489 /* Pods-ThaiTechEventsCalendarUITests.release.xcconfig */;
+			baseConfigurationReference = 9D44A6EA160339593C6DDCB4 /* Pods-ThaiTechEventsCalendarUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,6 +1,11 @@
+notifications:
+  email: false
 language: swift
 osx_image: xcode9.2
-xcode_workspace: ThaiTechEventsCalendar
+xcode_workspace: ThaiTechEventsCalendar.xcworkspace
 xcode_scheme: ThaiTechEventsCalendarTests
+before_install:
+  - bundle install
+  - pod repo update
 after_success:
   - bash <(curl -s https://codecov.io/bash)

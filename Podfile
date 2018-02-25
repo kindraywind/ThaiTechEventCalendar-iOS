@@ -7,7 +7,7 @@ def shared_pods
   pod 'SwiftyJSON', '~> 4.0.0'
   pod 'TagListView', '~> 1.3.0'
   pod 'DeckTransition', '~> 2.0'
-  pod 'Tabman', '~> 1.6.0'
+  pod 'Tabman', '1.6.0'
   pod 'Alamofire', '~> 4.6'
   pod 'Alamofire-SwiftyJSON'
 end
