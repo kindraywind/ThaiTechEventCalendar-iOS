@@ -10,7 +10,7 @@ import UIKit
 import TagListView
 
 class EventHeaderTableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var topicTagListView: TagListView!
 

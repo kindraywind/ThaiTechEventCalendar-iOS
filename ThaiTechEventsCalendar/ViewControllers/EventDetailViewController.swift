@@ -152,7 +152,7 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource 
         }
 
         cell.updateUIWith(event, indexPath)
-        
+
         return cell
     }
 
