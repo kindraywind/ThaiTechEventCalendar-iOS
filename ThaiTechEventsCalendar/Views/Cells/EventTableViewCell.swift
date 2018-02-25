@@ -37,6 +37,16 @@ class EventTableViewCell: UITableViewCell {
         weekdayFormatter.timeZone = TimeZone(abbreviation: "GMT+7")
     }
 
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+
+}
+
+extension EventTableViewCell: Updatable {
+
     func updateUIWith(_ event: Event) {
         titleLabel.text = event.title
         summaryLabel.text = event.summary
@@ -57,12 +67,6 @@ class EventTableViewCell: UITableViewCell {
         topicTagListView.removeAllTags()
         event.categories.forEach({ topicTagListView.addTag($0) })
         event.topics.forEach({ topicTagListView.addTag($0) })
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

@@ -24,3 +24,18 @@ class SummaryTableViewCell: UITableViewCell {
     }
 
 }
+
+extension SummaryTableViewCell: Updatable {
+
+    func updateUIWith(_ event: Event) {
+        summaryLabel?.text = event.summary
+
+        if event.summary.isEmpty {
+            summaryLabel.isHidden = true
+            grayView.isHidden = true
+        }
+
+        descLabel.text = event.desc
+    }
+
+}

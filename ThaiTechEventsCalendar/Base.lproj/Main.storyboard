@@ -112,7 +112,7 @@
                                             <outlet property="iconImageView" destination="4G9-Hm-dnZ" id="QlA-GQ-ZcG"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="linkCell" id="m8i-mK-VJK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="linkCell" id="m8i-mK-VJK" customClass="LinkTableViewCell" customModule="ThaiTechEventsCalendar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m8i-mK-VJK" id="SPV-eK-p5z">
@@ -164,6 +164,64 @@
                                             <outlet property="descLabel" destination="F62-KM-iB4" id="W7j-Mi-ng3"/>
                                             <outlet property="grayView" destination="ovp-8T-fop" id="alt-td-5EA"/>
                                             <outlet property="summaryLabel" destination="aPc-VN-3I2" id="VwL-Gy-UAP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="131" id="ugE-W1-U2a" customClass="EventHeaderTableViewCell" customModule="ThaiTechEventsCalendar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="243.5" width="375" height="131"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ugE-W1-U2a" id="MKh-84-8WN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="International Open Data Day Bangkok 2018 — Opendata Hackathon : Civic Engagement" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqb-Kg-9qL">
+                                                    <rect key="frame" x="15" y="11" width="345" height="64.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iu-rj-SA8" customClass="TagListView" customModule="TagListView">
+                                                    <rect key="frame" x="15" y="84" width="345" height="38.5"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                                            <color key="value" red="0.98098474739999997" green="0.9710124135" blue="0.82066601510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                            <color key="value" red="0.9568462968" green="0.57094234229999996" blue="0.0061058429999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                            <color key="value" red="0.9568462968" green="0.57094234229999996" blue="0.0061058429999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Aqb-Kg-9qL" firstAttribute="leading" secondItem="MKh-84-8WN" secondAttribute="leading" constant="15" id="9o3-fS-lSD"/>
+                                                <constraint firstAttribute="bottom" secondItem="5iu-rj-SA8" secondAttribute="bottom" constant="8" id="Ebt-nm-l0W"/>
+                                                <constraint firstAttribute="trailing" secondItem="Aqb-Kg-9qL" secondAttribute="trailing" constant="15" id="KfC-lY-S7m"/>
+                                                <constraint firstItem="5iu-rj-SA8" firstAttribute="leading" secondItem="MKh-84-8WN" secondAttribute="leading" constant="15" id="Mua-Qu-oP0"/>
+                                                <constraint firstAttribute="trailing" secondItem="5iu-rj-SA8" secondAttribute="trailing" constant="15" id="tLL-Fu-diF"/>
+                                                <constraint firstItem="5iu-rj-SA8" firstAttribute="top" secondItem="Aqb-Kg-9qL" secondAttribute="bottom" constant="8" id="tRO-Kr-U9k"/>
+                                                <constraint firstItem="Aqb-Kg-9qL" firstAttribute="top" secondItem="MKh-84-8WN" secondAttribute="top" constant="11" id="yPO-H4-8y4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="headerLabel" destination="Aqb-Kg-9qL" id="CeA-dU-yq3"/>
+                                            <outlet property="topicTagListView" destination="5iu-rj-SA8" id="92J-wi-Y2i"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

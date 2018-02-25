@@ -9,7 +9,6 @@
 
 import UIKit
 import RealmSwift
-import VegaScrollFlowLayout
 import SwiftyJSON
 import DeckTransition
 

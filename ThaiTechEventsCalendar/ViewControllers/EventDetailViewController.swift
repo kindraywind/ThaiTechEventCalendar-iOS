@@ -15,6 +15,8 @@ class EventDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = event.title
+        self.detailTableView.sectionHeaderHeight = UITableViewAutomaticDimension
+        self.detailTableView.estimatedSectionHeaderHeight = 25
 
         // Do any additional setup after loading the view.
     }
@@ -41,13 +43,21 @@ class EventDetailViewController: UIViewController {
 }
 
 extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource {
+    enum SectionType: Int {
+        case date = 0, links, details
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0:
+        guard let type = SectionType(rawValue: section) else {
+            return 1
+        }
+
+        switch type {
+        case .date:
             return 3
-        case 1:
+        case .links:
             return event.links.count
-        default:
+        case .details:
             return 1
         }
     }
@@ -57,27 +67,40 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource 
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0:
-             return event.title
-        case 1:
-            return "Links"
-        case 2:
-            return "Details"
-        default:
+        guard let type = SectionType(rawValue: section) else {
             return ""
+        }
+
+        switch type {
+        case .date:
+             return event.title
+        case .links:
+            return "Links"
+        case .details:
+            return "Details"
         }
     }
 
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == SectionType.date.rawValue {
+            let header = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! EventHeaderTableViewCell
+            header.updateUIWith(event)
+            return header
+        }
+        return nil
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.section {
-        case 0:
-            return configureSectionDateCell(tableView, indexPath)
-        case 1:
-            return configureSectionLinkCell(tableView, indexPath)
-        case 2:
+        guard let type = SectionType(rawValue: indexPath.section) else {
             return configureSectionSummaryCell(tableView, indexPath)
-        default:
+        }
+
+        switch type {
+        case .date:
+            return configureSectionDateCell(tableView, indexPath)
+        case .links:
+            return configureSectionLinkCell(tableView, indexPath)
+        case .details:
             return configureSectionSummaryCell(tableView, indexPath)
         }
     }
@@ -99,7 +122,10 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource 
     // MARK: - Cell configures (Will be moved to proper place.)
 
     private func configureSectionDateCell(_ tableView: UITableView, _ indexPath: IndexPath) -> DetailTableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! DetailTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as? DetailTableViewCell else {
+            return DetailTableViewCell(style: .default, reuseIdentifier: "detailCell")
+        }
+
         switch indexPath.row {
         case 0:
             cell.detailLabel.text = DateUtils.dateString(fromDate: event.start, toDate: event.end)
@@ -121,39 +147,22 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource 
     }
 
     private func configureSectionLinkCell(_  tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "linkCell", for: indexPath)
-        let link = event.links[indexPath.row]
-        let orangeAttributes: [NSAttributedStringKey: Any] = [
-            .foregroundColor: UIColor.TTOrange(),
-            .font: UIFont.systemFont(ofSize: 17.0)
-        ]
-        let title = NSAttributedString(string: link.title, attributes: orangeAttributes)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "linkCell", for: indexPath) as? LinkTableViewCell else {
+            return LinkTableViewCell(style: .default, reuseIdentifier: "linkCell")
+        }
 
-        let plainAttributes: [NSAttributedStringKey: Any] = [
-            .font: UIFont.systemFont(ofSize: 17.0)
-        ]
-        let type = NSAttributedString(string: " (\(link.type))", attributes: plainAttributes)
-        let price = NSAttributedString(string: " \(link.price)", attributes: plainAttributes)
-
-        let linkAttributedString = NSMutableAttributedString()
-        linkAttributedString.append(title)
-        linkAttributedString.append(type)
-        linkAttributedString.append(price)
-
-        cell.textLabel?.attributedText = linkAttributedString
+        cell.updateUIWith(event, indexPath)
+        
         return cell
     }
 
     private func configureSectionSummaryCell(_  tableView: UITableView, _ indexPath: IndexPath) -> SummaryTableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "summaryCell", for: indexPath) as! SummaryTableViewCell
-
-        cell.summaryLabel?.text = event.summary
-        if event.summary.isEmpty {
-            cell.summaryLabel.isHidden = true
-            cell.grayView.isHidden = true
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "summaryCell", for: indexPath) as? SummaryTableViewCell else {
+            return SummaryTableViewCell(style: .default, reuseIdentifier: "summaryCell")
         }
 
-        cell.descLabel.text = event.desc
+        cell.updateUIWith(event)
+
         return cell
     }
 }
