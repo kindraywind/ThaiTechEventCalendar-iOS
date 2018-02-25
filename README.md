@@ -22,3 +22,7 @@ iOS Application for [Thai Tech events calendar](https://github.com/ThaiProgramme
 or
 
 - Report an issue, any suggestion is welcome :]
+
+---
+
+The temporary icon is [designed by Freepik](http://www.freepik.com)
