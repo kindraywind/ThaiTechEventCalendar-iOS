@@ -12,6 +12,7 @@ target 'ThaiTechEventsCalendar' do
   pod 'SwiftyJSON', '~> 4.0.0'
   pod 'TagListView', '~> 1.3.0'
   pod 'DeckTransition', '~> 2.0'
+  pod 'Tabman', '~> 1.6.0'
 
   target 'ThaiTechEventsCalendarTests' do
     inherit! :search_paths
