@@ -27,20 +27,19 @@
                                 <rect key="frame" x="81" y="0.0" width="289" height="174.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blockchain Developers new trend in 2018" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5E6-hi-Qbn">
-                                        <rect key="frame" x="8" y="8" width="277" height="42.5"/>
+                                        <rect key="frame" x="8" y="8" width="273" height="42.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" red="0.9568462968" green="0.57094234229999996" blue="0.0061058429999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLX-ym-Avc">
-                                        <rect key="frame" x="8" y="51" width="277" height="86.5"/>
-                                        <string key="text">The more popular blockchain / distributed ledger systems sharing in this event: Hyperledger, stellar &amp; IOTA. Junior &amp; Senior blockchain engineers encourage to join this workshop.</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The more popular blockchain / distributed ledger systems sharing in this event: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLX-ym-Avc">
+                                        <rect key="frame" x="8" y="51" width="273" height="64.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrQ-dc-efZ" customClass="TagListView" customModule="TagListView">
-                                        <rect key="frame" x="8" y="141" width="277" height="25.5"/>
+                                        <rect key="frame" x="8" y="119" width="273" height="47.5"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
                                                 <color key="value" red="0.98098474739999997" green="0.9710124135" blue="0.82066601510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,12 +73,12 @@
                                     <constraint firstItem="gLX-ym-Avc" firstAttribute="leading" secondItem="PCo-F6-qkd" secondAttribute="leading" constant="8" id="4if-wV-uBf"/>
                                     <constraint firstItem="5E6-hi-Qbn" firstAttribute="leading" secondItem="PCo-F6-qkd" secondAttribute="leading" constant="8" id="JBh-M7-io5"/>
                                     <constraint firstItem="5E6-hi-Qbn" firstAttribute="top" secondItem="PCo-F6-qkd" secondAttribute="top" constant="8" id="JqZ-gl-bIY"/>
-                                    <constraint firstAttribute="trailing" secondItem="XrQ-dc-efZ" secondAttribute="trailing" constant="4" id="Ug7-gM-3Hl"/>
+                                    <constraint firstAttribute="trailing" secondItem="XrQ-dc-efZ" secondAttribute="trailing" constant="8" id="Ug7-gM-3Hl"/>
                                     <constraint firstItem="XrQ-dc-efZ" firstAttribute="leading" secondItem="PCo-F6-qkd" secondAttribute="leading" constant="8" id="Uxv-AI-dq7"/>
-                                    <constraint firstAttribute="trailing" secondItem="gLX-ym-Avc" secondAttribute="trailing" constant="4" id="frE-Uo-ER1"/>
+                                    <constraint firstAttribute="trailing" secondItem="gLX-ym-Avc" secondAttribute="trailing" constant="8" id="frE-Uo-ER1"/>
                                     <constraint firstItem="gLX-ym-Avc" firstAttribute="top" secondItem="5E6-hi-Qbn" secondAttribute="bottom" constant="0.5" id="lDT-0v-TWX"/>
                                     <constraint firstAttribute="bottom" secondItem="XrQ-dc-efZ" secondAttribute="bottom" constant="8" id="mOs-GZ-BNn"/>
-                                    <constraint firstAttribute="trailing" secondItem="5E6-hi-Qbn" secondAttribute="trailing" constant="4" id="rh0-ta-n7z"/>
+                                    <constraint firstAttribute="trailing" secondItem="5E6-hi-Qbn" secondAttribute="trailing" constant="8" id="rh0-ta-n7z"/>
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRM-CA-gyE" userLabel="DateContainer">
