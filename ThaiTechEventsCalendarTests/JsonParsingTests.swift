@@ -32,7 +32,10 @@ class JsonParsingTests: XCTestCase {
     private func destroyRealm() {
         do {
             let realm = try Realm()
-            realm.deleteAll()
+            try realm.write {
+                realm.deleteAll()
+            }
+
         } catch {
             XCTFail("FAIL")
         }
@@ -50,12 +53,40 @@ class JsonParsingTests: XCTestCase {
         }
 
         XCTAssertEqual(realm.objects(Event.self).count, 0)
+        XCTAssertEqual(realm.objects(Link.self).count, 0)
+        XCTAssertEqual(realm.objects(Location.self).count, 0)
+    }
+
+    func testParsingJsonToRealmObjects() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        XCTAssertEqual(realm.objects(Event.self).count, 28)
+        XCTAssertEqual(realm.objects(Link.self).count, 45)
+        XCTAssertEqual(realm.objects(Location.self).count, 23)
+    }
+
+    func testUpdatingRealmObjectsWithPrimaryKey() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        populate()
+        XCTAssertEqual(realm.objects(Event.self).count, 28, "The event count should be still 28")
+        XCTAssertEqual(realm.objects(Link.self).count, 45)
+        XCTAssertEqual(realm.objects(Location.self).count, 23)
     }
 
     func testPerformanceExample() {
-        // This is an example of a performance test case.
         self.measure {
-            // Put the code you want to measure the time of here.
+            populate()
         }
     }
 }
