@@ -2,4 +2,5 @@ language: swift
 osx_image: xcode9.2
 xcode_workspace: ThaiTechEventsCalendar
 xcode_scheme: ThaiTechEventsCalendarTests
-pod install
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
