@@ -1,11 +1,14 @@
 # ThaiTechEventCalendar-iOS
+[![Build Status](https://travis-ci.org/kindraywind/ThaiTechEventCalendar-iOS.svg?branch=master)](https://travis-ci.org/kindraywind/ThaiTechEventCalendar-iOS)
+[![codecov](https://codecov.io/gh/kindraywind/ThaiTechEventCalendar-iOS/branch/master/graph/badge.svg)](https://codecov.io/gh/kindraywind/ThaiTechEventCalendar-iOS)
+
 iOS Application for [Thai Tech events calendar](https://github.com/ThaiProgrammer/tech-events-calendar)
 
 ## TODOS:
 - [x] Functional app
 - [x] Add UnitTests and UITests
 - [x] Using fastlane for building application
-- [ ] CI
+- [x] CI
 - [ ] Push notification
 
 
