@@ -8,6 +8,6 @@ before_install:
   - bundle install
   - pod repo update
 script:
-  - xcodebuild test -workspace ThaiTechEventsCalendar.xcworkspace -scheme ThaiTechEventsCalendarTests CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination 'platform=iOS Simulator,name=iPhone 7'
+  - ./run_tests.sh
 after_success:
   - bash <(curl -s https://codecov.io/bash)
