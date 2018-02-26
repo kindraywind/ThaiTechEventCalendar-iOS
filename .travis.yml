@@ -7,5 +7,7 @@ xcode_scheme: ThaiTechEventsCalendarTests
 before_install:
   - bundle install
   - pod repo update
+script:
+  - ./run_tests.sh
 after_success:
   - bash <(curl -s https://codecov.io/bash)
