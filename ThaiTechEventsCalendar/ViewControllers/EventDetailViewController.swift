@@ -17,6 +17,7 @@ class EventDetailViewController: UIViewController {
         self.title = event.title
         self.detailTableView.sectionHeaderHeight = UITableViewAutomaticDimension
         self.detailTableView.estimatedSectionHeaderHeight = 25
+        self.detailTableView.accessibilityLabel = "detailTableView"
 
         // Do any additional setup after loading the view.
     }

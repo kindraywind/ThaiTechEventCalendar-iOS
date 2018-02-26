@@ -188,20 +188,6 @@
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9FFAF9D220410337000A99FE"
-               BuildableName = "ThaiTechEventsCalendar.app"
-               BlueprintName = "ThaiTechEventsCalendar"
-               ReferencedContainer = "container:ThaiTechEventsCalendar.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -245,10 +231,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9FFAF9D220410337000A99FE"
-            BuildableName = "ThaiTechEventsCalendar.app"
-            BlueprintName = "ThaiTechEventsCalendar"
-            ReferencedContainer = "container:ThaiTechEventsCalendar.xcodeproj">
+            BlueprintIdentifier = "88E9EC28B8B46C3631E6B242B50F4442"
+            BuildableName = "Alamofire.framework"
+            BlueprintName = "Alamofire"
+            ReferencedContainer = "container:Pods/Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -264,16 +250,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9FFAF9D220410337000A99FE"
-            BuildableName = "ThaiTechEventsCalendar.app"
-            BlueprintName = "ThaiTechEventsCalendar"
-            ReferencedContainer = "container:ThaiTechEventsCalendar.xcodeproj">
+            BlueprintIdentifier = "88E9EC28B8B46C3631E6B242B50F4442"
+            BuildableName = "Alamofire.framework"
+            BlueprintName = "Alamofire"
+            ReferencedContainer = "container:Pods/Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -283,16 +268,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9FFAF9D220410337000A99FE"
-            BuildableName = "ThaiTechEventsCalendar.app"
-            BlueprintName = "ThaiTechEventsCalendar"
-            ReferencedContainer = "container:ThaiTechEventsCalendar.xcodeproj">
+            BlueprintIdentifier = "88E9EC28B8B46C3631E6B242B50F4442"
+            BuildableName = "Alamofire.framework"
+            BlueprintName = "Alamofire"
+            ReferencedContainer = "container:Pods/Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

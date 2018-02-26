@@ -1,10 +1,11 @@
-# [WIP]ThaiTechEventCalendar-iOS
+# ThaiTechEventCalendar-iOS
 iOS Application for [Thai Tech events calendar](https://github.com/ThaiProgrammer/tech-events-calendar)
 
 ## TODOS:
 - [x] Functional app
-- [ ] Add UnitTests and UITests
-- [ ] CI with fastlane
+- [x] Add UnitTests and UITests
+- [x] Using fastlane for building application
+- [ ] CI
 - [ ] Push notification
 
 

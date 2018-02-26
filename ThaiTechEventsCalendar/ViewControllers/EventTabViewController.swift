@@ -43,7 +43,7 @@ class EventTabViewController: TabmanViewController {
         }
 
     upcomingVC.events = upcomingEvents
-    upcomingVC.title = "Upcoming Events"
+    upcomingVC.title = "Upcoming events"
     pastEventVC.events = pastEvents
     pastEventVC.title = "Past events"
     viewControllers.append(upcomingEventNavVC)
