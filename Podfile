@@ -10,6 +10,7 @@ def shared_pods
   pod 'Tabman', '1.6.0'
   pod 'Alamofire', '~> 4.6'
   pod 'Alamofire-SwiftyJSON'
+  pod 'markymark'
 end
 
 target 'ThaiTechEventsCalendar' do
