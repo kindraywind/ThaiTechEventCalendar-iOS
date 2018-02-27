@@ -11,6 +11,9 @@ def shared_pods
   pod 'Alamofire', '~> 4.6'
   pod 'Alamofire-SwiftyJSON'
   pod 'markymark'
+  pod 'Firebase/Core'
+  pod 'Fabric', '~> 1.7.3'
+  pod 'Crashlytics', '~> 3.10.0'
 end
 
 target 'ThaiTechEventsCalendar' do
