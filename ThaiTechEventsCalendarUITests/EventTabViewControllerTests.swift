@@ -25,7 +25,9 @@ class EventTabViewControllerTests: XCTestCase {
 
     func testUpComingFeedIsDefaultTab() {
         let app = XCUIApplication()
+        setupSnapshot(app)
         XCTAssertTrue(app.navigationBars["Upcoming events"].exists)
+        snapshot("Upcoming_screen01")
     }
 
     func testSwipeLeftFromUpcomingEvents() {
