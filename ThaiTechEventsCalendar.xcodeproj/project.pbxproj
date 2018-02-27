@@ -35,6 +35,7 @@
 		9FFAF9E120410338000A99FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DF20410338000A99FE /* LaunchScreen.storyboard */; };
 		9FFAF9EC20410338000A99FE /* ThaiTechEventsCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9EB20410338000A99FE /* ThaiTechEventsCalendarTests.swift */; };
 		9FFAF9F720410338000A99FE /* EventFeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9F620410338000A99FE /* EventFeedViewControllerTests.swift */; };
+		E935F3C420455B8B0087638A /* NSAttributedStringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E935F3C320455B8B0087638A /* NSAttributedStringExtensionsTests.swift */; };
 		E9A7B5E3204540CD002345B7 /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7B5E2204540CD002345B7 /* NSAttributedStringExtensions.swift */; };
 		F00AF86568834E1FEB350DC6 /* Pods_ThaiTechEventsCalendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EAE1EE5FAA4624FE904C96 /* Pods_ThaiTechEventsCalendarTests.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		9FFAF9F820410338000A99FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A72A37BC968FFB57CD54E378 /* Pods-ThaiTechEventsCalendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendarTests/Pods-ThaiTechEventsCalendarTests.release.xcconfig"; sourceTree = "<group>"; };
 		C5EAE1EE5FAA4624FE904C96 /* Pods_ThaiTechEventsCalendarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThaiTechEventsCalendarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E935F3C320455B8B0087638A /* NSAttributedStringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensionsTests.swift; sourceTree = "<group>"; };
 		E9A7B5E2204540CD002345B7 /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
 		FFB6DBD4FAEDAEFB81B3824D /* Pods_ThaiTechEventsCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThaiTechEventsCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -252,6 +254,7 @@
 				9FFAF9EB20410338000A99FE /* ThaiTechEventsCalendarTests.swift */,
 				9F4CD0D12042E33D00528E66 /* JsonParsingTests.swift */,
 				9F984D172042F08600B7BC7B /* DateUtilsTests.swift */,
+				E935F3C320455B8B0087638A /* NSAttributedStringExtensionsTests.swift */,
 				9FFAF9ED20410338000A99FE /* Info.plist */,
 			);
 			path = ThaiTechEventsCalendarTests;
@@ -632,6 +635,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F4CD0D22042E33E00528E66 /* JsonParsingTests.swift in Sources */,
+				E935F3C420455B8B0087638A /* NSAttributedStringExtensionsTests.swift in Sources */,
 				9FFAF9EC20410338000A99FE /* ThaiTechEventsCalendarTests.swift in Sources */,
 				9F984D182042F08600B7BC7B /* DateUtilsTests.swift in Sources */,
 			);

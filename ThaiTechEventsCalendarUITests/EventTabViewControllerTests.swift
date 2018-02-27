@@ -33,8 +33,10 @@ class EventTabViewControllerTests: XCTestCase {
         XCTAssertTrue(app.navigationBars["Upcoming events"].exists)
         let table = app.tables.firstMatch
         table.swipeLeft()
-        sleep(1)
-        XCTAssertTrue(app.navigationBars["Past events"].exists, "Past events tab should appear.")
+
+        let exists = NSPredicate(format: "exists == 1")
+        expectation(for: exists, evaluatedWith: app.navigationBars["Past events"], handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
     }
 
     func testSwipeRightFromUpComingEvents() {
@@ -42,8 +44,10 @@ class EventTabViewControllerTests: XCTestCase {
         XCTAssertTrue(app.navigationBars["Upcoming events"].exists)
         let table = app.tables.firstMatch
         table.swipeRight()
-        sleep(1)
-        XCTAssertTrue(app.navigationBars["Upcoming events"].exists, "Nothing should be changed.")
+
+        let exists = NSPredicate(format: "exists == 1")
+        expectation(for: exists, evaluatedWith: app.navigationBars["Upcoming events"], handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
     }
 
     func testSwipeRightFromPastEvents() {

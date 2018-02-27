@@ -26,8 +26,10 @@ class EventFeedViewControllerTests: XCTestCase {
         XCTAssertFalse(detailTable.exists)
 
         cell.tap()
+        let exists = NSPredicate(format: "exists == 1")
 
-        XCTAssertTrue(detailTable.exists)
+        expectation(for: exists, evaluatedWith: detailTable, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
     }
 
 }
