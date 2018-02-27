@@ -135,12 +135,7 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource 
             cell.detailLabel.text = event.time
             cell.iconImageView.image = UIImage(named: "clock")
         case 2:
-            if let location = event.location {
-                cell.detailLabel.text = location.title
-                cell.tag = 1
-                cell.detailLabel.textColor = UIColor.TTOrange()
-                cell.iconImageView.image = UIImage(named: "map-pin")
-            }
+            cell.configureLocationRow(event)
         default:
             cell.detailLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
         }

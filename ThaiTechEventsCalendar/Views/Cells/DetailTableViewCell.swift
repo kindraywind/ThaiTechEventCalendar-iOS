@@ -17,10 +17,32 @@ class DetailTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    func configureLocationRow(_ event: Event) {
+        iconImageView.image = UIImage(named: "map-pin")
+        tag = 1
+        guard  let location = event.location else {
+            return
+        }
 
-        // Configure the view for the selected state
+        let orangeAttributes: [NSAttributedStringKey: Any] = [
+            .foregroundColor: UIColor.TTOrange(),
+            .font: UIFont.systemFont(ofSize: 17.0)
+        ]
+        let title = NSAttributedString(string: location.title,
+                                       attributes: orangeAttributes)
+
+        let plainAttributes: [NSAttributedStringKey: Any] = [
+            .font: UIFont.systemFont(ofSize: 17.0)
+        ]
+
+        let detail = NSAttributedString(string: !location.detail.isEmpty ? "\n\(location.detail)" : "",
+                                        attributes: plainAttributes)
+
+        let linkAttributedString = NSMutableAttributedString()
+        linkAttributedString.append(title)
+        linkAttributedString.append(detail)
+
+        detailLabel?.attributedText = linkAttributedString
     }
 
 }
