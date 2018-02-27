@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14081.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,37 +17,21 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="q0b-y9-OzW">
-                                <rect key="frame" x="34" y="302.5" width="307.5" height="82"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="DJZ-ac-YPc">
+                                <rect key="frame" x="37.666666666666657" y="257.66666666666663" width="300" height="306.66666666666663"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="HHv-oW-qNh"/>
+                                    <constraint firstAttribute="width" secondItem="DJZ-ac-YPc" secondAttribute="height" multiplier="305:311" id="U6O-Cf-com"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="calendar">
-                                        <attributes>
-                                            <color key="NSColor" red="0.95920175313949585" green="0.69010651111602783" blue="0.16155368089675903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="24" name="SFMono-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=".thaiprogrammer.org">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99342447519302368" green="0.97329872846603394" blue="0.62842923402786255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="24" name="SFMono-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.09658507258" green="0.13656437399999999" blue="0.1781701446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.14050614833831787" green="0.16039913892745972" blue="0.18537372350692749" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="q0b-y9-OzW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qT0-03-7ZJ"/>
-                            <constraint firstItem="q0b-y9-OzW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wvk-yB-Pap"/>
+                            <constraint firstItem="DJZ-ac-YPc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0VA-lp-tuz"/>
+                            <constraint firstItem="DJZ-ac-YPc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ZaV-L7-nMz"/>
+                            <constraint firstItem="DJZ-ac-YPc" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.8" id="dh5-fC-GNn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -55,4 +41,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iTunesArtwork" width="512" height="512"/>
+    </resources>
 </document>

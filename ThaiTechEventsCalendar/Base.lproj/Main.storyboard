@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="duk-JA-k50" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1092" y="1455"/>
+            <point key="canvasLocation" x="-1028" y="1454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lPO-Zj-59s">
@@ -98,27 +98,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="4G9-Hm-dnZ">
-                                                    <rect key="frame" x="8" y="10" width="24" height="24"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="BBH-iD-CAs"/>
-                                                        <constraint firstAttribute="height" constant="24" id="iCm-FY-4Rn"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fge-MS-ge1">
-                                                    <rect key="frame" x="40" y="11" width="320" height="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fge-MS-ge1">
+                                                    <rect key="frame" x="36" y="10" width="324" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="4G9-Hm-dnZ">
+                                                    <rect key="frame" x="8" y="11" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="BBH-iD-CAs"/>
+                                                        <constraint firstAttribute="height" constant="20" id="iCm-FY-4Rn"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="fge-MS-ge1" secondAttribute="bottom" constant="9.5" id="G4S-cU-Fh1"/>
+                                                <constraint firstItem="4G9-Hm-dnZ" firstAttribute="centerY" secondItem="fAV-vb-tJo" secondAttribute="centerY" id="Blg-a3-Bx7"/>
+                                                <constraint firstAttribute="bottom" secondItem="fge-MS-ge1" secondAttribute="bottom" constant="10" id="G4S-cU-Fh1"/>
                                                 <constraint firstItem="fge-MS-ge1" firstAttribute="leading" secondItem="4G9-Hm-dnZ" secondAttribute="trailing" constant="8" id="GZu-Mx-puM"/>
                                                 <constraint firstAttribute="trailing" secondItem="fge-MS-ge1" secondAttribute="trailing" constant="15" id="LzT-J9-exI"/>
-                                                <constraint firstItem="fge-MS-ge1" firstAttribute="top" secondItem="fAV-vb-tJo" secondAttribute="top" constant="11" id="QTZ-3h-qv2"/>
+                                                <constraint firstItem="fge-MS-ge1" firstAttribute="top" secondItem="fAV-vb-tJo" secondAttribute="top" constant="10" id="QTZ-3h-qv2"/>
                                                 <constraint firstItem="4G9-Hm-dnZ" firstAttribute="leading" secondItem="fAV-vb-tJo" secondAttribute="leading" constant="8" id="d5v-Gl-a2r"/>
-                                                <constraint firstItem="4G9-Hm-dnZ" firstAttribute="top" secondItem="fAV-vb-tJo" secondAttribute="top" constant="10" id="q35-8J-iVJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
