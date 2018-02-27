@@ -5,6 +5,7 @@ PODS:
     - SwiftyJSON (~> 4.0.0)
   - AutoInsetter (1.2.1)
   - DeckTransition (2.0.0)
+  - markymark (4.0.4)
   - Pageboy (2.4.0)
   - Realm (3.0.2):
     - Realm/Headers (= 3.0.2)
@@ -22,6 +23,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.6)
   - Alamofire-SwiftyJSON
   - DeckTransition (~> 2.0)
+  - markymark
   - RealmSwift (~> 3.0.2)
   - SwiftLint (~> 0.25.0)
   - SwiftyJSON (~> 4.0.0)
@@ -33,6 +35,7 @@ SPEC CHECKSUMS:
   Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
   AutoInsetter: d90171b54341b801edd4ab68eee9eec54fdc92b7
   DeckTransition: 2300694f94fbeca2c103f365dc9dc09ffae14a4f
+  markymark: 87b1bbf9f990c88c583bab25c7cbf6754a5012c6
   Pageboy: b04cee5c1315a865fb49321129d12635e8465144
   Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
   RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
@@ -41,6 +44,6 @@ SPEC CHECKSUMS:
   Tabman: a9be97d1c75b4b7f40eec416021f614c4ccbb670
   TagListView: 669f7d4455003c877655875d34829731c4191528
 
-PODFILE CHECKSUM: fb37579a24e7e3b32c9e493ad1184965d3715287
+PODFILE CHECKSUM: d732401e39c836842b285bbc7a66da1aca7a1fcd
 
 COCOAPODS: 1.4.0

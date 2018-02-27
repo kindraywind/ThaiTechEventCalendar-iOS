@@ -49,7 +49,7 @@ extension EventTableViewCell: Updatable {
 
     func updateUIWith(_ event: Event) {
         titleLabel.text = event.title
-        summaryLabel.text = event.summary
+        summaryLabel.attributedText = NSAttributedString.from(event.summary)
 
         let start = dateFormatter.string(from: event.start)
         let startDay = weekdayFormatter.string(from: event.start)
