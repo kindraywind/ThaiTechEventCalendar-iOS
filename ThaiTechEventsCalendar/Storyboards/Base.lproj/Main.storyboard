@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lcq-jv-yKf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nVx-qX-9b9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,20 +10,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Event Tab View Controller-->
+        <!--Events-->
         <scene sceneID="snY-MW-7C9">
             <objects>
-                <viewController id="lcq-jv-yKf" customClass="EventTabViewController" customModule="ThaiTechEventsCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Events" id="lcq-jv-yKf" customClass="EventTabViewController" customModule="ThaiTechEventsCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mf8-MQ-F0y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zct-l9-FgV"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Events" image="calendar" id="814-bf-6ze"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="duk-JA-k50" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1028" y="1454"/>
+            <point key="canvasLocation" x="-1754" y="770"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yEV-7N-bqT">
+            <objects>
+                <tabBarController id="nVx-qX-9b9" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zab-Q6-03w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lcq-jv-yKf" kind="relationship" relationship="viewControllers" id="D50-Tm-OVL"/>
+                        <segue destination="qHJ-Re-czd" kind="relationship" relationship="viewControllers" id="7XK-Rw-Yog"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPi-Og-ifm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2996" y="1158"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lPO-Zj-59s">
@@ -72,10 +91,27 @@
                     <navigationItem key="navigationItem" id="31V-f7-XTh"/>
                     <connections>
                         <outlet property="feedTableView" destination="jFj-pC-CuC" id="ySz-Xp-hYU"/>
+                        <outlet property="searchDisplayController" destination="H4X-Nh-LXS" id="JD0-Qz-fcp"/>
                         <segue destination="Phq-dR-upj" kind="custom" identifier="eventDetail" customClass="DeckSegue" customModule="DeckTransition" id="DId-1n-Vks"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jqe-Yz-JKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="YvM-WM-mca">
+                    <connections>
+                        <outlet property="delegate" destination="7ef-Vb-z1V" id="xsA-6m-pqn"/>
+                        <outlet property="searchContentsController" destination="7ef-Vb-z1V" id="bMm-oJ-mjs"/>
+                        <outlet property="searchResultsDataSource" destination="7ef-Vb-z1V" id="AUm-0M-3hJ"/>
+                        <outlet property="searchResultsDelegate" destination="7ef-Vb-z1V" id="k7I-WW-XJM"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="H4X-Nh-LXS">
+                    <connections>
+                        <outlet property="delegate" destination="7ef-Vb-z1V" id="pmi-oD-J5x"/>
+                        <outlet property="searchContentsController" destination="7ef-Vb-z1V" id="OSy-aB-BYe"/>
+                        <outlet property="searchResultsDataSource" destination="7ef-Vb-z1V" id="51b-h5-dSE"/>
+                        <outlet property="searchResultsDelegate" destination="7ef-Vb-z1V" id="HIo-xP-FjW"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-258.39999999999998" y="769.56521739130437"/>
         </scene>
@@ -104,7 +140,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="4G9-Hm-dnZ">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="4G9-Hm-dnZ">
                                                     <rect key="frame" x="8" y="11" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="BBH-iD-CAs"/>
@@ -264,8 +300,18 @@
             </objects>
             <point key="canvasLocation" x="821.60000000000002" y="769.56521739130437"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="BRs-QO-w2L">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="qHJ-Re-czd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="HdJ-3Q-NmD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvX-Kb-XEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1962" y="1477"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="calendar" width="37" height="37"/>
+        <image name="calendar" width="22" height="22"/>
     </resources>
 </document>

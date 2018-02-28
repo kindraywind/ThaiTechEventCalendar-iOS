@@ -31,6 +31,8 @@
 		9F4E83BF2041255A00CFE046 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E83BE2041255A00CFE046 /* Event.swift */; };
 		9F6059702042F62A00048638 /* EventTabViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60596F2042F62A00048638 /* EventTabViewControllerTests.swift */; };
 		9F984D182042F08600B7BC7B /* DateUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F984D172042F08600B7BC7B /* DateUtilsTests.swift */; };
+		9FAA2F8520470C7B0054CCAD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2F8420470C7B0054CCAD /* SettingViewController.swift */; };
+		9FAA2F8720470CC70054CCAD /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2F8620470CC60054CCAD /* Settings.storyboard */; };
 		9FFAF9D720410338000A99FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9D620410338000A99FE /* AppDelegate.swift */; };
 		9FFAF9DC20410338000A99FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DA20410338000A99FE /* Main.storyboard */; };
 		9FFAF9DE20410338000A99FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DD20410338000A99FE /* Assets.xcassets */; };
@@ -86,6 +88,8 @@
 		9F4E83BE2041255A00CFE046 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9F60596F2042F62A00048638 /* EventTabViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTabViewControllerTests.swift; sourceTree = "<group>"; };
 		9F984D172042F08600B7BC7B /* DateUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilsTests.swift; sourceTree = "<group>"; };
+		9FAA2F8420470C7B0054CCAD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9FAA2F8620470CC60054CCAD /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		9FFAF9D320410337000A99FE /* ThaiTechEventsCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiTechEventsCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFAF9D620410338000A99FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFAF9DB20410338000A99FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				9F0BC95A20412C2600568153 /* EventFeedViewController.swift */,
 				9F4CD089204172AE00528E66 /* EventDetailViewController.swift */,
 				9F4CD09F20426B5A00528E66 /* EventTabViewController.swift */,
+				9FAA2F8420470C7B0054CCAD /* SettingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 		9F37F6852045B34300BC26CB /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				9FAA2F8620470CC60054CCAD /* Settings.storyboard */,
 				9FFAF9DA20410338000A99FE /* Main.storyboard */,
 				9FFAF9DF20410338000A99FE /* LaunchScreen.storyboard */,
 			);
@@ -418,6 +424,7 @@
 				9FFAF9DC20410338000A99FE /* Main.storyboard in Resources */,
 				9F4E83BB2041074100CFE046 /* calendar.json in Resources */,
 				9F37F6842045B33A00BC26CB /* GoogleService-Info.plist in Resources */,
+				9FAA2F8720470CC70054CCAD /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +587,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+			shellScript = "swiftlint autocorrect\n\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		C3529D69B1B119A181E46979 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -649,6 +656,7 @@
 				9F4CD08A204172AE00528E66 /* EventDetailViewController.swift in Sources */,
 				E9A7B5E3204540CD002345B7 /* NSAttributedStringExtensions.swift in Sources */,
 				9F4CD08C20417D5D00528E66 /* DetailTableViewCell.swift in Sources */,
+				9FAA2F8520470C7B0054CCAD /* SettingViewController.swift in Sources */,
 				9F4CD0A52042881A00528E66 /* CalendarAPI.swift in Sources */,
 				9F4CD08E20419D2200528E66 /* ColorUtils.swift in Sources */,
 				9F4CD09920425BE600528E66 /* Updatable.swift in Sources */,
