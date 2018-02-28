@@ -11,6 +11,8 @@
 		7AD9C244CD05C023A302FED2 /* Pods_ThaiTechEventsCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB6DBD4FAEDAEFB81B3824D /* Pods_ThaiTechEventsCalendar.framework */; };
 		9F0BC95B20412C2600568153 /* EventFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BC95A20412C2600568153 /* EventFeedViewController.swift */; };
 		9F1C8D5D20415AE10016E72E /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C8D5B2041595A0016E72E /* DateUtils.swift */; };
+		9F37F6842045B33A00BC26CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F37F6832045B33A00BC26CB /* GoogleService-Info.plist */; };
+		9F37F6882045BA0A00BC26CB /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37F6872045BA0A00BC26CB /* SnapshotHelper.swift */; };
 		9F4CD08A204172AE00528E66 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD089204172AE00528E66 /* EventDetailViewController.swift */; };
 		9F4CD08C20417D5D00528E66 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD08B20417D5D00528E66 /* DetailTableViewCell.swift */; };
 		9F4CD08E20419D2200528E66 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD08D20419D2200528E66 /* ColorUtils.swift */; };
@@ -66,6 +68,8 @@
 		9D44A6EA160339593C6DDCB4 /* Pods-ThaiTechEventsCalendarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThaiTechEventsCalendarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9F0BC95A20412C2600568153 /* EventFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFeedViewController.swift; sourceTree = "<group>"; };
 		9F1C8D5B2041595A0016E72E /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		9F37F6832045B33A00BC26CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F37F6872045BA0A00BC26CB /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		9F4CD089204172AE00528E66 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		9F4CD08B20417D5D00528E66 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		9F4CD08D20419D2200528E66 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
@@ -183,6 +187,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		9F37F6852045B34300BC26CB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAF9DA20410338000A99FE /* Main.storyboard */,
+				9FFAF9DF20410338000A99FE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		9F4CD09720425BD300528E66 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +246,7 @@
 		9FFAF9D520410337000A99FE /* ThaiTechEventsCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				9F37F6852045B34300BC26CB /* Storyboards */,
 				9F4CD0A3204284A100528E66 /* Networks */,
 				9F4CD09720425BD300528E66 /* Protocols */,
 				9F1C8D5A204159460016E72E /* Utils */,
@@ -240,9 +254,8 @@
 				9F0BC95920412C0F00568153 /* ViewControllers */,
 				9F4E83BD2041087900CFE046 /* Models */,
 				9FFAF9D620410338000A99FE /* AppDelegate.swift */,
-				9FFAF9DA20410338000A99FE /* Main.storyboard */,
 				9FFAF9DD20410338000A99FE /* Assets.xcassets */,
-				9FFAF9DF20410338000A99FE /* LaunchScreen.storyboard */,
+				9F37F6832045B33A00BC26CB /* GoogleService-Info.plist */,
 				9FFAF9E220410338000A99FE /* Info.plist */,
 			);
 			path = ThaiTechEventsCalendar;
@@ -266,6 +279,7 @@
 				9FFAF9F620410338000A99FE /* EventFeedViewControllerTests.swift */,
 				9F60596F2042F62A00048638 /* EventTabViewControllerTests.swift */,
 				9FFAF9F820410338000A99FE /* Info.plist */,
+				9F37F6872045BA0A00BC26CB /* SnapshotHelper.swift */,
 			);
 			path = ThaiTechEventsCalendarUITests;
 			sourceTree = "<group>";
@@ -289,6 +303,7 @@
 			buildPhases = (
 				701D202689BF42374174EC55 /* [CP] Check Pods Manifest.lock */,
 				9FB86CC3204126120090803F /* SwiftLint */,
+				9F37F6862045B47400BC26CB /* FabricRun */,
 				9FFAF9CF20410337000A99FE /* Sources */,
 				9FFAF9D020410337000A99FE /* Frameworks */,
 				9FFAF9D120410337000A99FE /* Resources */,
@@ -402,6 +417,7 @@
 				9FFAF9DE20410338000A99FE /* Assets.xcassets in Resources */,
 				9FFAF9DC20410338000A99FE /* Main.storyboard in Resources */,
 				9F4E83BB2041074100CFE046 /* calendar.json in Resources */,
+				9F37F6842045B33A00BC26CB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +554,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9F37F6862045B47400BC26CB /* FabricRun */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = FabricRun;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
+		};
 		9FB86CC3204126120090803F /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -563,6 +593,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/AutoInsetter/AutoInsetter.framework",
 				"${BUILT_PRODUCTS_DIR}/DeckTransition/DeckTransition.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -570,6 +601,7 @@
 				"${BUILT_PRODUCTS_DIR}/Tabman/Tabman.framework",
 				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
 				"${BUILT_PRODUCTS_DIR}/markymark/markymark.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -577,6 +609,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AutoInsetter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeckTransition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -584,6 +617,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tabman.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/markymark.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -647,6 +681,7 @@
 			files = (
 				9FFAF9F720410338000A99FE /* EventFeedViewControllerTests.swift in Sources */,
 				9F6059702042F62A00048638 /* EventTabViewControllerTests.swift in Sources */,
+				9F37F6882045BA0A00BC26CB /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

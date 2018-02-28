@@ -19,6 +19,7 @@ class EventFeedViewControllerTests: XCTestCase {
 
     func testTapEventCell() {
         let app = XCUIApplication()
+        setupSnapshot(app)
         let cell = app.tables.firstMatch.cells.firstMatch
         let detailTable = app.tables["detailTableView"]
 
@@ -30,6 +31,7 @@ class EventFeedViewControllerTests: XCTestCase {
 
         expectation(for: exists, evaluatedWith: detailTable, handler: nil)
         waitForExpectations(timeout: 5, handler: nil)
+        snapshot("detail_screen_01")
     }
 
 }
