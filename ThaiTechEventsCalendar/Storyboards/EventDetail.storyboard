@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14081.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -163,6 +164,9 @@
                                                     <state key="normal" image="share">
                                                         <color key="titleColor" red="0.9568462968" green="0.57094234229999996" blue="0.0061058429999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="tapShareButton:" destination="ugE-W1-U2a" eventType="touchUpInside" id="03d-25-fRu"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

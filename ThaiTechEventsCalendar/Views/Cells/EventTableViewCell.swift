@@ -36,13 +36,6 @@ class EventTableViewCell: UITableViewCell {
         weekdayFormatter.dateFormat = "E"
         weekdayFormatter.timeZone = TimeZone(abbreviation: "GMT+7")
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
 
 extension EventTableViewCell: Updatable {

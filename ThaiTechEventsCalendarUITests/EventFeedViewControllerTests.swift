@@ -22,7 +22,7 @@ class EventFeedViewControllerTests: XCTestCase {
         setupSnapshot(app)
         let cell = app.tables.firstMatch.cells.firstMatch
         let detailTable = app.tables["detailTableView"]
-
+        sleep(1)
         XCTAssertTrue(cell.exists)
         XCTAssertFalse(detailTable.exists)
 
