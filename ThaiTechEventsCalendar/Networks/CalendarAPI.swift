@@ -12,15 +12,19 @@ import SwiftyJSON
 import Alamofire_SwiftyJSON
 import Alamofire
 
+struct TTConstant {
+    static let baseAPIURL = "https://thaiprogrammer-tech-events-calendar.spacet.me"
+    static let baseURL = "https://calendar.thaiprogrammer.org/event/"
+}
+
 struct CalendarAPI {
-    let baseURL = "https://thaiprogrammer-tech-events-calendar.spacet.me"
 
     func fetchCalendarFromNetwork() {
         guard let realm = try? Realm() else {
             return
         }
 
-        Alamofire.request(baseURL+"/calendar.json").responseSwiftyJSON { dataResponse in
+        Alamofire.request(TTConstant.baseAPIURL+"/calendar.json").responseSwiftyJSON { dataResponse in
             if dataResponse.error != nil {
                 return
             }
