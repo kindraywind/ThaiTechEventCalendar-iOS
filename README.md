@@ -4,21 +4,13 @@
 
 iOS Application for [Thai Tech events calendar](https://github.com/ThaiProgrammer/tech-events-calendar)
 
-## TODOS:
-- [x] Functional app
-- [x] Add UnitTests and UITests
-- [x] Using fastlane for building application
-- [x] CI
-- [ ] Push notification
-
-
 ![](https://raw.githubusercontent.com/kindraywind/ThaiTechEventCalendar-iOS/master/screenshots/ss1.png)
 
 ## Development
 - Git clone this repository
 - run `pod install`. We use [Cocoapods](http://cocoapods.org) to manage third-party native dependencies.
 - We also use Xcode's default 4 space indentation and [swiftlint](https://github.com/realm/SwiftLint).
-- [WIP][fastlane](https://fastlane.tools)
+- [fastlane](https://fastlane.tools) for deployment
 
 ## Contributing
 - Fork this project, make a change, open a pull request, simple!
