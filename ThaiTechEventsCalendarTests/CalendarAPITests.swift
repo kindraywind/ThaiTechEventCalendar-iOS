@@ -13,7 +13,7 @@ import RealmSwift
 
 @testable import ThaiTechEventsCalendar
 
-class JsonParsingTests: XCTestCase {
+class CalendarAPITests: XCTestCase {
 
     private func populate() {
         guard let path = Bundle.main.path(forResource: "calendar", ofType: "json"),
@@ -82,6 +82,24 @@ class JsonParsingTests: XCTestCase {
         XCTAssertEqual(realm.objects(Event.self).count, 28, "The event count should be still 28")
         XCTAssertEqual(realm.objects(Link.self).count, 45)
         XCTAssertEqual(realm.objects(Location.self).count, 23)
+    }
+
+    func testGetEventOnThatDate() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        var dateComponents = DateComponents()
+        dateComponents.year = 2018
+        dateComponents.month = 2
+        dateComponents.day = 22
+        dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
+        let userCalendar = Calendar.current
+        let eightMarch = userCalendar.date(from: dateComponents)
+        let events = CalendarAPI().events(on: eightMarch!)
+        XCTAssertEqual(events?.count, 2)
     }
 
     func testPerformanceExample() {

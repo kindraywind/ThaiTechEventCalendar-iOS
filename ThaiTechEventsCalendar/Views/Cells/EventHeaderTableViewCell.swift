@@ -25,18 +25,16 @@ class EventHeaderTableViewCell: UITableViewCell {
         guard let event = event else {
             return
         }
-        let baseUrl = "https://calendar.thaiprogrammer.org/event/"
+        let baseUrl = TTConstant.baseURL
         let link = baseUrl + event.eventId
         let eventTitle = event.title
 
         let activityViewController: UIActivityViewController = UIActivityViewController(
             activityItems: [eventTitle, link], applicationActivities: nil)
 
-        // This lines is for the popover you need to show in iPad
+        // iPad stuff
         activityViewController.popoverPresentationController?.sourceView = sender
-
-        // This line remove the arrow of the popover to show in iPad
-        activityViewController.popoverPresentationController?.permittedArrowDirections = .down
+ activityViewController.popoverPresentationController?.permittedArrowDirections = .down
         activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
 
         rootVC?.present(activityViewController, animated: true, completion: nil)
