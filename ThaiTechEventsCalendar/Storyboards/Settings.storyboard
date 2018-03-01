@@ -43,7 +43,7 @@
                         <viewLayoutGuide key="safeArea" id="zAA-FN-qiP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="i7p-kG-SRZ"/>
-                    <navigationItem key="navigationItem" id="QYI-ni-xf5"/>
+                    <navigationItem key="navigationItem" title="Settings" id="QYI-ni-xf5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EE4-uE-ccv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

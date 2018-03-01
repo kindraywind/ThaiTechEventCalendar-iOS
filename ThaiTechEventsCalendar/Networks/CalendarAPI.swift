@@ -38,6 +38,10 @@ struct CalendarAPI {
         }
     }
 
+}
+
+extension CalendarAPI {
+    // MARK: - Events filter (refactorable)
     func events(on date: Date) -> Results<Event>? {
         guard let realm = try? Realm() else {
             return nil

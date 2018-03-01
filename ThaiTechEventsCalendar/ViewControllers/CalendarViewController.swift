@@ -17,6 +17,7 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     private let nib = UINib(nibName: "EventTableViewCell", bundle: nil)
     private var currentCalendar: Calendar?
+    private var cachedDots = Array(repeating: 0, count: 32)
     var events: Results<Event>?
 
     override func awakeFromNib() {
@@ -51,6 +52,13 @@ class CalendarViewController: UIViewController {
 
 }
 
+extension CalendarViewController: AppearanceDelegate {
+    func dotMarker(colorOnDayView dayView: DayView) -> [UIColor] {
+        let count = min(3, cachedDots[dayView.date.day])
+        return Array(repeating: UIColor.TTOrange(), count: count)
+    }
+}
+
 extension CalendarViewController: CVCalendarViewDelegate {
     func presentationMode() -> CalendarMode {
         return .monthView
@@ -59,6 +67,7 @@ extension CalendarViewController: CVCalendarViewDelegate {
     func firstWeekday() -> Weekday {
         return .sunday
     }
+
     func didSelectDayView(_ dayView: DayView, animationDidFinish: Bool) {
         guard let today = dayView.date.convertedDate() else {
             return
@@ -66,8 +75,15 @@ extension CalendarViewController: CVCalendarViewDelegate {
         events = CalendarAPI().events(on: today)
         tableView?.reloadData()
     }
-    func shouldShowWeekdaysOut() -> Bool {
-        return true
+
+    func dotMarker(shouldShowOnDayView dayView: DayView) -> Bool {
+        guard let date = dayView.date.convertedDate() else {
+            return false
+        }
+        let count = CalendarAPI().events(on: date)?.count ?? 0
+        cachedDots[dayView.date.day] = count
+        print("\(dayView.date.day) | events: \(count)")
+        return count > 0
     }
 }
 
@@ -80,8 +96,7 @@ extension CalendarViewController: CVCalendarMenuViewDelegate {
 
 extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(events?.count ?? 0)
-        return events?.count ?? 0
+        return (events?.count) ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
