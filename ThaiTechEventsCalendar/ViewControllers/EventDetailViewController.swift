@@ -85,6 +85,7 @@ extension EventDetailViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == SectionType.date.rawValue {
             let header = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! EventHeaderTableViewCell
+            header.rootVC = self
             header.updateUIWith(event)
             return header
         }

@@ -1,23 +1,22 @@
 //
-//  ThaiTechEventsCalendarUITests.swift
+//  EventDetailViewControllerTests.swift
 //  ThaiTechEventsCalendarUITests
 //
-//  Created by Woramet Muangsiri on 2/24/18.
+//  Created by Woramet Muangsiri on 3/1/18.
 //  Copyright © 2018 WM. All rights reserved.
 //
 
 import XCTest
 
-class EventFeedViewControllerTests: XCTestCase {
+class EventDetailViewControllerTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-
         continueAfterFailure = false
         XCUIApplication().launch()
     }
 
-    func testTapEventCell() {
+    func testTapEventCellShare() {
         let app = XCUIApplication()
         setupSnapshot(app)
         let cell = app.tables.firstMatch.cells.firstMatch
@@ -31,7 +30,13 @@ class EventFeedViewControllerTests: XCTestCase {
 
         expectation(for: exists, evaluatedWith: detailTable, handler: nil)
         waitForExpectations(timeout: 5, handler: nil)
-        snapshot("detail_screen_01")
+
+        let shareButton = app.buttons["share"]
+        shareButton.tap()
+        let activityListView = app.otherElements["ActivityListView"]
+        expectation(for: exists, evaluatedWith: activityListView, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
+
     }
 
 }
