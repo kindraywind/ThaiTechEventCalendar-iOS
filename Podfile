@@ -14,6 +14,7 @@ def shared_pods
   pod 'Firebase/Core'
   pod 'Fabric', '~> 1.7.3'
   pod 'Crashlytics', '~> 3.10.0'
+  pod 'CVCalendar', '~> 1.6.1'
 end
 
 target 'ThaiTechEventsCalendar' do

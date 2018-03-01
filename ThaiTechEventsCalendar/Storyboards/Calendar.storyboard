@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VSd-vl-tac">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wKK-g0-JPy">
+            <objects>
+                <navigationController id="VSd-vl-tac" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LUY-qJ-sOU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gHw-RN-aXR" kind="relationship" relationship="rootViewController" id="ssX-ac-UrR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZd-dw-Y4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2606" y="1421"/>
+        </scene>
+        <!--Animator Delegate-->
+        <scene sceneID="Bvq-Gl-tpn">
+            <objects>
+                <viewController title="Calendar" id="gHw-RN-aXR" customClass="CalendarViewController" customModule="ThaiTechEventsCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CRt-AP-3h1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0O1-cG-0y3" customClass="CVCalendarView" customModule="CVCalendar">
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="animatorDelegate" destination="gHw-RN-aXR" id="tQI-r0-0gL"/>
+                                    <outlet property="calendarAppearanceDelegate" destination="gHw-RN-aXR" id="uWC-wm-3dv"/>
+                                    <outlet property="calendarDelegate" destination="gHw-RN-aXR" id="717-I6-q8r"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6t-2k-ceT" customClass="CVCalendarMenuView" customModule="CVCalendar">
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JXw-1H-dqV"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="menuViewDelegate" destination="gHw-RN-aXR" id="TEq-T5-k8r"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0O1-cG-0y3" firstAttribute="top" secondItem="N6t-2k-ceT" secondAttribute="bottom" id="2zG-a0-yco"/>
+                            <constraint firstItem="0O1-cG-0y3" firstAttribute="bottom" secondItem="3CI-AS-mIc" secondAttribute="bottom" id="4Fa-NH-wt7"/>
+                            <constraint firstItem="N6t-2k-ceT" firstAttribute="leading" secondItem="0O1-cG-0y3" secondAttribute="leading" id="6Me-mI-mzh"/>
+                            <constraint firstItem="N6t-2k-ceT" firstAttribute="top" secondItem="3CI-AS-mIc" secondAttribute="top" id="9Re-D9-voT"/>
+                            <constraint firstItem="N6t-2k-ceT" firstAttribute="leading" secondItem="CRt-AP-3h1" secondAttribute="leading" id="Gbx-ve-Urv"/>
+                            <constraint firstAttribute="trailing" secondItem="N6t-2k-ceT" secondAttribute="trailing" id="Jgt-kf-DTr"/>
+                            <constraint firstItem="N6t-2k-ceT" firstAttribute="trailing" secondItem="0O1-cG-0y3" secondAttribute="trailing" id="lqL-Fd-UbT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3CI-AS-mIc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" id="6Vj-V5-j7i"/>
+                    <navigationItem key="navigationItem" id="vtc-gL-lVb"/>
+                    <connections>
+                        <outlet property="calendarMenuView" destination="N6t-2k-ceT" id="y5g-5L-dA7"/>
+                        <outlet property="calendarView" destination="0O1-cG-0y3" id="7Gc-Fb-5Vx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vEr-Pl-Y5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1743.2" y="1420.8395802098951"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" width="22" height="22"/>
+    </resources>
+</document>

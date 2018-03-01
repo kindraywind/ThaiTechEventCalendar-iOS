@@ -13,6 +13,8 @@
 		9F1C8D5D20415AE10016E72E /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C8D5B2041595A0016E72E /* DateUtils.swift */; };
 		9F37F6842045B33A00BC26CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F37F6832045B33A00BC26CB /* GoogleService-Info.plist */; };
 		9F37F6882045BA0A00BC26CB /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37F6872045BA0A00BC26CB /* SnapshotHelper.swift */; };
+		9F41E9022047ECF700F5AAD3 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F41E9012047ECF700F5AAD3 /* Calendar.storyboard */; };
+		9F41E9042047F37B00F5AAD3 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F41E9032047F37B00F5AAD3 /* CalendarViewController.swift */; };
 		9F4CD08A204172AE00528E66 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD089204172AE00528E66 /* EventDetailViewController.swift */; };
 		9F4CD08C20417D5D00528E66 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD08B20417D5D00528E66 /* DetailTableViewCell.swift */; };
 		9F4CD08E20419D2200528E66 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD08D20419D2200528E66 /* ColorUtils.swift */; };
@@ -74,6 +76,8 @@
 		9F1C8D5B2041595A0016E72E /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		9F37F6832045B33A00BC26CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F37F6872045BA0A00BC26CB /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		9F41E9012047ECF700F5AAD3 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		9F41E9032047F37B00F5AAD3 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		9F4CD089204172AE00528E66 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		9F4CD08B20417D5D00528E66 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		9F4CD08D20419D2200528E66 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 				9F4CD089204172AE00528E66 /* EventDetailViewController.swift */,
 				9F4CD09F20426B5A00528E66 /* EventTabViewController.swift */,
 				9FAA2F8420470C7B0054CCAD /* SettingViewController.swift */,
+				9F41E9032047F37B00F5AAD3 /* CalendarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 		9F37F6852045B34300BC26CB /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				9F41E9012047ECF700F5AAD3 /* Calendar.storyboard */,
 				9FF541CF2047D45700659A0B /* EventDetail.storyboard */,
 				9FAA2F8620470CC60054CCAD /* Settings.storyboard */,
 				9FFAF9DA20410338000A99FE /* Main.storyboard */,
@@ -424,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F41E9022047ECF700F5AAD3 /* Calendar.storyboard in Resources */,
 				9F4CD0942041B52000528E66 /* EventTableViewCell.xib in Resources */,
 				9FFAF9E120410338000A99FE /* LaunchScreen.storyboard in Resources */,
 				9FF541D02047D45800659A0B /* EventDetail.storyboard in Resources */,
@@ -606,6 +613,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/AutoInsetter/AutoInsetter.framework",
+				"${BUILT_PRODUCTS_DIR}/CVCalendar/CVCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/DeckTransition/DeckTransition.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
@@ -622,6 +630,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AutoInsetter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CVCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeckTransition.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
@@ -662,6 +671,7 @@
 			files = (
 				9F4CD08A204172AE00528E66 /* EventDetailViewController.swift in Sources */,
 				E9A7B5E3204540CD002345B7 /* NSAttributedStringExtensions.swift in Sources */,
+				9F41E9042047F37B00F5AAD3 /* CalendarViewController.swift in Sources */,
 				9F4CD08C20417D5D00528E66 /* DetailTableViewCell.swift in Sources */,
 				9FAA2F8520470C7B0054CCAD /* SettingViewController.swift in Sources */,
 				9F4CD0A52042881A00528E66 /* CalendarAPI.swift in Sources */,
