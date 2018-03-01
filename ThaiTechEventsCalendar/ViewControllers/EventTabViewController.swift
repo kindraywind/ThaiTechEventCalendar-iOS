@@ -37,8 +37,8 @@ class EventTabViewController: TabmanViewController {
         let pastEventNavVC = storyboard.instantiateViewController(withIdentifier: "eventDetailNav") as? UINavigationController,
         let upcomingVC = upcomingEventNavVC.viewControllers.first as? EventFeedViewController,
         let pastEventVC = pastEventNavVC.viewControllers.first as? EventFeedViewController,
-        let upcomingEvents = upcomingEvents(),
-        let pastEvents = pastEvents() else {
+        let upcomingEvents = CalendarAPI().upcomingEvents(),
+        let pastEvents = CalendarAPI().pastEvents() else {
             return
         }
 
@@ -49,28 +49,6 @@ class EventTabViewController: TabmanViewController {
     viewControllers.append(upcomingEventNavVC)
     viewControllers.append(pastEventNavVC)
     self.dataSource = self
-    }
-
-    private func upcomingEvents() -> Results<Event>? {
-        guard let realm = try? Realm() else {
-            return nil
-        }
-        let upcomingPredicate = NSPredicate(format: "start >= %@", Date() as NSDate)
-        return realm
-            .objects(Event.self)
-            .filter(upcomingPredicate)
-            .sorted(byKeyPath: "start", ascending: true)
-    }
-
-    private func pastEvents() -> Results<Event>? {
-        guard let realm = try? Realm() else {
-            return nil
-        }
-        let pastPredicate = NSPredicate(format: "start < %@", Date() as NSDate)
-        return realm
-            .objects(Event.self)
-            .filter(pastPredicate)
-            .sorted(byKeyPath: "start", ascending: true)
     }
 
     override func didReceiveMemoryWarning() {

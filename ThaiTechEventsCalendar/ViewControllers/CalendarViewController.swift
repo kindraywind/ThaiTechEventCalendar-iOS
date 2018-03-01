@@ -17,7 +17,7 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     private let nib = UINib(nibName: "EventTableViewCell", bundle: nil)
     private var currentCalendar: Calendar?
-    let events = try! Realm().objects(Event.self)
+    var events: Results<Event>?
 
     override func awakeFromNib() {
         let timeZoneBias = 420 // (Bangkok UTC+07:00)
@@ -60,7 +60,11 @@ extension CalendarViewController: CVCalendarViewDelegate {
         return .sunday
     }
     func didSelectDayView(_ dayView: DayView, animationDidFinish: Bool) {
-        print(dayView.date.day)
+        guard let today = dayView.date.convertedDate() else {
+            return
+        }
+        events = CalendarAPI().events(on: today)
+        tableView?.reloadData()
     }
     func shouldShowWeekdaysOut() -> Bool {
         return true
@@ -76,12 +80,15 @@ extension CalendarViewController: CVCalendarMenuViewDelegate {
 
 extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return events.count
+        print(events?.count ?? 0)
+        return events?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as! EventTableViewCell
-        let event = events[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as? EventTableViewCell,
+            let event = events?[indexPath.row] else {
+            return UITableViewCell(style: .default, reuseIdentifier: "EventTableViewCell")
+        }
         cell.updateUIWith(event)
         return cell
     }
@@ -91,9 +98,10 @@ extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = tableView.indexPathForSelectedRow {
+        if let indexPath = tableView.indexPathForSelectedRow,
+            let event = events?[indexPath.row] {
             let dest = segue.destination as! EventDetailViewController
-            dest.event = events[(indexPath.row)]
+            dest.event = event
             dest.modalPresentationCapturesStatusBarAppearance = true
         }
 
