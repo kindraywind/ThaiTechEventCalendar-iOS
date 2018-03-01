@@ -95,29 +95,20 @@
                     <navigationItem key="navigationItem" id="31V-f7-XTh"/>
                     <connections>
                         <outlet property="feedTableView" destination="jFj-pC-CuC" id="ySz-Xp-hYU"/>
-                        <outlet property="searchDisplayController" destination="H4X-Nh-LXS" id="JD0-Qz-fcp"/>
-                        <segue destination="hV7-5e-n5M" kind="custom" identifier="eventDetail" customClass="DeckSegue" customModule="DeckTransition" id="DId-1n-Vks"/>
+                        <segue destination="eHf-jy-mbl" kind="custom" identifier="eventDetail" customClass="DeckSegue" customModule="DeckTransition" id="Y39-nN-maW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jqe-Yz-JKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="YvM-WM-mca">
-                    <connections>
-                        <outlet property="delegate" destination="7ef-Vb-z1V" id="xsA-6m-pqn"/>
-                        <outlet property="searchContentsController" destination="7ef-Vb-z1V" id="bMm-oJ-mjs"/>
-                        <outlet property="searchResultsDataSource" destination="7ef-Vb-z1V" id="AUm-0M-3hJ"/>
-                        <outlet property="searchResultsDelegate" destination="7ef-Vb-z1V" id="k7I-WW-XJM"/>
-                    </connections>
-                </searchDisplayController>
-                <searchDisplayController id="H4X-Nh-LXS">
-                    <connections>
-                        <outlet property="delegate" destination="7ef-Vb-z1V" id="pmi-oD-J5x"/>
-                        <outlet property="searchContentsController" destination="7ef-Vb-z1V" id="OSy-aB-BYe"/>
-                        <outlet property="searchResultsDataSource" destination="7ef-Vb-z1V" id="51b-h5-dSE"/>
-                        <outlet property="searchResultsDelegate" destination="7ef-Vb-z1V" id="HIo-xP-FjW"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-258.39999999999998" y="769.56521739130437"/>
+        </scene>
+        <!--EventDetail-->
+        <scene sceneID="C4Z-ux-TzN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EventDetail" id="eHf-jy-mbl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4KP-y2-2KD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421" y="769"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="Bvq-Gl-tpn">
@@ -143,15 +134,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lvX-Kb-XEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1988" y="1809"/>
-        </scene>
-        <!--detailVC-->
-        <scene sceneID="UK6-7X-c22">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="detailVC" storyboardName="EventDetail" referencedIdentifier="detailVC" id="hV7-5e-n5M" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TsJ-G7-ux1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="821.60000000000002" y="769.56521739130437"/>
+            <point key="canvasLocation" x="-1743" y="1917"/>
         </scene>
     </scenes>
     <resources>

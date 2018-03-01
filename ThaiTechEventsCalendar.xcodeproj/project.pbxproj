@@ -33,7 +33,8 @@
 		9F984D182042F08600B7BC7B /* DateUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F984D172042F08600B7BC7B /* DateUtilsTests.swift */; };
 		9FAA2F8520470C7B0054CCAD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2F8420470C7B0054CCAD /* SettingViewController.swift */; };
 		9FAA2F8720470CC70054CCAD /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2F8620470CC60054CCAD /* Settings.storyboard */; };
-		9FAA2F8B2047130C0054CCAD /* EventDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2F88204712A00054CCAD /* EventDetail.storyboard */; };
+		9FAA2F8D2047C1580054CCAD /* EventDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2F8C2047C1580054CCAD /* EventDetailViewControllerTests.swift */; };
+		9FF541D02047D45800659A0B /* EventDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF541CF2047D45700659A0B /* EventDetail.storyboard */; };
 		9FFAF9D720410338000A99FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9D620410338000A99FE /* AppDelegate.swift */; };
 		9FFAF9DC20410338000A99FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DA20410338000A99FE /* Main.storyboard */; };
 		9FFAF9DE20410338000A99FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DD20410338000A99FE /* Assets.xcassets */; };
@@ -91,7 +92,8 @@
 		9F984D172042F08600B7BC7B /* DateUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilsTests.swift; sourceTree = "<group>"; };
 		9FAA2F8420470C7B0054CCAD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		9FAA2F8620470CC60054CCAD /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		9FAA2F88204712A00054CCAD /* EventDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = EventDetail.storyboard; path = /Users/woramet/Documents/myProj/ThaiTechEventsCalendar/ThaiTechEventsCalendar/Storyboards/EventDetail.storyboard; sourceTree = "<absolute>"; };
+		9FAA2F8C2047C1580054CCAD /* EventDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		9FF541CF2047D45700659A0B /* EventDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EventDetail.storyboard; sourceTree = "<group>"; };
 		9FFAF9D320410337000A99FE /* ThaiTechEventsCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiTechEventsCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFAF9D620410338000A99FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFAF9DB20410338000A99FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -197,7 +199,7 @@
 		9F37F6852045B34300BC26CB /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				9FAA2F88204712A00054CCAD /* EventDetail.storyboard */,
+				9FF541CF2047D45700659A0B /* EventDetail.storyboard */,
 				9FAA2F8620470CC60054CCAD /* Settings.storyboard */,
 				9FFAF9DA20410338000A99FE /* Main.storyboard */,
 				9FFAF9DF20410338000A99FE /* LaunchScreen.storyboard */,
@@ -289,6 +291,7 @@
 				9F60596F2042F62A00048638 /* EventTabViewControllerTests.swift */,
 				9FFAF9F820410338000A99FE /* Info.plist */,
 				9F37F6872045BA0A00BC26CB /* SnapshotHelper.swift */,
+				9FAA2F8C2047C1580054CCAD /* EventDetailViewControllerTests.swift */,
 			);
 			path = ThaiTechEventsCalendarUITests;
 			sourceTree = "<group>";
@@ -421,9 +424,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FAA2F8B2047130C0054CCAD /* EventDetail.storyboard in Resources */,
 				9F4CD0942041B52000528E66 /* EventTableViewCell.xib in Resources */,
 				9FFAF9E120410338000A99FE /* LaunchScreen.storyboard in Resources */,
+				9FF541D02047D45800659A0B /* EventDetail.storyboard in Resources */,
 				9FFAF9DE20410338000A99FE /* Assets.xcassets in Resources */,
 				9FFAF9DC20410338000A99FE /* Main.storyboard in Resources */,
 				9F4E83BB2041074100CFE046 /* calendar.json in Resources */,
@@ -693,6 +696,7 @@
 			files = (
 				9FFAF9F720410338000A99FE /* EventFeedViewControllerTests.swift in Sources */,
 				9F6059702042F62A00048638 /* EventTabViewControllerTests.swift in Sources */,
+				9FAA2F8D2047C1580054CCAD /* EventDetailViewControllerTests.swift in Sources */,
 				9F37F6882045BA0A00BC26CB /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
