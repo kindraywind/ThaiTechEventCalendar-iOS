@@ -4,11 +4,11 @@ PODS:
     - Alamofire (~> 4.5)
     - SwiftyJSON (~> 4.0.0)
   - AutoInsetter (1.2.1)
-  - Crashlytics (3.10.0):
-    - Fabric (~> 1.7.3)
+  - Crashlytics (3.10.1):
+    - Fabric (~> 1.7.5)
   - CVCalendar (1.6.1)
   - DeckTransition (2.0.0)
-  - Fabric (1.7.3)
+  - Fabric (1.7.5)
   - Firebase/Core (4.9.0):
     - FirebaseAnalytics (= 4.0.9)
     - FirebaseCore (= 4.0.15)
@@ -62,10 +62,10 @@ SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
   AutoInsetter: d90171b54341b801edd4ab68eee9eec54fdc92b7
-  Crashlytics: a989ef242b66605577a425733797f810bd2725eb
+  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
   CVCalendar: 505c11b11a088b43f159806e791eba1c2540853b
   DeckTransition: 2300694f94fbeca2c103f365dc9dc09ffae14a4f
-  Fabric: bb495bb9a7a7677c6d03a1f8b83d95bc49b47e41
+  Fabric: ae7146a5f505ea370a1e44820b4b1dc8890e2890
   Firebase: 632216af3ed7f31e3be34776947fdc7546cfb572
   FirebaseAnalytics: 388b630c15713f5dbf364071f5f3d6077fb52f4e
   FirebaseCore: 3bd047463058fa6b5d312c97502c52e45401cdfb
@@ -81,6 +81,6 @@ SPEC CHECKSUMS:
   Tabman: a9be97d1c75b4b7f40eec416021f614c4ccbb670
   TagListView: 669f7d4455003c877655875d34829731c4191528
 
-PODFILE CHECKSUM: 33b67419a890000139ce023757ce6d6d80b2ee6e
+PODFILE CHECKSUM: 93c24e59580430b07490f1e15501eb29b8763ed7
 
 COCOAPODS: 1.4.0
