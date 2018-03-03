@@ -18,15 +18,17 @@ class TabbarControllerTests: XCTestCase {
 
     func testSelectTabbar() {
         let app = XCUIApplication()
+        setupSnapshot(app)
         let tabBarsQuery = XCUIApplication().tabBars
 
         let exists = NSPredicate(format: "exists == 1")
 
         tabBarsQuery.buttons["Calendar"].tap()
+        snapshot("calendar_screen_01")
 
-        tabBarsQuery.buttons["Settings"].tap()
-        expectation(for: exists, evaluatedWith: app.navigationBars["Settings"], handler: nil)
-        waitForExpectations(timeout: 5, handler: nil)
+//        tabBarsQuery.buttons["Settings"].tap()
+//        expectation(for: exists, evaluatedWith: app.navigationBars["Settings"], handler: nil)
+//        waitForExpectations(timeout: 5, handler: nil)
 
         tabBarsQuery.buttons["Events"].tap()
         expectation(for: exists, evaluatedWith: app.navigationBars["Upcoming events"], handler: nil)
