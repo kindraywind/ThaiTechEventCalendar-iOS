@@ -13,7 +13,6 @@
 		9F1C8D5D20415AE10016E72E /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C8D5B2041595A0016E72E /* DateUtils.swift */; };
 		9F37F6842045B33A00BC26CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F37F6832045B33A00BC26CB /* GoogleService-Info.plist */; };
 		9F37F6882045BA0A00BC26CB /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37F6872045BA0A00BC26CB /* SnapshotHelper.swift */; };
-		9F41E9022047ECF700F5AAD3 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F41E9012047ECF700F5AAD3 /* Calendar.storyboard */; };
 		9F41E9042047F37B00F5AAD3 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F41E9032047F37B00F5AAD3 /* CalendarViewController.swift */; };
 		9F4CD08A204172AE00528E66 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD089204172AE00528E66 /* EventDetailViewController.swift */; };
 		9F4CD08C20417D5D00528E66 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD08B20417D5D00528E66 /* DetailTableViewCell.swift */; };
@@ -37,6 +36,9 @@
 		9FAA2F8520470C7B0054CCAD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2F8420470C7B0054CCAD /* SettingViewController.swift */; };
 		9FAA2F8720470CC70054CCAD /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2F8620470CC60054CCAD /* Settings.storyboard */; };
 		9FAA2F8D2047C1580054CCAD /* EventDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2F8C2047C1580054CCAD /* EventDetailViewControllerTests.swift */; };
+		9FBE38E2204C17A00039DEDE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE38E1204C17A00039DEDE /* SearchViewController.swift */; };
+		9FBE38E4204C1B910039DEDE /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE38E3204C19D60039DEDE /* Search.storyboard */; };
+		9FBE38E5204C1DC00039DEDE /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F41E9012047ECF700F5AAD3 /* Calendar.storyboard */; };
 		9FF541D02047D45800659A0B /* EventDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF541CF2047D45700659A0B /* EventDetail.storyboard */; };
 		9FFAF9D720410338000A99FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9D620410338000A99FE /* AppDelegate.swift */; };
 		9FFAF9DC20410338000A99FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DA20410338000A99FE /* Main.storyboard */; };
@@ -99,6 +101,9 @@
 		9FAA2F8420470C7B0054CCAD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		9FAA2F8620470CC60054CCAD /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		9FAA2F8C2047C1580054CCAD /* EventDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		9FBE38E0204C15B30039DEDE /* ThaiTechEventsCalendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThaiTechEventsCalendar.entitlements; sourceTree = "<group>"; };
+		9FBE38E1204C17A00039DEDE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9FBE38E3204C19D60039DEDE /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Search.storyboard; path = /Users/woramet/Documents/myProj/ThaiTechEventsCalendar/ThaiTechEventsCalendar/Storyboards/Search.storyboard; sourceTree = "<absolute>"; };
 		9FF541CF2047D45700659A0B /* EventDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EventDetail.storyboard; sourceTree = "<group>"; };
 		9FFAF9D320410337000A99FE /* ThaiTechEventsCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiTechEventsCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFAF9D620410338000A99FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +173,7 @@
 				9F4CD09F20426B5A00528E66 /* EventTabViewController.swift */,
 				9FAA2F8420470C7B0054CCAD /* SettingViewController.swift */,
 				9F41E9032047F37B00F5AAD3 /* CalendarViewController.swift */,
+				9FBE38E1204C17A00039DEDE /* SearchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 		9F37F6852045B34300BC26CB /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				9FBE38E3204C19D60039DEDE /* Search.storyboard */,
 				9F41E9012047ECF700F5AAD3 /* Calendar.storyboard */,
 				9FF541CF2047D45700659A0B /* EventDetail.storyboard */,
 				9FAA2F8620470CC60054CCAD /* Settings.storyboard */,
@@ -265,6 +272,7 @@
 		9FFAF9D520410337000A99FE /* ThaiTechEventsCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				9FBE38E0204C15B30039DEDE /* ThaiTechEventsCalendar.entitlements */,
 				9F37F6852045B34300BC26CB /* Storyboards */,
 				9F4CD0A3204284A100528E66 /* Networks */,
 				9F4CD09720425BD300528E66 /* Protocols */,
@@ -283,11 +291,11 @@
 		9FFAF9EA20410338000A99FE /* ThaiTechEventsCalendarTests */ = {
 			isa = PBXGroup;
 			children = (
+				9FFAF9ED20410338000A99FE /* Info.plist */,
 				9FFAF9EB20410338000A99FE /* ThaiTechEventsCalendarTests.swift */,
 				9F4CD0D12042E33D00528E66 /* CalendarAPITests.swift */,
 				9F984D172042F08600B7BC7B /* DateUtilsTests.swift */,
 				E935F3C320455B8B0087638A /* NSAttributedStringExtensionsTests.swift */,
-				9FFAF9ED20410338000A99FE /* Info.plist */,
 			);
 			path = ThaiTechEventsCalendarTests;
 			sourceTree = "<group>";
@@ -295,9 +303,9 @@
 		9FFAF9F520410338000A99FE /* ThaiTechEventsCalendarUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9FFAF9F820410338000A99FE /* Info.plist */,
 				9FFAF9F620410338000A99FE /* EventFeedViewControllerTests.swift */,
 				9F60596F2042F62A00048638 /* EventTabViewControllerTests.swift */,
-				9FFAF9F820410338000A99FE /* Info.plist */,
 				9F37F6872045BA0A00BC26CB /* SnapshotHelper.swift */,
 				9FAA2F8C2047C1580054CCAD /* EventDetailViewControllerTests.swift */,
 				9F5DBCDA20483C8200D85E62 /* TabbarControllerTests.swift */,
@@ -395,6 +403,11 @@
 					9FFAF9D220410337000A99FE = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 0;
+							};
+						};
 					};
 					9FFAF9E620410338000A99FE = {
 						CreatedOnToolsVersion = 9.2;
@@ -433,7 +446,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F41E9022047ECF700F5AAD3 /* Calendar.storyboard in Resources */,
+				9FBE38E5204C1DC00039DEDE /* Calendar.storyboard in Resources */,
+				9FBE38E4204C1B910039DEDE /* Search.storyboard in Resources */,
 				9F4CD0942041B52000528E66 /* EventTableViewCell.xib in Resources */,
 				9FFAF9E120410338000A99FE /* LaunchScreen.storyboard in Resources */,
 				9FF541D02047D45800659A0B /* EventDetail.storyboard in Resources */,
@@ -684,6 +698,7 @@
 				9F0BC95B20412C2600568153 /* EventFeedViewController.swift in Sources */,
 				9F4CD0962042563100528E66 /* EventHeaderTableViewCell.swift in Sources */,
 				9F1C8D5D20415AE10016E72E /* DateUtils.swift in Sources */,
+				9FBE38E2204C17A00039DEDE /* SearchViewController.swift in Sources */,
 				9F4E83BF2041255A00CFE046 /* Event.swift in Sources */,
 				9F4CD0932041B52000528E66 /* EventTableViewCell.swift in Sources */,
 				9FFAF9D720410338000A99FE /* AppDelegate.swift in Sources */,
