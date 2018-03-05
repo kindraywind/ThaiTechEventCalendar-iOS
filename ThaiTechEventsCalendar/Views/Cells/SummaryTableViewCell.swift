@@ -28,7 +28,7 @@ class SummaryTableViewCell: UITableViewCell {
 extension SummaryTableViewCell: Updatable {
 
     func updateUIWith(_ event: Event) {
-        summaryLabel?.attributedText = NSAttributedString.from(event.summary)
+        summaryLabel?.attributedText = NSAttributedString.from("> \(event.summary)")
 
         if event.summary.isEmpty {
             summaryLabel.isHidden = true
