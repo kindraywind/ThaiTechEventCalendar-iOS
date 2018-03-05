@@ -32,6 +32,8 @@
 		9F4E83BF2041255A00CFE046 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E83BE2041255A00CFE046 /* Event.swift */; };
 		9F5DBCDB20483C8200D85E62 /* TabbarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5DBCDA20483C8200D85E62 /* TabbarControllerTests.swift */; };
 		9F6059702042F62A00048638 /* EventTabViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60596F2042F62A00048638 /* EventTabViewControllerTests.swift */; };
+		9F6AE543204D88EF0029C6D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DD20410338000A99FE /* Assets.xcassets */; };
+		9F6AE544204D8DDB0029C6D8 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE38E3204C19D60039DEDE /* Search.storyboard */; };
 		9F855D7B204D6E6000F0C927 /* CalendarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD0A42042881A00528E66 /* CalendarAPI.swift */; };
 		9F855D7C204D6E8E00F0C927 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E83BE2041255A00CFE046 /* Event.swift */; };
 		9F984D182042F08600B7BC7B /* DateUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F984D172042F08600B7BC7B /* DateUtilsTests.swift */; };
@@ -39,7 +41,6 @@
 		9FAA2F8720470CC70054CCAD /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2F8620470CC60054CCAD /* Settings.storyboard */; };
 		9FAA2F8D2047C1580054CCAD /* EventDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2F8C2047C1580054CCAD /* EventDetailViewControllerTests.swift */; };
 		9FBE38E2204C17A00039DEDE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE38E1204C17A00039DEDE /* SearchViewController.swift */; };
-		9FBE38E4204C1B910039DEDE /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE38E3204C19D60039DEDE /* Search.storyboard */; };
 		9FBE38E5204C1DC00039DEDE /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F41E9012047ECF700F5AAD3 /* Calendar.storyboard */; };
 		9FBE38EC204D69310039DEDE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBE38EB204D69310039DEDE /* NotificationCenter.framework */; };
 		9FBE38EF204D69310039DEDE /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE38EE204D69310039DEDE /* TodayViewController.swift */; };
@@ -552,6 +553,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6AE543204D88EF0029C6D8 /* Assets.xcassets in Resources */,
 				9FBE38F2204D69310039DEDE /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,8 +562,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6AE544204D8DDB0029C6D8 /* Search.storyboard in Resources */,
 				9FBE38E5204C1DC00039DEDE /* Calendar.storyboard in Resources */,
-				9FBE38E4204C1B910039DEDE /* Search.storyboard in Resources */,
 				9F4CD0942041B52000528E66 /* EventTableViewCell.xib in Resources */,
 				9FFAF9E120410338000A99FE /* LaunchScreen.storyboard in Resources */,
 				9FF541D02047D45800659A0B /* EventDetail.storyboard in Resources */,

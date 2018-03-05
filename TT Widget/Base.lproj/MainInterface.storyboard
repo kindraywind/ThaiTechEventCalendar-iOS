@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14081.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,31 +16,93 @@
             <objects>
                 <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="TT_Widget" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weg-JA-vAu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB 27 ~ FEB 28 at 19.00 ~ 22.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="zvN-Nc-5Xa">
+                                        <rect key="frame" x="36" y="8" width="276" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="XF9-cB-CZ7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blockchain Developers new trend in 2018" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nry-Ag-WyU">
+                                        <rect key="frame" x="36" y="34.5" width="276" height="42.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42.5" id="gJb-vP-Ehk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The more popular blockchain / distributed ledger systems sharing in this event: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJ3-Nk-8iO">
+                                        <rect key="frame" x="36" y="78" width="276" height="64.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="MnV-kT-acN">
+                                        <rect key="frame" x="8" y="8" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="CLx-lv-eTq"/>
+                                            <constraint firstAttribute="width" secondItem="MnV-kT-acN" secondAttribute="height" multiplier="1:1" id="y00-A5-nh5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e85-dQ-n9x">
+                                        <rect key="frame" x="16" y="36" width="4" height="42.5"/>
+                                        <color key="backgroundColor" red="0.9568462968" green="0.57094234229999996" blue="0.0061058429999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="4" id="KKo-gV-n0H"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zvN-Nc-5Xa" secondAttribute="trailing" constant="8" id="3b0-Fh-aN8"/>
+                                    <constraint firstAttribute="trailing" secondItem="CJ3-Nk-8iO" secondAttribute="trailing" constant="8" id="46P-ue-Tfv"/>
+                                    <constraint firstItem="MnV-kT-acN" firstAttribute="leading" secondItem="weg-JA-vAu" secondAttribute="leading" constant="8" id="5ZR-gE-evw"/>
+                                    <constraint firstItem="e85-dQ-n9x" firstAttribute="height" secondItem="Nry-Ag-WyU" secondAttribute="height" id="6K3-qO-6bI"/>
+                                    <constraint firstItem="MnV-kT-acN" firstAttribute="top" secondItem="weg-JA-vAu" secondAttribute="top" constant="8" id="881-Ee-sv8"/>
+                                    <constraint firstAttribute="bottom" secondItem="CJ3-Nk-8iO" secondAttribute="bottom" constant="8" id="FjL-Jz-edu"/>
+                                    <constraint firstItem="CJ3-Nk-8iO" firstAttribute="top" secondItem="Nry-Ag-WyU" secondAttribute="bottom" constant="1" id="TQL-OK-6J4"/>
+                                    <constraint firstItem="e85-dQ-n9x" firstAttribute="leading" secondItem="weg-JA-vAu" secondAttribute="leading" constant="16" id="UYa-aC-tBz"/>
+                                    <constraint firstItem="Nry-Ag-WyU" firstAttribute="top" secondItem="zvN-Nc-5Xa" secondAttribute="bottom" constant="8" id="jJk-ij-qhi"/>
+                                    <constraint firstItem="zvN-Nc-5Xa" firstAttribute="leading" secondItem="MnV-kT-acN" secondAttribute="trailing" constant="8" id="jl5-2v-nGC"/>
+                                    <constraint firstItem="e85-dQ-n9x" firstAttribute="top" secondItem="MnV-kT-acN" secondAttribute="bottom" constant="8" id="kcf-b5-Mpn"/>
+                                    <constraint firstItem="zvN-Nc-5Xa" firstAttribute="top" secondItem="weg-JA-vAu" secondAttribute="top" constant="8" id="kj0-fz-XjH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nry-Ag-WyU" secondAttribute="trailing" constant="8" id="lgY-Sy-wKj"/>
+                                    <constraint firstItem="Nry-Ag-WyU" firstAttribute="leading" secondItem="e85-dQ-n9x" secondAttribute="trailing" constant="16" id="qVM-qh-1M0"/>
+                                    <constraint firstItem="CJ3-Nk-8iO" firstAttribute="leading" secondItem="e85-dQ-n9x" secondAttribute="trailing" constant="16" id="yG7-gp-5mT"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="GcN-lo-r42" secondAttribute="bottom" symbolic="YES" id="0Q0-KW-PJ6"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" symbolic="YES" id="6Vq-gs-PHe"/>
-                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" symbolic="YES" id="L8K-9R-egU"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" symbolic="YES" id="mYS-Cv-VNx"/>
+                            <constraint firstItem="weg-JA-vAu" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="00H-4p-ZtN"/>
+                            <constraint firstItem="weg-JA-vAu" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="MVn-aX-XbR"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="weg-JA-vAu" secondAttribute="bottom" id="cn6-1S-rUE"/>
+                            <constraint firstItem="weg-JA-vAu" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="j9w-z2-ri0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="37"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="zvN-Nc-5Xa" id="6YZ-gL-tRK"/>
+                        <outlet property="summaryLabel" destination="CJ3-Nk-8iO" id="z3u-RK-QQo"/>
+                        <outlet property="titleLabel" destination="Nry-Ag-WyU" id="kpC-Kf-NbU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.59999999999999" y="105.69715142428787"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calendar" width="22" height="22"/>
+    </resources>
 </document>
