@@ -27,6 +27,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         dateFormatter.timeZone = TimeZone(abbreviation: "GMT+7")
         weekdayFormatter.dateFormat = "E"
         weekdayFormatter.timeZone = TimeZone(abbreviation: "GMT+7")
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        view.addGestureRecognizer(tapRecognizer)
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,17 +37,18 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
 
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        print("######## wperformupdate")
         calAPI.fetchCalendarFromNetwork(success: { [weak self] in
             self?.updateUIWith(self?.getUpcomingEvent(), displayMode: .compact)
-            }, failure: nil)
+            completionHandler(NCUpdateResult.newData)
+            }, failure: {
+                completionHandler(NCUpdateResult.failed)
+        })
         // Perform any setup necessary in order to update the view.
 
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
 
-        completionHandler(NCUpdateResult.newData)
     }
 
     func getUpcomingEvent() -> Event? {
@@ -91,4 +94,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         updateUIWith(getUpcomingEvent(), displayMode: activeDisplayMode)
     }
 
+    @objc private func viewTapped() {
+        let url = URL(string: "ttevent://")!
+        extensionContext?.open(url, completionHandler: nil)
+    }
 }
