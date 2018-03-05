@@ -11,7 +11,6 @@ import RealmSwift
 import SwiftyJSON
 import Alamofire_SwiftyJSON
 import Alamofire
-import CVCalendar
 
 struct TTConstant {
     static let baseAPIURL = "https://thaiprogrammer-tech-events-calendar.spacet.me"
@@ -21,19 +20,28 @@ struct TTConstant {
 struct CalendarAPI {
 
     func fetchCalendarFromNetwork() {
+        fetchCalendarFromNetwork(success: nil, failure: nil)
+    }
+
+    func fetchCalendarFromNetwork(success: (() -> Void)?,
+                                  failure: (() -> Void)?) {
         guard let realm = try? Realm() else {
+            failure?()
             return
         }
 
         Alamofire.request(TTConstant.baseAPIURL+"/calendar.json").responseSwiftyJSON { dataResponse in
             if dataResponse.error != nil {
+                failure?()
                 return
             }
             guard let json = dataResponse.value else {
+                failure?()
                 return
             }
             try! realm.write {
                 json.arrayValue.forEach({ realm.add(Event($0), update: true) })
+                success?()
             }
         }
     }

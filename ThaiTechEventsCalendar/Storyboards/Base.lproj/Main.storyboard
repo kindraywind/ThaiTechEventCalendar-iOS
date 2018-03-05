@@ -117,7 +117,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lvX-Kb-XEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1743" y="1917"/>
+            <point key="canvasLocation" x="-3014" y="1755"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="lM3-q7-yj4">
@@ -127,7 +127,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbI-jy-0DG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1887" y="1445"/>
+            <point key="canvasLocation" x="-1985" y="1157"/>
         </scene>
     </scenes>
     <resources>

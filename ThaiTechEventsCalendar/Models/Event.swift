@@ -53,7 +53,6 @@ class Event: Object {
     private func parseTime(_ timeJson: JSON) -> String {
         var timeFrom = "\(timeJson[0]["from"]["hour"]):\(timeJson[0]["from"]["minute"])"
         var timeTo = "\(timeJson[0]["to"]["hour"]):\(timeJson[0]["to"]["minute"])"
-
         if timeJson[0]["from"]["minute"] == 0 { timeFrom += "0" }
         if timeJson[0]["to"]["minute"] == 0 { timeTo += "0" }
         if timeFrom.contains("null") { timeFrom = "" }
