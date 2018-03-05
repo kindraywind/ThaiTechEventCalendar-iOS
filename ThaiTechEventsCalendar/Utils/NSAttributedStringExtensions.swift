@@ -20,6 +20,8 @@ extension NSAttributedString {
         styling.linkStyling.textColor = UIColor.TTOrange()
         styling.paragraphStyling.baseFont = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
         styling.listStyling.baseFont = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
+        styling.quoteStyling.baseFont = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
+        styling.quoteStyling.isItalic = false
         let configuration = MarkDownToAttributedStringConverterConfiguration(styling: styling)
         let converter = MarkDownConverter(configuration: configuration)
         let str = markyMark.parseMarkDown(markdown)
