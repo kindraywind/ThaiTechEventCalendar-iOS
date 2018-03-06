@@ -26,29 +26,29 @@ class EventTabViewControllerTests: XCTestCase {
     func testUpComingFeedIsDefaultTab() {
         let app = XCUIApplication()
         setupSnapshot(app)
-        XCTAssertTrue(app.navigationBars["Upcoming events"].exists)
+        XCTAssertTrue(app.navigationBars["Upcoming Events"].exists)
         snapshot("Upcoming_screen01")
     }
 
     func testSwipeLeftFromUpcomingEvents() {
         let app = XCUIApplication()
-        XCTAssertTrue(app.navigationBars["Upcoming events"].exists)
+        XCTAssertTrue(app.navigationBars["Upcoming Events"].exists)
         let table = app.tables.firstMatch
         table.swipeLeft()
 
         let exists = NSPredicate(format: "exists == 1")
-        expectation(for: exists, evaluatedWith: app.navigationBars["Past events"], handler: nil)
+        expectation(for: exists, evaluatedWith: app.navigationBars["Past Events"], handler: nil)
         waitForExpectations(timeout: 5, handler: nil)
     }
 
     func testSwipeRightFromUpComingEvents() {
         let app = XCUIApplication()
-        XCTAssertTrue(app.navigationBars["Upcoming events"].exists)
+        XCTAssertTrue(app.navigationBars["Upcoming Events"].exists)
         let table = app.tables.firstMatch
         table.swipeRight()
 
         let exists = NSPredicate(format: "exists == 1")
-        expectation(for: exists, evaluatedWith: app.navigationBars["Upcoming events"], handler: nil)
+        expectation(for: exists, evaluatedWith: app.navigationBars["Upcoming Events"], handler: nil)
         waitForExpectations(timeout: 5, handler: nil)
     }
 
@@ -59,6 +59,6 @@ class EventTabViewControllerTests: XCTestCase {
         sleep(1)
         table.swipeRight()
         sleep(1)
-        XCTAssertTrue(app.navigationBars["Upcoming events"].exists)
+        XCTAssertTrue(app.navigationBars["Upcoming Events"].exists)
     }
 }
