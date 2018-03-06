@@ -31,7 +31,7 @@ class TabbarControllerTests: XCTestCase {
 //        waitForExpectations(timeout: 5, handler: nil)
 
         tabBarsQuery.buttons["Events"].tap()
-        expectation(for: exists, evaluatedWith: app.navigationBars["Upcoming events"], handler: nil)
+        expectation(for: exists, evaluatedWith: app.navigationBars["Upcoming Events"], handler: nil)
         waitForExpectations(timeout: 5, handler: nil)
     }
 
