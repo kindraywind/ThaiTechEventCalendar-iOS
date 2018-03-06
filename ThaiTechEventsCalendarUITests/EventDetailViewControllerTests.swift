@@ -35,7 +35,7 @@ class EventDetailViewControllerTests: XCTestCase {
         shareButton.tap()
         let activityListView = app.otherElements["ActivityListView"]
         expectation(for: exists, evaluatedWith: activityListView, handler: nil)
-        waitForExpectations(timeout: 5, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
 
     }
 

@@ -81,7 +81,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPc-VN-3I2">
-                                                    <rect key="frame" x="36" y="20" width="324" height="0.0"/>
+                                                    <rect key="frame" x="20" y="20" width="340" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.41450494527816772" green="0.45037573575973511" blue="0.49202084541320801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -100,7 +100,7 @@
                                                 <constraint firstItem="ovp-8T-fop" firstAttribute="height" secondItem="aPc-VN-3I2" secondAttribute="height" constant="8" id="ToL-8O-56q"/>
                                                 <constraint firstItem="F62-KM-iB4" firstAttribute="leading" secondItem="Vzx-9p-H8d" secondAttribute="leading" constant="15" id="UE5-tT-OJb"/>
                                                 <constraint firstAttribute="trailing" secondItem="aPc-VN-3I2" secondAttribute="trailing" constant="15" id="ZRq-pS-mc8"/>
-                                                <constraint firstItem="aPc-VN-3I2" firstAttribute="leading" secondItem="ovp-8T-fop" secondAttribute="trailing" constant="16" id="cIZ-Bn-g8H"/>
+                                                <constraint firstItem="aPc-VN-3I2" firstAttribute="leading" secondItem="ovp-8T-fop" secondAttribute="trailing" id="cIZ-Bn-g8H"/>
                                                 <constraint firstItem="aPc-VN-3I2" firstAttribute="top" secondItem="Vzx-9p-H8d" secondAttribute="top" constant="20" id="hAq-2f-rgb"/>
                                                 <constraint firstItem="ovp-8T-fop" firstAttribute="leading" secondItem="Vzx-9p-H8d" secondAttribute="leading" constant="15" id="mQT-GX-uuG"/>
                                                 <constraint firstItem="F62-KM-iB4" firstAttribute="top" secondItem="ovp-8T-fop" secondAttribute="bottom" constant="12" id="zmA-bo-JPm"/>
