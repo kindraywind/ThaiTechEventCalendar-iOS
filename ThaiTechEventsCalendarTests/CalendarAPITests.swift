@@ -84,6 +84,17 @@ class CalendarAPITests: XCTestCase {
         XCTAssertEqual(realm.objects(Location.self).count, 23)
     }
 
+    func testGetUpcomingEvents() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        XCTAssertFalse((CalendarAPI().upcomingEvents()?.isEmpty)!)
+    }
+
     func testGetEventOnThatDate() {
         guard let realm = try? Realm() else {
             XCTFail("FAIL")
@@ -96,7 +107,25 @@ class CalendarAPITests: XCTestCase {
         dateComponents.month = 2
         dateComponents.day = 22
         dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
-        let userCalendar = Calendar.current
+        let userCalendar = Calendar(identifier: .gregorian)
+        let eightMarch = userCalendar.date(from: dateComponents)
+        let events = CalendarAPI().events(on: eightMarch!)
+        XCTAssertEqual(events?.count, 2)
+    }
+
+    func testGetEventOnThatBuddhistDate() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        var dateComponents = DateComponents()
+        dateComponents.year = 2561
+        dateComponents.month = 2
+        dateComponents.day = 22
+        dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
+        let userCalendar = Calendar(identifier: .buddhist)
         let eightMarch = userCalendar.date(from: dateComponents)
         let events = CalendarAPI().events(on: eightMarch!)
         XCTAssertEqual(events?.count, 2)

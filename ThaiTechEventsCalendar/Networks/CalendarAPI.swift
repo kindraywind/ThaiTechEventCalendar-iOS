@@ -66,7 +66,8 @@ extension CalendarAPI {
         guard let realm = try? Realm() else {
             return nil
         }
-        let upcomingPredicate = NSPredicate(format: "start >= %@", Date() as NSDate)
+
+        let upcomingPredicate = NSPredicate(format: "start >= %@", Date().gregorianDate() as NSDate)
         return realm
             .objects(Event.self)
             .filter(upcomingPredicate)
@@ -77,10 +78,10 @@ extension CalendarAPI {
         guard let realm = try? Realm() else {
             return nil
         }
-        let pastPredicate = NSPredicate(format: "start < %@", Date() as NSDate)
+        let pastPredicate = NSPredicate(format: "start < %@", Date().gregorianDate() as NSDate)
         return realm
             .objects(Event.self)
             .filter(pastPredicate)
-            .sorted(byKeyPath: "start", ascending: true)
+            .sorted(byKeyPath: "start", ascending: false)
     }
 }

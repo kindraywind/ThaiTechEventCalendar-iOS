@@ -16,26 +16,14 @@ class CalendarViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     private let nib = UINib(nibName: "EventTableViewCell", bundle: nil)
-    private var currentCalendar: Calendar?
     private var cachedDots = Array(repeating: 0, count: 32)
     var events: Results<Event>?
 
-    override func awakeFromNib() {
-        let timeZoneBias = 420 // (Bangkok UTC+07:00)
-        currentCalendar = Calendar(identifier: .gregorian)
-        if let timeZone = TimeZone(secondsFromGMT: -timeZoneBias * 60) {
-            currentCalendar?.timeZone = timeZone
-        }
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let currentCalendar = currentCalendar else {
-            return
-        }
-        self.navigationItem.title = CVDate(date: Date(), calendar: currentCalendar).globalDescription
-        self.tableView.register(nib, forCellReuseIdentifier: "EventTableViewCell")
 
+        self.presentedDateUpdated(CVDate(date: Date()))
+        self.tableView.register(nib, forCellReuseIdentifier: "EventTableViewCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,7 +61,9 @@ extension CalendarViewController: CVCalendarViewDelegate {
             return
         }
         events = CalendarAPI().events(on: today)
-        tableView?.reloadData()
+        tableView?.reloadSections([0], with: .automatic)
+        tableView?.setContentOffset(CGPoint.zero, animated: false)
+
     }
 
     func dotMarker(shouldShowOnDayView dayView: DayView) -> Bool {

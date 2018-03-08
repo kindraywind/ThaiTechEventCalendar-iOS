@@ -36,3 +36,16 @@ class DateUtils {
 
     }
 }
+
+extension Date {
+    func gregorianDate() -> Date {
+        if Calendar.current.identifier != .gregorian {
+            let gCal = Calendar(identifier: .gregorian)
+            var datecom = gCal.dateComponents([.day, .month, .year, .hour, .minute, .second], from: self)
+            datecom.calendar = gCal
+            return datecom.date ?? self
+        } else {
+            return self
+        }
+    }
+}
