@@ -49,6 +49,7 @@
 		9FBE38EF204D69310039DEDE /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE38EE204D69310039DEDE /* TodayViewController.swift */; };
 		9FBE38F2204D69310039DEDE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE38F0204D69310039DEDE /* MainInterface.storyboard */; };
 		9FBE38F6204D69310039DEDE /* TT Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FBE38EA204D69310039DEDE /* TT Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9FC178D620515F32005E3B61 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C8D5B2041595A0016E72E /* DateUtils.swift */; };
 		9FFAF9D720410338000A99FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAF9D620410338000A99FE /* AppDelegate.swift */; };
 		9FFAF9DC20410338000A99FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DA20410338000A99FE /* Main.storyboard */; };
 		9FFAF9DE20410338000A99FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DD20410338000A99FE /* Assets.xcassets */; };
@@ -843,6 +844,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F855D7B204D6E6000F0C927 /* CalendarAPI.swift in Sources */,
+				9FC178D620515F32005E3B61 /* DateUtils.swift in Sources */,
 				9F855D7C204D6E8E00F0C927 /* Event.swift in Sources */,
 				9FBE38EF204D69310039DEDE /* TodayViewController.swift in Sources */,
 			);

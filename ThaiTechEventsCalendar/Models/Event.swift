@@ -69,7 +69,7 @@ class Event: Object {
         dateComponents.hour = 23
         dateComponents.minute = 59
         dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
-        let userCalendar = Calendar.current
+        let userCalendar = Calendar(identifier: .gregorian)
 
         return userCalendar.date(from: dateComponents) ?? Date()
     }
