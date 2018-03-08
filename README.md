@@ -6,7 +6,9 @@ iOS Application for [Thai Tech events calendar](https://github.com/ThaiProgramme
 
 [![app store](https://devimages-cdn.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg)](https://itunes.apple.com/th/app/thai-it-events/id1352781617?ls=1&mt=8)
 
-![](https://raw.githubusercontent.com/kindraywind/ThaiTechEventCalendar-iOS/master/screenshots/ss1.png)
+![](https://raw.githubusercontent.com/kindraywind/ThaiTechEventCalendar-iOS/master/screenshots/ss1.png)![](https://raw.githubusercontent.com/kindraywind/ThaiTechEventCalendar-iOS/master/screenshots/ss2.png)![](https://raw.githubusercontent.com/kindraywind/ThaiTechEventCalendar-iOS/master/screenshots/ss3.png)
+
+
 
 ## Development
 - Git clone this repository
