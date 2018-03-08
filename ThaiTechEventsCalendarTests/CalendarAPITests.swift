@@ -84,6 +84,17 @@ class CalendarAPITests: XCTestCase {
         XCTAssertEqual(realm.objects(Location.self).count, 23)
     }
 
+    func testGetUpcomingEvents() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        XCTAssertFalse((CalendarAPI().upcomingEvents()?.isEmpty)!)
+    }
+
     func testGetEventOnThatDate() {
         guard let realm = try? Realm() else {
             XCTFail("FAIL")
