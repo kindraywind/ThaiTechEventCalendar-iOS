@@ -61,7 +61,9 @@ extension CalendarViewController: CVCalendarViewDelegate {
             return
         }
         events = CalendarAPI().events(on: today)
-        tableView?.reloadData()
+        tableView?.reloadSections([0], with: .automatic)
+        tableView?.setContentOffset(CGPoint.zero, animated: false)
+
     }
 
     func dotMarker(shouldShowOnDayView dayView: DayView) -> Bool {
