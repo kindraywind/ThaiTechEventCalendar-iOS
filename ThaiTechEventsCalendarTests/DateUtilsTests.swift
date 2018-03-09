@@ -24,9 +24,9 @@ class DateUtilsTests: XCTestCase {
         dateComponents2.day = 22
         dateComponents2.timeZone = TimeZone(abbreviation: "GMT+7")
         let userCalendar = Calendar(identifier: .gregorian)
-        let march_31 = userCalendar.date(from: dateComponents)!
-        let april_22 = userCalendar.date(from: dateComponents2)!
-        XCTAssertEqual(DateUtils.dateString(fromDate: march_31, toDate: april_22), "March 31 (Sat) ~ April 22 (Sun)")
+        let march31 = userCalendar.date(from: dateComponents)!
+        let april22 = userCalendar.date(from: dateComponents2)!
+        XCTAssertEqual(DateUtils.dateString(fromDate: march31, toDate: april22), "March 31 (Sat) ~ April 22 (Sun)")
     }
 
     func testDateStringSingleDay() {
@@ -43,9 +43,9 @@ class DateUtilsTests: XCTestCase {
         dateComponents2.timeZone = TimeZone(abbreviation: "GMT+7")
 
         let userCalendar = Calendar(identifier: .gregorian)
-        let march_31 = userCalendar.date(from: dateComponents)!
-        let anotherMarch_31 = userCalendar.date(from: dateComponents2)!
-        XCTAssertEqual(DateUtils.dateString(fromDate: march_31, toDate: anotherMarch_31), "March 31 (Sat)")
+        let march31 = userCalendar.date(from: dateComponents)!
+        let anotherMarch31 = userCalendar.date(from: dateComponents2)!
+        XCTAssertEqual(DateUtils.dateString(fromDate: march31, toDate: anotherMarch31), "March 31 (Sat)")
     }
 
     func testParseDateFromJSONShouldNotBeNil() {

@@ -35,10 +35,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0O1-cG-0y3" customClass="CVCalendarView" customModule="CVCalendar">
-                                <rect key="frame" x="0.0" y="128" width="375" height="250"/>
+                                <rect key="frame" x="0.0" y="112" width="375" height="266"/>
                                 <color key="backgroundColor" red="0.96840542554855347" green="0.97255235910415649" blue="0.97656112909317017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="3mh-MI-ruu"/>
+                                    <constraint firstAttribute="height" constant="266" id="3mh-MI-ruu"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="animatorDelegate" destination="gHw-RN-aXR" id="tQI-r0-0gL"/>
@@ -47,10 +47,10 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6t-2k-ceT" customClass="CVCalendarMenuView" customModule="CVCalendar">
-                                <rect key="frame" x="0.0" y="88" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="24"/>
                                 <color key="backgroundColor" red="0.96840542554855347" green="0.97255235910415649" blue="0.97656112909317017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="JXw-1H-dqV"/>
+                                    <constraint firstAttribute="height" constant="24" id="JXw-1H-dqV"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="menuViewDelegate" destination="gHw-RN-aXR" id="TEq-T5-k8r"/>
