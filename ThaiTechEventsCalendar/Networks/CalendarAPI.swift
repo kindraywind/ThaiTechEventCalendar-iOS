@@ -50,38 +50,30 @@ struct CalendarAPI {
 
 extension CalendarAPI {
     // MARK: - Events filter (refactorable)
-    func events(on date: Date) -> Results<Event>? {
+    func events(that predicate: NSPredicate,ascending isAscending: Bool) -> Results<Event>? {
         guard let realm = try? Realm() else {
             return nil
         }
-        let tmr = date.addingTimeInterval(24 * 60 * 60)
-        let thatDatePredicate = NSPredicate(format: "start >= %@ AND end <= %@", date as NSDate, tmr as NSDate)
+        
         return realm
             .objects(Event.self)
-            .filter(thatDatePredicate)
-            .sorted(byKeyPath: "start", ascending: true)
+            .filter(predicate)
+            .sorted(byKeyPath: "start", ascending: isAscending)
+    }
+
+    func events(on date: Date) -> Results<Event>? {
+        let tmr = date.addingTimeInterval(24 * 60 * 60)
+        let onToday = NSPredicate(format: "start >= %@ AND end <= %@", date as NSDate, tmr as NSDate)
+        return events(that: onToday, ascending: true)
     }
 
     func upcomingEvents() -> Results<Event>? {
-        guard let realm = try? Realm() else {
-            return nil
-        }
-
-        let upcomingPredicate = NSPredicate(format: "start >= %@", Date().gregorianDate() as NSDate)
-        return realm
-            .objects(Event.self)
-            .filter(upcomingPredicate)
-            .sorted(byKeyPath: "start", ascending: true)
+        let upcoming = NSPredicate(format: "start >= %@", Date().gregorianDate() as NSDate)
+        return events(that: upcoming, ascending: true)
     }
 
     func pastEvents() -> Results<Event>? {
-        guard let realm = try? Realm() else {
-            return nil
-        }
-        let pastPredicate = NSPredicate(format: "start < %@", Date().gregorianDate() as NSDate)
-        return realm
-            .objects(Event.self)
-            .filter(pastPredicate)
-            .sorted(byKeyPath: "start", ascending: false)
+        let alreadyPassed = NSPredicate(format: "start < %@", Date().gregorianDate() as NSDate)
+        return events(that: alreadyPassed, ascending: false)
     }
 }
