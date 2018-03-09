@@ -45,6 +45,10 @@ extension CalendarViewController: AppearanceDelegate {
         let count = min(3, cachedDots[dayView.date.day])
         return Array(repeating: UIColor.TTOrange(), count: count)
     }
+
+    func dayLabelWeekdaySelectedBackgroundColor() -> UIColor {
+        return UIColor.TTOrange()
+    }
 }
 
 extension CalendarViewController: CVCalendarViewDelegate {
