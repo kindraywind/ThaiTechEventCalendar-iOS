@@ -12,14 +12,40 @@ import SwiftyJSON
 
 class DateUtilsTests: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testDateString() {
+        var dateComponents = DateComponents()
+        dateComponents.year = 2018
+        dateComponents.month = 3
+        dateComponents.day = 31
+        dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
+        var dateComponents2 = DateComponents()
+        dateComponents2.year = 2018
+        dateComponents2.month = 4
+        dateComponents2.day = 22
+        dateComponents2.timeZone = TimeZone(abbreviation: "GMT+7")
+        let userCalendar = Calendar(identifier: .gregorian)
+        let march_31 = userCalendar.date(from: dateComponents)!
+        let april_22 = userCalendar.date(from: dateComponents2)!
+        XCTAssertEqual(DateUtils.dateString(fromDate: march_31, toDate: april_22), "March 31 (Sat) ~ April 22 (Sun)")
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testDateStringSingleDay() {
+        var dateComponents = DateComponents()
+        dateComponents.year = 2018
+        dateComponents.month = 3
+        dateComponents.day = 31
+        dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
+
+        var dateComponents2 = DateComponents()
+        dateComponents2.year = 2018
+        dateComponents2.month = 3
+        dateComponents2.day = 31
+        dateComponents2.timeZone = TimeZone(abbreviation: "GMT+7")
+
+        let userCalendar = Calendar(identifier: .gregorian)
+        let march_31 = userCalendar.date(from: dateComponents)!
+        let anotherMarch_31 = userCalendar.date(from: dateComponents2)!
+        XCTAssertEqual(DateUtils.dateString(fromDate: march_31, toDate: anotherMarch_31), "March 31 (Sat)")
     }
 
     func testParseDateFromJSONShouldNotBeNil() {

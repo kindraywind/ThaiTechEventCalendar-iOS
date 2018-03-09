@@ -1134,6 +1134,7 @@
 				CODE_SIGN_ENTITLEMENTS = ThaiTechEventsCalendar/ThaiTechEventsCalendar.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = PRXSGPVD4P;
 				INFOPLIST_FILE = ThaiTechEventsCalendar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
