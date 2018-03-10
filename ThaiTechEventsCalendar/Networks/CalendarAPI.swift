@@ -79,5 +79,6 @@ extension CalendarAPI {
         return realm
             .objects(Event.self)
             .filter(contain)
+            .sorted(byKeyPath: "start", ascending: false)
     }
 }

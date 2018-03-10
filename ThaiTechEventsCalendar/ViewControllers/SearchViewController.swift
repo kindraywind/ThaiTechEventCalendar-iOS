@@ -12,58 +12,48 @@ import RealmSwift
 class SearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     let realm = try! Realm()
-    var events: Results<Event>? = try! Realm().objects(Event.self) //やばいよ、 dependency injectionの方がいいよ。
+    var events: Results<Event>? = try! Realm().objects(Event.self) //やばいよ
     let nib = UINib(nibName: "EventTableViewCell", bundle: nil)
     var isSearching = false
-    var notificationToken: NotificationToken?
 
+    lazy var searchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.placeholder = "Events"
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.obscuresBackgroundDuringPresentation = false
+        return searchController
+    }()
+
+    // MARK: - Life cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        let search = UISearchController(searchResultsController: nil)
-        search.searchResultsUpdater = self
+
         tableView.register(nib, forCellReuseIdentifier: "EventTableViewCell")
-        configureRealmNotification()
         if #available(iOS 11.0, *) {
-            self.navigationItem.searchController = search
+            navigationItem.searchController = searchController
+            navigationItem.hidesSearchBarWhenScrolling = false
         } else {
-            // Fallback on earlier versions
+            navigationItem.titleView = searchController.searchBar
         }
     }
 
-    private func configureRealmNotification() {
-        // Observe Results Notifications
-        notificationToken = events?.observe { [weak self] (changes: RealmCollectionChange) in
-            guard let tableView = self?.tableView else { return }
-            switch changes {
-            case .initial:
-                // Results are now populated and can be accessed without blocking the UI
-                tableView.reloadData()
-            case .update(_, let deletions, let insertions, let modifications):
-                // Query results have changed, so apply them to the UITableView
-                tableView.beginUpdates()
-                tableView.insertRows(at: insertions.map({ IndexPath(row: $0, section: 0) }),
-                                     with: .automatic)
-                tableView.deleteRows(at: deletions.map({ IndexPath(row: $0, section: 0)}),
-                                     with: .automatic)
-                tableView.reloadRows(at: modifications.map({ IndexPath(row: $0, section: 0) }),
-                                     with: .automatic)
-                tableView.endUpdates()
-            case .error(let error):
-                // An error occurred while opening the Realm file on the background worker thread
-                fatalError("\(error)")
-            }
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    deinit {
-        notificationToken?.invalidate()
-    }
-
+//    override func viewWillAppear(_ animated: Bool) {
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear), name: Notification.Name.UIKeyboardWillHide, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear), name: Notification.Name.UIKeyboardWillShow, object: nil)
+//    }
+//
+//    @objc func keyboardWillAppear() {
+//        //Do something here
+//    }
+//
+//    @objc func keyboardWillDisappear() {
+//        //Do something here
+//        searchController.resignFirstResponder()
+//    }
+//    deinit {
+//        NotificationCenter.default.removeObserver(self)
+//    }
 }
 
 // MARK: - TableView datasource
@@ -72,6 +62,7 @@ extension SearchViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as! EventTableViewCell
         if let event = events?[indexPath.row] {
             cell.updateUIWith(event)
+            cell.summaryLabel.text = ""
         }
         return cell
     }
@@ -84,7 +75,25 @@ extension SearchViewController: UITableViewDataSource {
 // MARK: - TableView delegate
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "eventDetail", sender: nil)
+        searchController.searchBar.resignFirstResponder()
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow,
+            let dest = segue.destination as? EventDetailViewController,
+            let event = events?[(indexPath.row)] else {
+                return
+        }
+
+            dest.event = event
+            dest.modalPresentationCapturesStatusBarAppearance = true
+    }
+}
+
+extension SearchViewController: UIScrollViewDelegate {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        searchController.searchBar.resignFirstResponder()
     }
 }
 
@@ -101,11 +110,15 @@ extension SearchViewController: UISearchResultsUpdating {
             isSearching = false
             return
         }
+        updateTableAndTitle(query)
+    }
+
+    private func updateTableAndTitle(_ query: String) {
         isSearching = true
         events = CalendarAPI().eventsFromSearch(text: query)
         tableView.reloadSections([0], with: .automatic)
-        navigationItem.prompt = "Found \(events?.count ?? 0) Results for:"
-        navigationItem.title = "\"\(query)\""
+        navigationItem.prompt = "Found \(events?.count ?? 0) Results for: \"\(query)\""
+        navigationItem.title = "Search"
     }
 
 }

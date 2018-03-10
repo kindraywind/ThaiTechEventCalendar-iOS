@@ -10,15 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search View Controller-->
+        <!--Search-->
         <scene sceneID="7bO-aR-53t">
             <objects>
-                <viewController id="CiO-Uh-aet" customClass="SearchViewController" customModule="ThaiTechEventsCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="CiO-Uh-aet" customClass="SearchViewController" customModule="ThaiTechEventsCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="86o-2W-Zex">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="idA-IV-JST">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="idA-IV-JST">
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -28,6 +28,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ti4-NW-Kh4" firstAttribute="bottom" secondItem="idA-IV-JST" secondAttribute="bottom" id="9Cp-OP-NbW"/>
                             <constraint firstItem="idA-IV-JST" firstAttribute="leading" secondItem="ti4-NW-Kh4" secondAttribute="leading" id="LTp-FC-lTp"/>
@@ -36,10 +37,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ti4-NW-Kh4"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GUN-mF-0S1"/>
+                    <navigationItem key="navigationItem" title="Search" id="GUN-mF-0S1"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="otP-FW-i10" id="rka-FK-JhV"/>
                         <outlet property="tableView" destination="idA-IV-JST" id="2m2-Gp-9Rd"/>
+                        <segue destination="iKe-o0-bc0" kind="custom" identifier="eventDetail" customClass="DeckSegue" customModule="DeckTransition" id="0TQ-sH-inh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRj-Uh-hJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -53,6 +55,14 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-1028" y="1684"/>
+        </scene>
+        <!--EventDetail-->
+        <scene sceneID="385-9F-obe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EventDetail" id="iKe-o0-bc0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZV-ht-aER" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277" y="1683"/>
         </scene>
         <!--Search-->
         <scene sceneID="Mze-zv-ht0">
