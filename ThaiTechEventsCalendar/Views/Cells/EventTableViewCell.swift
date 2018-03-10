@@ -10,6 +10,9 @@ import UIKit
 import TagListView
 
 class EventTableViewCell: UITableViewCell {
+    static let nibName = "EventTableViewCell"
+    static let identifier = "EventTableViewCell"
+    
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var weekDayLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!

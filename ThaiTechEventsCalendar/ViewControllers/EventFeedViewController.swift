@@ -17,14 +17,14 @@ class EventFeedViewController: UIViewController {
 
     let realm = try! Realm()
     var events: Results<Event>! //やばいよ、 dependency injectionの方がいいよ。
-    let nib = UINib(nibName: "EventTableViewCell", bundle: nil)
+    let nib = UINib(nibName: EventTableViewCell.nibName, bundle: nil)
     var notificationToken: NotificationToken?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print(realm.configuration.fileURL ?? "")
         configureRealmNotification()
-        feedTableView.register(nib, forCellReuseIdentifier: "EventTableViewCell")
+        feedTableView.register(nib, forCellReuseIdentifier: EventTableViewCell.identifier)
     }
 
     private func configureRealmNotification() {
@@ -69,7 +69,7 @@ extension EventFeedViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as! EventTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: EventTableViewCell.identifier, for: indexPath) as! EventTableViewCell
         let event = events[indexPath.row]
         cell.updateUIWith(event)
         return cell

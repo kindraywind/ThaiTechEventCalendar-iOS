@@ -75,10 +75,9 @@ extension CalendarAPI {
 extension CalendarAPI {
     func eventsFromSearch(text: String) -> Results<Event>? {
         guard let realm = try? Realm() else { return nil }
-        let contain = NSPredicate(format: "title CONTAINS[c] %@", text)
+        let titleContainIgnoreCase = NSPredicate(format: "title CONTAINS[c] %@", text)
         return realm
             .objects(Event.self)
-            .filter(contain)
-            .sorted(byKeyPath: "start", ascending: false)
+            .filter(titleContainIgnoreCase)
     }
 }
