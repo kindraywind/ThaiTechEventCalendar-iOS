@@ -28,6 +28,7 @@ class EventTabViewController: TabmanViewController {
             appearance.indicator.color = UIColor.TTOrange()
             appearance.indicator.bounces = true
             appearance.indicator.useRoundedCorners = true
+            appearance.indicator.lineWeight = .thick
         })
     }
 
