@@ -63,7 +63,7 @@ class EventFeedViewController: UIViewController {
 
 }
 
-extension EventFeedViewController: UITableViewDataSource, UITableViewDelegate {
+extension EventFeedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return events.count
     }
@@ -74,7 +74,9 @@ extension EventFeedViewController: UITableViewDataSource, UITableViewDelegate {
         cell.updateUIWith(event)
         return cell
     }
+}
 
+extension EventFeedViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "eventDetail", sender: nil)
     }

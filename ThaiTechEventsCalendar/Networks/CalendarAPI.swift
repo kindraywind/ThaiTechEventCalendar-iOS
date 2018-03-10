@@ -42,7 +42,7 @@ struct CalendarAPI {
 
 }
 
-// MARK: - Events query
+// MARK: - Events query by start date
 extension CalendarAPI {
     // MARK: - Events by start date
     func events(when predicate: NSPredicate, ascending isAscending: Bool) -> Results<Event>? {
@@ -68,5 +68,16 @@ extension CalendarAPI {
     func pastEvents() -> Results<Event>? {
         let alreadyPassed = NSPredicate(format: "start < %@", Date().gregorianDate() as NSDate)
         return events(when: alreadyPassed, ascending: false)
+    }
+}
+
+// MARK: - Events searching
+extension CalendarAPI {
+    func eventsFromSearch(text: String) -> Results<Event>? {
+        guard let realm = try? Realm() else { return nil }
+        let contain = NSPredicate(format: "title CONTAINS[c] %@", text)
+        return realm
+            .objects(Event.self)
+            .filter(contain)
     }
 }
