@@ -80,4 +80,15 @@ extension CalendarAPI {
             .objects(Event.self)
             .filter(titleContainIgnoreCase)
     }
+
+    func upcomingEventsFrom(events: Results<Event>?) -> Results<Event>? {
+        let upcoming = NSPredicate(format: "start >= %@", Date().gregorianDate() as NSDate)
+        return events?.filter(upcoming).sorted(byKeyPath: "start", ascending: true)
+    }
+
+    func pastEventsFrom(events: Results<Event>?) -> Results<Event>? {
+        let alreadyPassed = NSPredicate(format: "start < %@", Date().gregorianDate() as NSDate)
+        return events?.filter(alreadyPassed).sorted(byKeyPath: "start", ascending: false)
+    }
+
 }

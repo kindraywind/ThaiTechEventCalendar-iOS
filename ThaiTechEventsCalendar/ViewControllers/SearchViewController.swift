@@ -17,10 +17,7 @@ class SearchViewController: UIViewController {
     var pastEvents: Results<Event>?
 
     let nib = UINib(nibName: EventTableViewCell.nibName, bundle: nil)
-
-    //duplicated! (with CalendarAPI).
-    let upcoming = NSPredicate(format: "start >= %@", Date().gregorianDate() as NSDate)
-    let alreadyPassed = NSPredicate(format: "start < %@", Date().gregorianDate() as NSDate)
+    let calendarAPI = CalendarAPI()
 
     lazy var searchController: UISearchController = {
         let searchCon = UISearchController(searchResultsController: nil)
@@ -130,9 +127,9 @@ extension SearchViewController: UISearchResultsUpdating {
     }
 
     private func updateTableAndTitle(_ query: String) {
-        events = CalendarAPI().eventsFromSearch(text: query)
-        upcomingEvents = events?.filter(upcoming).sorted(byKeyPath: "start", ascending: true)
-        pastEvents = events?.filter(alreadyPassed).sorted(byKeyPath: "start", ascending: false)
+        events = calendarAPI.eventsFromSearch(text: query)
+        upcomingEvents = calendarAPI.upcomingEventsFrom(events: events)
+        pastEvents = calendarAPI.pastEventsFrom(events: events)
 
         tableView.reloadSections([0, 1], with: .automatic)
         navigationItem.prompt = "Found \(events?.count ?? 0) Results for: \"\(query)\""
