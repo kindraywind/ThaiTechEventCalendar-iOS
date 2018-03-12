@@ -22,8 +22,8 @@ class EventTabViewController: TabmanViewController {
     private func configureUIBar() {
         bar.style = .bar
         bar.location = .top
-        bar.items = [Item(title: NSLocalizedString(LocalizationIdentifiers.upcomingEvents, comment: "")),
-                     Item(title: NSLocalizedString(LocalizationIdentifiers.pastEvents, comment: ""))]
+        bar.items = [Item(title: NSLocalizedString(LocalizationId.upcomingEvents, comment: "")),
+                     Item(title: NSLocalizedString(LocalizationId.pastEvents, comment: ""))]
         bar.appearance = TabmanBar.Appearance({ appearance in
             appearance.indicator.color = UIColor.TTOrange()
             appearance.indicator.bounces = true
@@ -44,9 +44,9 @@ class EventTabViewController: TabmanViewController {
         }
 
     upcomingVC.events = upcomingEvents
-    upcomingVC.title = NSLocalizedString(LocalizationIdentifiers.upcomingEvents, comment: "")
+    upcomingVC.title = NSLocalizedString(LocalizationId.upcomingEvents, comment: "")
     pastEventVC.events = pastEvents
-    pastEventVC.title = NSLocalizedString(LocalizationIdentifiers.pastEvents, comment: "")
+    pastEventVC.title = NSLocalizedString(LocalizationId.pastEvents, comment: "")
     viewControllers.append(upcomingEventNavVC)
     viewControllers.append(pastEventNavVC)
     self.dataSource = self

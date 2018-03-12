@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sAg-mt-yhO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14081.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="7bO-aR-53t">
+            <objects>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="CiO-Uh-aet" customClass="SearchViewController" customModule="ThaiTechEventsCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="86o-2W-Zex">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="idA-IV-JST">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CiO-Uh-aet" id="5yp-fD-st5"/>
+                                    <outlet property="delegate" destination="CiO-Uh-aet" id="Fky-QC-38s"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ti4-NW-Kh4" firstAttribute="bottom" secondItem="idA-IV-JST" secondAttribute="bottom" id="9Cp-OP-NbW"/>
+                            <constraint firstItem="idA-IV-JST" firstAttribute="leading" secondItem="ti4-NW-Kh4" secondAttribute="leading" id="LTp-FC-lTp"/>
+                            <constraint firstItem="idA-IV-JST" firstAttribute="top" secondItem="ti4-NW-Kh4" secondAttribute="top" id="aJj-Sj-zKG"/>
+                            <constraint firstItem="ti4-NW-Kh4" firstAttribute="trailing" secondItem="idA-IV-JST" secondAttribute="trailing" id="x3m-R9-BMO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ti4-NW-Kh4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="GUN-mF-0S1"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="otP-FW-i10" id="rka-FK-JhV"/>
+                        <outlet property="tableView" destination="idA-IV-JST" id="2m2-Gp-9Rd"/>
+                        <segue destination="iKe-o0-bc0" kind="custom" identifier="eventDetail" customClass="DeckSegue" customModule="DeckTransition" id="0TQ-sH-inh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRj-Uh-hJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="otP-FW-i10">
+                    <connections>
+                        <outlet property="delegate" destination="CiO-Uh-aet" id="U0L-yV-kAK"/>
+                        <outlet property="searchContentsController" destination="CiO-Uh-aet" id="GGH-F5-YLC"/>
+                        <outlet property="searchResultsDataSource" destination="CiO-Uh-aet" id="kmf-fj-7OR"/>
+                        <outlet property="searchResultsDelegate" destination="CiO-Uh-aet" id="uax-Kk-fnG"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-1028" y="1684"/>
+        </scene>
+        <!--EventDetail-->
+        <scene sceneID="385-9F-obe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EventDetail" id="iKe-o0-bc0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZV-ht-aER" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277" y="1683"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Mze-zv-ht0">
+            <objects>
+                <navigationController id="sAg-mt-yhO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="bqb-yJ-Z3B"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sZ1-Wr-p4F">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CiO-Uh-aet" kind="relationship" relationship="rootViewController" id="4oc-LE-KZy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SrM-OU-Jni" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1754" y="1684"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="search" width="20" height="20"/>
+    </resources>
+</document>

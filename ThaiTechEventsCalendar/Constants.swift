@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LocalizationIdentifiers {
+struct LocalizationId {
     static let upcomingEvents = "upcomingEvents"
     static let pastEvents = "pastEvents"
 }

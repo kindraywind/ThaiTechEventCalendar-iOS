@@ -15,7 +15,7 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var calendarView: CVCalendarView!
 
     @IBOutlet weak var tableView: UITableView!
-    private let nib = UINib(nibName: "EventTableViewCell", bundle: nil)
+    private let nib = UINib(nibName: EventTableViewCell.nibName, bundle: nil)
     private var cachedDots = Array(repeating: 0, count: 32)
     var events: Results<Event>?
 
@@ -23,7 +23,7 @@ class CalendarViewController: UIViewController {
         super.viewDidLoad()
 
         self.presentedDateUpdated(CVDate(date: Date()))
-        self.tableView.register(nib, forCellReuseIdentifier: "EventTableViewCell")
+        self.tableView.register(nib, forCellReuseIdentifier: EventTableViewCell.identifier)
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,7 +76,6 @@ extension CalendarViewController: CVCalendarViewDelegate {
         }
         let count = CalendarAPI().events(on: date)?.count ?? 0
         cachedDots[dayView.date.day] = count
-        print("\(dayView.date.day) | events: \(count)")
         return count > 0
     }
 }
@@ -94,9 +93,9 @@ extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as? EventTableViewCell,
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: EventTableViewCell.identifier, for: indexPath) as? EventTableViewCell,
             let event = events?[indexPath.row] else {
-            return UITableViewCell(style: .default, reuseIdentifier: "EventTableViewCell")
+            return UITableViewCell(style: .default, reuseIdentifier: EventTableViewCell.identifier)
         }
         cell.updateUIWith(event)
         return cell
