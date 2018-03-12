@@ -84,7 +84,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D0084720EE89B2962DF0D2EC36A20A69"
+               BlueprintIdentifier = "5D5C6EBCEB22D7795D0CCC92062AA02D"
                BuildableName = "Pods_ThaiTechEventsCalendar.framework"
                BlueprintName = "Pods-ThaiTechEventsCalendar"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -126,7 +126,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D43C7EA9F13D4AA6CD184B1C281D1D76"
+               BlueprintIdentifier = "9700C4B6FA29C8A4AEE9025072B06C6C"
                BuildableName = "Realm.framework"
                BlueprintName = "Realm"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -140,7 +140,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5678B37A06871B06ADB356697BF81220"
+               BlueprintIdentifier = "DE5351CB7B88C752E9626A89293ACEB9"
                BuildableName = "RealmSwift.framework"
                BlueprintName = "RealmSwift"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -168,7 +168,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C161DA57C00048C7D26A1E8F305E4DE"
+               BlueprintIdentifier = "7040C06EF3287551F365FCE78957F2FF"
                BuildableName = "Tabman.framework"
                BlueprintName = "Tabman"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -182,7 +182,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8610D3AD858943FC398A41755689C428"
+               BlueprintIdentifier = "9B82F119C0F81D317A441AE1F247DE6C"
                BuildableName = "TagListView.framework"
                BlueprintName = "TagListView"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -240,6 +240,11 @@
                BlueprintName = "ThaiTechEventsCalendarUITests"
                ReferencedContainer = "container:ThaiTechEventsCalendar.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "SearchViewControllerTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

@@ -39,6 +39,7 @@
 		9F6AE543204D88EF0029C6D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAF9DD20410338000A99FE /* Assets.xcassets */; };
 		9F855D7B204D6E6000F0C927 /* CalendarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CD0A42042881A00528E66 /* CalendarAPI.swift */; };
 		9F855D7C204D6E8E00F0C927 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E83BE2041255A00CFE046 /* Event.swift */; };
+		9F888E7F2056AA1C00F647C2 /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F888E7E2056AA1C00F647C2 /* SearchViewControllerTests.swift */; };
 		9F8F01B12053F596003105F6 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F01B02053F596003105F6 /* Search.storyboard */; };
 		9F984D182042F08600B7BC7B /* DateUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F984D172042F08600B7BC7B /* DateUtilsTests.swift */; };
 		9FAA2F8520470C7B0054CCAD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2F8420470C7B0054CCAD /* SettingViewController.swift */; };
@@ -138,6 +139,7 @@
 		9F5DBCDA20483C8200D85E62 /* TabbarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarControllerTests.swift; sourceTree = "<group>"; };
 		9F60596F2042F62A00048638 /* EventTabViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTabViewControllerTests.swift; sourceTree = "<group>"; };
 		9F6AE541204D76F40029C6D8 /* TT Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TT Widget.entitlements"; sourceTree = "<group>"; };
+		9F888E7E2056AA1C00F647C2 /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
 		9F8F01B02053F596003105F6 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		9F984D172042F08600B7BC7B /* DateUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilsTests.swift; sourceTree = "<group>"; };
 		9FAA2F8420470C7B0054CCAD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 				9F37F6872045BA0A00BC26CB /* SnapshotHelper.swift */,
 				9FAA2F8C2047C1580054CCAD /* EventDetailViewControllerTests.swift */,
 				9F5DBCDA20483C8200D85E62 /* TabbarControllerTests.swift */,
+				9F888E7E2056AA1C00F647C2 /* SearchViewControllerTests.swift */,
 			);
 			path = ThaiTechEventsCalendarUITests;
 			sourceTree = "<group>";
@@ -897,6 +900,7 @@
 			files = (
 				9FFAF9F720410338000A99FE /* EventFeedViewControllerTests.swift in Sources */,
 				9F5DBCDB20483C8200D85E62 /* TabbarControllerTests.swift in Sources */,
+				9F888E7F2056AA1C00F647C2 /* SearchViewControllerTests.swift in Sources */,
 				9F6059702042F62A00048638 /* EventTabViewControllerTests.swift in Sources */,
 				9FAA2F8D2047C1580054CCAD /* EventDetailViewControllerTests.swift in Sources */,
 				9F37F6882045BA0A00BC26CB /* SnapshotHelper.swift in Sources */,
