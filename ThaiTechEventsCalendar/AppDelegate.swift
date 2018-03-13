@@ -8,6 +8,9 @@
 
 import UIKit
 import Firebase
+import RealmSwift
+
+let currentSchemaVersion: UInt64 = 1
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        migrateRealmSchemaIfNeeded()
         return true
     }
 
@@ -43,4 +47,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    private func migrateRealmSchemaIfNeeded() {
+        guard let realm = try? Realm() else { return }
+
+        let config = Realm.Configuration(
+            schemaVersion: currentSchemaVersion,
+            
+            migrationBlock: { migration, oldSchemaVersion in
+                if oldSchemaVersion < currentSchemaVersion {
+                    //Do nothing!
+                }
+                realm.deleteAll()
+        })
+        
+        Realm.Configuration.defaultConfiguration = config
+    }
 }
