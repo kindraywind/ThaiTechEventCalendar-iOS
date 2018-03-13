@@ -20,18 +20,16 @@ class Event: Object {
     @objc dynamic var summary = ""
     @objc dynamic var time = ""
     @objc dynamic var title = ""
-    let categories = List<String>()
+    let categories = List<Category>()
     let links = List<Link>()
-    let topics = List<String>()
+    let topics = List<Topic>()
 
     required convenience init(_ json: JSON) {
         self.init()
         mapping(json)
     }
 
-    override static func primaryKey() -> String? {
-        return "eventId"
-    }
+    override static func primaryKey() -> String? { return "eventId" }
 
     // Mappable
     func mapping(_ json: JSON) {
@@ -45,9 +43,9 @@ class Event: Object {
         time = parseTime(json["time"])
         title = json["title"].stringValue
 
-        json["categories"].arrayValue.forEach({ categories.append($0.stringValue) })
+        json["categories"].arrayValue.forEach({ categories.append(Category($0.stringValue)) })
         json["links"].arrayValue.forEach({ links.append(Link($0)) })
-        json["topics"].arrayValue.forEach({ topics.append($0.stringValue) })
+        json["topics"].arrayValue.forEach({ topics.append(Topic($0.stringValue)) })
     }
 
     private func parseTime(_ timeJson: JSON) -> String {
@@ -76,6 +74,30 @@ class Event: Object {
 
 }
 
+class Topic: Object {
+    @objc dynamic var title = ""
+    let events = LinkingObjects(fromType: Event.self, property: "topics")
+
+    required convenience init(_ title: String) {
+        self.init()
+        self.title = title
+    }
+
+    override static func primaryKey() -> String? { return "title" }
+}
+
+class Category: Object {
+    @objc dynamic var title = ""
+    let events = LinkingObjects(fromType: Event.self, property: "categories")
+
+    required convenience init(_ title: String) {
+        self.init()
+        self.title = title
+    }
+
+    override static func primaryKey() -> String? { return "title" }
+}
+
 class Location: Object {
     @objc dynamic var detail = ""
     @objc dynamic var title = ""
@@ -85,15 +107,15 @@ class Location: Object {
         self.init()
         mapping(json)
     }
+
+    override static func primaryKey() -> String? { return "url" }
+
     func mapping(_ json: JSON) {
         detail = json["detail"].stringValue
         title = json["title"].stringValue
         url = json["url"].stringValue
     }
 
-    override static func primaryKey() -> String? {
-        return "url"
-    }
 }
 
 class Link: Object {
@@ -108,6 +130,8 @@ class Link: Object {
         mapping(json)
     }
 
+    override static func primaryKey() -> String? { return "url" }
+
     func mapping(_ json: JSON) {
         detail = json["detail"].stringValue
         title = json["title"].stringValue
@@ -116,7 +140,4 @@ class Link: Object {
         price = json["price"].stringValue
     }
 
-    override static func primaryKey() -> String? {
-        return "url"
-    }
 }

@@ -75,10 +75,16 @@ extension CalendarAPI {
 extension CalendarAPI {
     func eventsFromSearch(text: String) -> Results<Event>? {
         guard let realm = try? Realm() else { return nil }
-        let titleContainIgnoreCase = NSPredicate(format: "title CONTAINS[c] %@", text)
+
+        let titleFilter = NSPredicate(format: "title CONTAINS[c] %@", text)
+        let topicFilter = NSPredicate(format: "ANY topics.title CONTAINS[c] %@", text)
+        let categoryFilter = NSPredicate(format: "ANY categories.title CONTAINS[c] %@", text)
+        let allCriteria = NSCompoundPredicate(orPredicateWithSubpredicates: [titleFilter,
+                                                                             topicFilter,
+                                                                             categoryFilter])
         return realm
             .objects(Event.self)
-            .filter(titleContainIgnoreCase)
+            .filter(allCriteria)
     }
 
     func upcomingEventsFrom(events: Results<Event>?) -> Results<Event>? {

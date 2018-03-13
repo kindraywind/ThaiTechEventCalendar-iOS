@@ -45,7 +45,7 @@ extension EventHeaderTableViewCell: Updatable {
         self.event = event
         headerLabel.text = event.title
         topicTagListView.removeAllTags()
-        event.categories.forEach({ topicTagListView.addTag($0) })
-        event.topics.forEach({ topicTagListView.addTag($0) })
+        event.categories.forEach({ topicTagListView.addTag($0.title) })
+        event.topics.forEach({ topicTagListView.addTag($0.title) })
     }
 }

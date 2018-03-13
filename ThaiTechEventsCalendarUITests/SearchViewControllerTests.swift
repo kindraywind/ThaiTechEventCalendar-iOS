@@ -20,30 +20,28 @@ class SearchViewControllerTests: XCTestCase {
     func testSearchAndTapResult() {
 
         let app = XCUIApplication()
+        let exists = NSPredicate(format: "exists == 1")
+        let notExists = NSPredicate(format: "exists == 0")
         let searchButton = app.tabBars.buttons["Search"]
         searchButton.tap()
         app.searchFields["Events"].tap()
-        app.staticTexts["b"].tap()
-        let kStaticText = app.staticTexts["k"]
-        kStaticText.tap()
-        kStaticText.tap()
+        app.searchFields["Events"].typeText("bkk")
+        sleep(1)
 
         app.tables.firstMatch.swipeUp()
 
-        XCTAssertFalse(app.keyboards.firstMatch.exists)
+        expectation(for: notExists, evaluatedWith: app.keyboards.firstMatch, handler: nil)
 
         let cell = app.tables.firstMatch.cells.firstMatch
         let detailTable = app.tables["detailTableView"]
         sleep(1)
-        XCTAssertTrue(cell.exists)
-        XCTAssertFalse(detailTable.exists)
-
+        expectation(for: exists, evaluatedWith: cell, handler: nil)
+        expectation(for: notExists, evaluatedWith: detailTable, handler: nil)
+        sleep(1)
         cell.tap()
-        let exists = NSPredicate(format: "exists == 1")
 
         expectation(for: exists, evaluatedWith: detailTable, handler: nil)
-        waitForExpectations(timeout: 5, handler: nil)
-
+        waitForExpectations(timeout: 10, handler: nil)
     }
 
 }
