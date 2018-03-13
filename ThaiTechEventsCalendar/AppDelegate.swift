@@ -48,18 +48,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func migrateRealmSchemaIfNeeded() {
-        guard let realm = try? Realm() else { return }
-
         let config = Realm.Configuration(
             schemaVersion: currentSchemaVersion,
-            
+
             migrationBlock: { migration, oldSchemaVersion in
                 if oldSchemaVersion < currentSchemaVersion {
                     //Do nothing!
                 }
-                realm.deleteAll()
+                migration.deleteData(forType: "Event")
         })
-        
+
         Realm.Configuration.defaultConfiguration = config
+        _ = try! Realm()
     }
 }

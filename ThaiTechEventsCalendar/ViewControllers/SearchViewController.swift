@@ -11,8 +11,7 @@ import RealmSwift
 
 class SearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    let realm = try! Realm()
-    var events: Results<Event>? = try! Realm().objects(Event.self) //やばいよ
+    var events: Results<Event>?
     var upcomingEvents: Results<Event>?
     var pastEvents: Results<Event>?
 
@@ -31,6 +30,8 @@ class SearchViewController: UIViewController {
     // MARK: - Life cycles
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        events = try! Realm().objects(Event.self)
 
         self.tabBarController?.delegate = self
         tableView.register(nib, forCellReuseIdentifier: EventTableViewCell.identifier)
