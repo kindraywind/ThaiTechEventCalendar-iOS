@@ -11,68 +11,84 @@ import RealmSwift
 import SwiftyJSON
 import Alamofire_SwiftyJSON
 import Alamofire
-import CVCalendar
 
+// MARK: - Constants
 struct TTConstant {
     static let baseAPIURL = "https://thaiprogrammer-tech-events-calendar.spacet.me"
     static let baseURL = "https://calendar.thaiprogrammer.org/event/"
 }
 
+// MARK: Calendar network API
 struct CalendarAPI {
 
     func fetchCalendarFromNetwork() {
-        guard let realm = try? Realm() else {
-            return
-        }
+        fetchCalendarFromNetwork(success: nil, failure: nil)
+    }
+
+    func fetchCalendarFromNetwork(success: (() -> Void)?,
+                                  failure: (() -> Void)?) {
+        guard let realm = try? Realm() else { failure?(); return }
 
         Alamofire.request(TTConstant.baseAPIURL+"/calendar.json").responseSwiftyJSON { dataResponse in
-            if dataResponse.error != nil {
-                return
-            }
-            guard let json = dataResponse.value else {
-                return
-            }
-            try! realm.write {
+            if dataResponse.error != nil { failure?(); return }
+            guard let json = dataResponse.value else { failure?(); return }
+
+            try? realm.write {
                 json.arrayValue.forEach({ realm.add(Event($0), update: true) })
+                success?()
             }
         }
     }
 
 }
 
+// MARK: - Events query by start date
 extension CalendarAPI {
-    // MARK: - Events filter (refactorable)
-    func events(on date: Date) -> Results<Event>? {
-        guard let realm = try? Realm() else {
-            return nil
-        }
-        let tmr = date.addingTimeInterval(24 * 60 * 60)
-        let thatDatePredicate = NSPredicate(format: "start >= %@ AND end <= %@", date as NSDate, tmr as NSDate)
+    // MARK: - Events by start date
+    func events(when predicate: NSPredicate, ascending isAscending: Bool) -> Results<Event>? {
+        guard let realm = try? Realm() else { return nil }
+
         return realm
             .objects(Event.self)
-            .filter(thatDatePredicate)
-            .sorted(byKeyPath: "start", ascending: true)
+            .filter(predicate)
+            .sorted(byKeyPath: "start", ascending: isAscending)
+    }
+
+    func events(on date: Date) -> Results<Event>? {
+        let tmr = date.addingTimeInterval(24 * 60 * 60)
+        let today = NSPredicate(format: "start >= %@ AND end <= %@", date as NSDate, tmr as NSDate)
+        return events(when: today, ascending: true)
     }
 
     func upcomingEvents() -> Results<Event>? {
-        guard let realm = try? Realm() else {
-            return nil
-        }
-        let upcomingPredicate = NSPredicate(format: "start >= %@", Date() as NSDate)
-        return realm
-            .objects(Event.self)
-            .filter(upcomingPredicate)
-            .sorted(byKeyPath: "start", ascending: true)
+        let upcoming = NSPredicate(format: "start >= %@", Date().gregorianDate() as NSDate)
+        return events(when: upcoming, ascending: true)
     }
 
     func pastEvents() -> Results<Event>? {
-        guard let realm = try? Realm() else {
-            return nil
-        }
-        let pastPredicate = NSPredicate(format: "start < %@", Date() as NSDate)
+        let alreadyPassed = NSPredicate(format: "start < %@", Date().gregorianDate() as NSDate)
+        return events(when: alreadyPassed, ascending: false)
+    }
+}
+
+// MARK: - Events searching
+extension CalendarAPI {
+    func eventsFromSearch(text: String) -> Results<Event>? {
+        guard let realm = try? Realm() else { return nil }
+        let titleContainIgnoreCase = NSPredicate(format: "title CONTAINS[c] %@", text)
         return realm
             .objects(Event.self)
-            .filter(pastPredicate)
-            .sorted(byKeyPath: "start", ascending: true)
+            .filter(titleContainIgnoreCase)
     }
+
+    func upcomingEventsFrom(events: Results<Event>?) -> Results<Event>? {
+        let upcoming = NSPredicate(format: "start >= %@", Date().gregorianDate() as NSDate)
+        return events?.filter(upcoming).sorted(byKeyPath: "start", ascending: true)
+    }
+
+    func pastEventsFrom(events: Results<Event>?) -> Results<Event>? {
+        let alreadyPassed = NSPredicate(format: "start < %@", Date().gregorianDate() as NSDate)
+        return events?.filter(alreadyPassed).sorted(byKeyPath: "start", ascending: false)
+    }
+
 }

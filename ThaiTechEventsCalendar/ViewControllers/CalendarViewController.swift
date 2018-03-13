@@ -15,27 +15,15 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var calendarView: CVCalendarView!
 
     @IBOutlet weak var tableView: UITableView!
-    private let nib = UINib(nibName: "EventTableViewCell", bundle: nil)
-    private var currentCalendar: Calendar?
+    private let nib = UINib(nibName: EventTableViewCell.nibName, bundle: nil)
     private var cachedDots = Array(repeating: 0, count: 32)
     var events: Results<Event>?
 
-    override func awakeFromNib() {
-        let timeZoneBias = 420 // (Bangkok UTC+07:00)
-        currentCalendar = Calendar(identifier: .gregorian)
-        if let timeZone = TimeZone(secondsFromGMT: -timeZoneBias * 60) {
-            currentCalendar?.timeZone = timeZone
-        }
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let currentCalendar = currentCalendar else {
-            return
-        }
-        self.navigationItem.title = CVDate(date: Date(), calendar: currentCalendar).globalDescription
-        self.tableView.register(nib, forCellReuseIdentifier: "EventTableViewCell")
 
+        self.presentedDateUpdated(CVDate(date: Date()))
+        self.tableView.register(nib, forCellReuseIdentifier: EventTableViewCell.identifier)
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +45,10 @@ extension CalendarViewController: AppearanceDelegate {
         let count = min(3, cachedDots[dayView.date.day])
         return Array(repeating: UIColor.TTOrange(), count: count)
     }
+
+    func dayLabelWeekdaySelectedBackgroundColor() -> UIColor {
+        return UIColor.TTOrange()
+    }
 }
 
 extension CalendarViewController: CVCalendarViewDelegate {
@@ -73,7 +65,9 @@ extension CalendarViewController: CVCalendarViewDelegate {
             return
         }
         events = CalendarAPI().events(on: today)
-        tableView?.reloadData()
+        tableView?.reloadSections([0], with: .automatic)
+        tableView?.setContentOffset(CGPoint.zero, animated: false)
+
     }
 
     func dotMarker(shouldShowOnDayView dayView: DayView) -> Bool {
@@ -82,7 +76,6 @@ extension CalendarViewController: CVCalendarViewDelegate {
         }
         let count = CalendarAPI().events(on: date)?.count ?? 0
         cachedDots[dayView.date.day] = count
-        print("\(dayView.date.day) | events: \(count)")
         return count > 0
     }
 }
@@ -100,9 +93,9 @@ extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as? EventTableViewCell,
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: EventTableViewCell.identifier, for: indexPath) as? EventTableViewCell,
             let event = events?[indexPath.row] else {
-            return UITableViewCell(style: .default, reuseIdentifier: "EventTableViewCell")
+            return UITableViewCell(style: .default, reuseIdentifier: EventTableViewCell.identifier)
         }
         cell.updateUIWith(event)
         return cell

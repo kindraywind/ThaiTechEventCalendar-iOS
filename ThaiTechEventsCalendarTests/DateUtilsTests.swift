@@ -12,14 +12,40 @@ import SwiftyJSON
 
 class DateUtilsTests: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testDateString() {
+        var dateComponents = DateComponents()
+        dateComponents.year = 2018
+        dateComponents.month = 3
+        dateComponents.day = 31
+        dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
+        var dateComponents2 = DateComponents()
+        dateComponents2.year = 2018
+        dateComponents2.month = 4
+        dateComponents2.day = 22
+        dateComponents2.timeZone = TimeZone(abbreviation: "GMT+7")
+        let userCalendar = Calendar(identifier: .gregorian)
+        let march31 = userCalendar.date(from: dateComponents)!
+        let april22 = userCalendar.date(from: dateComponents2)!
+        XCTAssertEqual(DateUtils.dateString(fromDate: march31, toDate: april22), "March 31 (Sat) ~ April 22 (Sun)")
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testDateStringSingleDay() {
+        var dateComponents = DateComponents()
+        dateComponents.year = 2018
+        dateComponents.month = 3
+        dateComponents.day = 31
+        dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
+
+        var dateComponents2 = DateComponents()
+        dateComponents2.year = 2018
+        dateComponents2.month = 3
+        dateComponents2.day = 31
+        dateComponents2.timeZone = TimeZone(abbreviation: "GMT+7")
+
+        let userCalendar = Calendar(identifier: .gregorian)
+        let march31 = userCalendar.date(from: dateComponents)!
+        let anotherMarch31 = userCalendar.date(from: dateComponents2)!
+        XCTAssertEqual(DateUtils.dateString(fromDate: march31, toDate: anotherMarch31), "March 31 (Sat)")
     }
 
     func testParseDateFromJSONShouldNotBeNil() {
@@ -58,12 +84,4 @@ class DateUtilsTests: XCTestCase {
         XCTAssertTrue(someDayInFuture > someDay)
 
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

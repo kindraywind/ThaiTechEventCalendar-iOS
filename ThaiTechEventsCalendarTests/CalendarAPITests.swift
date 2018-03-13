@@ -84,6 +84,17 @@ class CalendarAPITests: XCTestCase {
         XCTAssertEqual(realm.objects(Location.self).count, 23)
     }
 
+    func testGetUpcomingEvents() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        XCTAssertFalse((CalendarAPI().upcomingEvents()?.isEmpty)!)
+    }
+
     func testGetEventOnThatDate() {
         guard let realm = try? Realm() else {
             XCTFail("FAIL")
@@ -96,13 +107,86 @@ class CalendarAPITests: XCTestCase {
         dateComponents.month = 2
         dateComponents.day = 22
         dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
-        let userCalendar = Calendar.current
+        let userCalendar = Calendar(identifier: .gregorian)
         let eightMarch = userCalendar.date(from: dateComponents)
         let events = CalendarAPI().events(on: eightMarch!)
         XCTAssertEqual(events?.count, 2)
     }
 
-    func testPerformanceExample() {
+    func testGetEventOnThatBuddhistDate() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        var dateComponents = DateComponents()
+        dateComponents.year = 2561
+        dateComponents.month = 2
+        dateComponents.day = 22
+        dateComponents.timeZone = TimeZone(abbreviation: "GMT+7")
+        let userCalendar = Calendar(identifier: .buddhist)
+        let eightMarch = userCalendar.date(from: dateComponents)
+        let events = CalendarAPI().events(on: eightMarch!)
+        XCTAssertEqual(events?.count, 2)
+    }
+
+    func testGetEventFromSearch() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        let events = CalendarAPI().eventsFromSearch(text: "bkk")
+        XCTAssertEqual(events?.count, 5)
+    }
+
+    func testGetEventFromSearchCaseInsensitive() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        let events = CalendarAPI().eventsFromSearch(text: "BKk")
+        XCTAssertEqual(events?.count, 5)
+    }
+
+    func testUpcomingEventFromSearch() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        let events = CalendarAPI().eventsFromSearch(text: "BKK")
+        XCTAssertEqual(events?.count, 5)
+
+        let upComingBKKEvents = CalendarAPI().upcomingEventsFrom(events: events)
+        XCTAssertTrue((upComingBKKEvents?.count)! > 0)
+    }
+
+    func testPastEventFromSearch() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        let events = CalendarAPI().eventsFromSearch(text: "BKK")
+        XCTAssertEqual(events?.count, 5)
+
+        let pastBKKEvents = CalendarAPI().pastEventsFrom(events: events)
+        XCTAssertTrue((pastBKKEvents?.count)! > 0)
+
+        let upComingBKKEvents = CalendarAPI().upcomingEventsFrom(events: events)
+        XCTAssertTrue((upComingBKKEvents?.count)! > 0)
+
+        XCTAssertEqual(events?.count, (pastBKKEvents?.count)! + (upComingBKKEvents?.count)!)
+    }
+
+    func testPopulateFromJson() {
         self.measure {
             populate()
         }
