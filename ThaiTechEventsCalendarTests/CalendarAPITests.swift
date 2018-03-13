@@ -153,6 +153,28 @@ class CalendarAPITests: XCTestCase {
         XCTAssertEqual(events?.count, 5)
     }
 
+    func testGetEventByTopic() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        let events = CalendarAPI().eventsFromSearch(text: "PYTHON")
+        XCTAssertEqual(events?.count, 3)
+    }
+
+    func testGetEventByCategory() {
+        guard let realm = try? Realm() else {
+            XCTFail("FAIL")
+            return
+        }
+        XCTAssertEqual(realm.objects(Event.self).count, 0)
+        populate()
+        let events = CalendarAPI().eventsFromSearch(text: "workshop")
+        XCTAssertEqual(events?.count, 5)
+    }
+
     func testUpcomingEventFromSearch() {
         guard let realm = try? Realm() else {
             XCTFail("FAIL")

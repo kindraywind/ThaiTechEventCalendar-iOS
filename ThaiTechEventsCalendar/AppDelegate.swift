@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
+        if !Platform.isSimulator {
+            FirebaseApp.configure()
+        }
         migrateRealmSchemaIfNeeded()
         return true
     }
@@ -61,4 +63,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Realm.Configuration.defaultConfiguration = config
         _ = try! Realm()
     }
+}
+
+struct Platform {
+
+    static var isSimulator: Bool {
+        return TARGET_OS_SIMULATOR != 0
+    }
+
 }
