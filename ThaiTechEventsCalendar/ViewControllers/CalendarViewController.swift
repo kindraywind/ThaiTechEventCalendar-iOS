@@ -18,10 +18,12 @@ class CalendarViewController: UIViewController {
     private let nib = UINib(nibName: EventTableViewCell.nibName, bundle: nil)
     private var cachedDots = Array(repeating: 0, count: 32)
     var events: Results<Event>?
+    let placeholder = EmptyPlaceholder.instanceFromNib()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        placeholder.emptyLabel.text = "No event this day"
         self.presentedDateUpdated(CVDate(date: Date()))
         self.tableView.register(nib, forCellReuseIdentifier: EventTableViewCell.identifier)
     }
@@ -89,6 +91,7 @@ extension CalendarViewController: CVCalendarMenuViewDelegate {
 
 extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        updatePlaceholder()
         return (events?.count) ?? 0
     }
 
@@ -113,5 +116,13 @@ extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
             dest.modalPresentationCapturesStatusBarAppearance = true
         }
 
+    }
+
+    private func updatePlaceholder() {
+        if let events = events, !events.isEmpty {
+            tableView.backgroundView = nil
+        } else {
+            tableView.backgroundView = placeholder
+        }
     }
 }
