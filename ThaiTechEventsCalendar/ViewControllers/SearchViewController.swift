@@ -17,6 +17,7 @@ class SearchViewController: UIViewController {
 
     let nib = UINib(nibName: EventTableViewCell.nibName, bundle: nil)
     let calendarAPI = CalendarAPI()
+    let placeholder = EmptyPlaceholder.instanceFromNib()
 
     lazy var searchController: UISearchController = {
         let searchCon = UISearchController(searchResultsController: nil)
@@ -41,6 +42,9 @@ class SearchViewController: UIViewController {
         } else {
             navigationItem.titleView = searchController.searchBar
         }
+
+        tableView.backgroundView = placeholder
+
     }
 
 }
@@ -72,14 +76,21 @@ extension SearchViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        if !isSearching {
-//            return 0
-//        }
-
+        updatePlaceholder()
         switch section {
         case 0: return upcomingEvents?.count ?? 0
         case 1: return pastEvents?.count ?? 0
         default: return 0
+        }
+    }
+
+    private func updatePlaceholder() {
+        if let upcomingEvents = upcomingEvents,
+            let pastEvents = pastEvents,
+            pastEvents.count + upcomingEvents.count > 0 {
+            tableView.backgroundView = nil
+        } else {
+            tableView.backgroundView = placeholder
         }
     }
 }
@@ -116,7 +127,7 @@ extension SearchViewController: UITableViewDelegate {
 extension SearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(self.reload(_:)), object: searchController)
-        perform(#selector(self.reload(_:)), with: searchController, afterDelay: 0.2)
+        perform(#selector(self.reload(_:)), with: searchController, afterDelay: 0.3)
     }
 
     @objc private func reload(_ searchController: UISearchController) {
@@ -143,6 +154,7 @@ extension SearchViewController: UISearchResultsUpdating {
 extension SearchViewController: UIScrollViewDelegate {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         searchController.searchBar.resignFirstResponder()
+        searchController.isActive = false
     }
 }
 extension SearchViewController: UITabBarControllerDelegate {

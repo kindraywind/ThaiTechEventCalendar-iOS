@@ -19,6 +19,13 @@ class CalendarViewController: UIViewController {
     private var cachedDots = Array(repeating: 0, count: 32)
     var events: Results<Event>?
 
+    lazy var placeholder: EmptyPlaceholder = {
+       let pholder = EmptyPlaceholder.instanceFromNib()
+        pholder.emptyLabel.text = "Relax, no tech event this day :)"
+        pholder.emptyImageView.image = UIImage(named: "beach")
+        return pholder
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -89,6 +96,7 @@ extension CalendarViewController: CVCalendarMenuViewDelegate {
 
 extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        updatePlaceholder()
         return (events?.count) ?? 0
     }
 
@@ -107,11 +115,19 @@ extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow,
-            let event = events?[indexPath.row] {
-            let dest = segue.destination as! EventDetailViewController
+            let event = events?[indexPath.row],
+            let dest = segue.destination as? EventDetailViewController {
             dest.event = event
             dest.modalPresentationCapturesStatusBarAppearance = true
         }
 
+    }
+
+    private func updatePlaceholder() {
+        if let events = events, !events.isEmpty {
+            tableView.backgroundView = nil
+        } else {
+            tableView.backgroundView = placeholder
+        }
     }
 }

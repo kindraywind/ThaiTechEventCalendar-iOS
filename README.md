@@ -24,3 +24,5 @@ or
 - Report an issue, any suggestion is welcome :]
 
 ---
+
+Search icon made by Freepik from www.flaticon.com 
