@@ -20,6 +20,7 @@ class SearchViewControllerTests: XCTestCase {
     func testSearchAndTapResult() {
 
         let app = XCUIApplication()
+        setupSnapshot(app)
         let exists = NSPredicate(format: "exists == 1")
         let notExists = NSPredicate(format: "exists == 0")
         let searchButton = app.tabBars.buttons["Search"]
@@ -27,6 +28,7 @@ class SearchViewControllerTests: XCTestCase {
         app.searchFields["Events"].tap()
         app.searchFields["Events"].typeText("bkk")
         sleep(1)
+        snapshot("search_screen_01")
 
         app.tables.firstMatch.swipeUp()
 
