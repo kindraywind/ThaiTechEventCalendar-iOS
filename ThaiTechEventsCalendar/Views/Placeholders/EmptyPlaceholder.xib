@@ -24,19 +24,19 @@
                         <constraint firstAttribute="width" secondItem="Llf-ay-rHU" secondAttribute="height" multiplier="1:1" id="qiK-23-Lg3"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No search result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr2-py-3zy">
-                    <rect key="frame" x="84.5" y="400.5" width="206" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No search result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr2-py-3zy">
+                    <rect key="frame" x="84.5" y="391" width="206" height="21"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="Zgd-tO-crA"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Zgd-tO-crA"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Rr2-py-3zy" firstAttribute="top" secondItem="Llf-ay-rHU" secondAttribute="bottom" constant="39.5" id="35b-7D-hpc"/>
+                <constraint firstItem="Rr2-py-3zy" firstAttribute="top" secondItem="Llf-ay-rHU" secondAttribute="bottom" constant="30" id="35b-7D-hpc"/>
                 <constraint firstItem="Llf-ay-rHU" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.55" id="5ry-1E-nCB"/>
                 <constraint firstItem="Llf-ay-rHU" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="N8d-IK-rZw"/>
                 <constraint firstItem="Rr2-py-3zy" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Rwp-JF-WeA"/>

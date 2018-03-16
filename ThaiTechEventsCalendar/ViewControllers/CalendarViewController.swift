@@ -18,12 +18,17 @@ class CalendarViewController: UIViewController {
     private let nib = UINib(nibName: EventTableViewCell.nibName, bundle: nil)
     private var cachedDots = Array(repeating: 0, count: 32)
     var events: Results<Event>?
-    let placeholder = EmptyPlaceholder.instanceFromNib()
+
+    lazy var placeholder: EmptyPlaceholder = {
+       let pholder = EmptyPlaceholder.instanceFromNib()
+        pholder.emptyLabel.text = "Relax, no tech event this day :)"
+        pholder.emptyImageView.image = UIImage(named: "beach")
+        return pholder
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        placeholder.emptyLabel.text = "No event this day"
         self.presentedDateUpdated(CVDate(date: Date()))
         self.tableView.register(nib, forCellReuseIdentifier: EventTableViewCell.identifier)
     }
@@ -110,8 +115,8 @@ extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow,
-            let event = events?[indexPath.row] {
-            let dest = segue.destination as! EventDetailViewController
+            let event = events?[indexPath.row],
+            let dest = segue.destination as? EventDetailViewController {
             dest.event = event
             dest.modalPresentationCapturesStatusBarAppearance = true
         }

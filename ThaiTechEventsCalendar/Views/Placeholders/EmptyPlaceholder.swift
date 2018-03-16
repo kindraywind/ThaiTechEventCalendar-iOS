@@ -14,12 +14,4 @@ class EmptyPlaceholder: UIView {
     class func instanceFromNib() -> EmptyPlaceholder {
         return UINib(nibName: "EmptyPlaceholder", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! EmptyPlaceholder
     }
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
 }

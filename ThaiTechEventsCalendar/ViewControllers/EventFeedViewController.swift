@@ -82,8 +82,8 @@ extension EventFeedViewController: UITableViewDelegate {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = feedTableView.indexPathForSelectedRow {
-            let dest = segue.destination as! EventDetailViewController
+        if let indexPath = feedTableView.indexPathForSelectedRow,
+            let dest = segue.destination as? EventDetailViewController {
             dest.event = events[(indexPath.row)]
             dest.modalPresentationCapturesStatusBarAppearance = true
         }
