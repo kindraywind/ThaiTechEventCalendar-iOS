@@ -1155,7 +1155,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1229F4D3209FB62FCE1B35B /* Pods-ThaiTechEventsCalendar.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ThaiTechEventsCalendar/ThaiTechEventsCalendar.entitlements;
@@ -1180,7 +1180,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FE9FC935BC8FB28241335A8 /* Pods-ThaiTechEventsCalendar.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ThaiTechEventsCalendar/ThaiTechEventsCalendar.entitlements;
