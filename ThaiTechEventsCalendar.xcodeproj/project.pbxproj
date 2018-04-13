@@ -428,7 +428,6 @@
 				9FBE38E6204D69310039DEDE /* Sources */,
 				9FBE38E7204D69310039DEDE /* Frameworks */,
 				9FBE38E8204D69310039DEDE /* Resources */,
-				1B41BA5FC48FEC23E6908988 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -451,7 +450,6 @@
 				9FFAF9D120410337000A99FE /* Resources */,
 				9FBE38FA204D69310039DEDE /* Embed App Extensions */,
 				DDFAB95D1C61811A1B378035 /* [CP] Embed Pods Frameworks */,
-				CC7ACFF14F7EAD215F0413EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -471,8 +469,6 @@
 				9FFAF9E320410338000A99FE /* Sources */,
 				9FFAF9E420410338000A99FE /* Frameworks */,
 				9FFAF9E520410338000A99FE /* Resources */,
-				F890E7880AFCCCD75BC7022D /* [CP] Embed Pods Frameworks */,
-				3CBE21DFCD4ACCD553F8A5B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -492,8 +488,6 @@
 				9FFAF9EE20410338000A99FE /* Sources */,
 				9FFAF9EF20410338000A99FE /* Frameworks */,
 				9FFAF9F020410338000A99FE /* Resources */,
-				0CE01C0EC5A64CC314BC742F /* [CP] Embed Pods Frameworks */,
-				B8AAA5565D1AA699A62A4502 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -624,51 +618,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0CE01C0EC5A64CC314BC742F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B41BA5FC48FEC23E6908988 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TT Widget/Pods-TT Widget-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3CBE21DFCD4ACCD553F8A5B9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendarTests/Pods-ThaiTechEventsCalendarTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		54CB133B06939A9C929DE126 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -733,21 +682,6 @@
 			shellPath = /bin/sh;
 			shellScript = "swiftlint autocorrect\n\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
-		B8AAA5565D1AA699A62A4502 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendarUITests/Pods-ThaiTechEventsCalendarUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C40986FAAEB0A9AC620C65BC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -764,21 +698,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC7ACFF14F7EAD215F0413EC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendar/Pods-ThaiTechEventsCalendar-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D62CBB9FA6F72DB45C72A12E /* [CP] Check Pods Manifest.lock */ = {
@@ -841,21 +760,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendar/Pods-ThaiTechEventsCalendar-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F890E7880AFCCCD75BC7022D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThaiTechEventsCalendarTests/Pods-ThaiTechEventsCalendarTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1155,7 +1059,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1229F4D3209FB62FCE1B35B /* Pods-ThaiTechEventsCalendar.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ThaiTechEventsCalendar/ThaiTechEventsCalendar.entitlements;
@@ -1180,7 +1084,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FE9FC935BC8FB28241335A8 /* Pods-ThaiTechEventsCalendar.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ThaiTechEventsCalendar/ThaiTechEventsCalendar.entitlements;
