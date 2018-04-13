@@ -33,16 +33,15 @@ class CalendarViewController: UIViewController {
         self.tableView.register(nib, forCellReuseIdentifier: EventTableViewCell.identifier)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        calendarMenuView.commitMenuViewUpdate()
+        calendarView.commitCalendarViewUpdate()
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-
-        calendarMenuView.commitMenuViewUpdate()
-        calendarView.commitCalendarViewUpdate()
     }
 
 }
