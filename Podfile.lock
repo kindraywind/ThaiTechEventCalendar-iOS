@@ -1,30 +1,59 @@
 PODS:
-  - Alamofire (4.7.1)
+  - Alamofire (4.7.3)
   - Alamofire-SwiftyJSON (3.0.0):
     - Alamofire (~> 4.5)
     - SwiftyJSON (~> 4.0.0)
-  - AutoInsetter (1.2.3)
-  - Crashlytics (3.10.1):
-    - Fabric (~> 1.7.5)
+  - AutoInsetter (1.2.6)
+  - Crashlytics (3.10.8):
+    - Fabric (~> 1.7.12)
   - CVCalendar (1.6.1)
-  - DeckTransition (2.0.0)
-  - Fabric (1.7.6)
-  - Firebase/Core (4.11.0):
-    - FirebaseAnalytics (= 4.1.0)
-    - FirebaseCore (= 4.0.18)
-  - FirebaseAnalytics (4.1.0):
-    - FirebaseCore (~> 4.0)
-    - FirebaseInstanceID (~> 2.0)
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - DeckTransition (2.1.0)
+  - Fabric (1.7.12)
+  - Firebase/Core (5.9.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.2.0)
+  - Firebase/CoreOnly (5.9.0):
+    - FirebaseCore (= 5.1.4)
+  - FirebaseAnalytics (5.2.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.2)
+    - GoogleAppMeasurement (~> 5.2)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
-  - FirebaseCore (4.0.18):
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-  - FirebaseInstanceID (2.0.10):
-    - FirebaseCore (~> 4.0)
-  - GoogleToolboxForMac/Defines (2.1.3)
-  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
-    - GoogleToolboxForMac/Defines (= 2.1.3)
-  - markymark (6.0.1)
+  - FirebaseCore (5.1.4):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.2.2):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+  - GoogleAppMeasurement (5.2.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (5.3.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.3.0)
+  - GoogleUtilities/Logger (5.3.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.3.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.3.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.3.0)"
+  - GoogleUtilities/Reachability (5.3.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.3.0):
+    - GoogleUtilities/Logger
+  - markymark (7.2.2)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -36,12 +65,12 @@ PODS:
   - Realm/Headers (3.0.2)
   - RealmSwift (3.0.2):
     - Realm (= 3.0.2)
-  - SwiftLint (0.25.0)
+  - SwiftLint (0.25.1)
   - SwiftyJSON (4.0.0)
   - Tabman (1.6.0):
     - AutoInsetter (~> 1.2.0)
     - Pageboy (~> 2.4.0)
-  - TagListView (1.3.0)
+  - TagListView (1.3.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
@@ -59,7 +88,7 @@ DEPENDENCIES:
   - TagListView (~> 1.3.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - Alamofire-SwiftyJSON
     - AutoInsetter
@@ -71,7 +100,8 @@ SPEC REPOS:
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseInstanceID
-    - GoogleToolboxForMac
+    - GoogleAppMeasurement
+    - GoogleUtilities
     - markymark
     - nanopb
     - Pageboy
@@ -83,28 +113,29 @@ SPEC REPOS:
     - TagListView
 
 SPEC CHECKSUMS:
-  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
-  AutoInsetter: 1a8f8ad5e7da8e993970b3809cfb8e8e330f4db1
-  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
+  AutoInsetter: 3713c857f3c0cc4b6265fe55ecf0c14bfe8622ee
+  Crashlytics: 058dc1ba579f6c100bc60a6878703779bff383c4
   CVCalendar: 505c11b11a088b43f159806e791eba1c2540853b
-  DeckTransition: 2300694f94fbeca2c103f365dc9dc09ffae14a4f
-  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
-  Firebase: cc13dfab1038c8b45d7903e01fc690451d6d0b24
-  FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
-  FirebaseCore: b981f47e5254cbcfdeb483355300d743f6fcab2c
-  FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
-  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
-  markymark: 3dc8770d0bfd2cba895351729de6355a1d8d3233
+  DeckTransition: ca707456e3d83928c895fed6f458cbf68c5cac84
+  Fabric: d7387db9a31aadff63b147a4b91d982c53afaa4f
+  Firebase: 383fa29aca93e371cab776b48a5c66544d3c2003
+  FirebaseAnalytics: 831f1f127f4a75698e9875a87bf7e2668730d953
+  FirebaseCore: 2a84b6b325792a4319ef71ee18819dcba08d2fd7
+  FirebaseInstanceID: 78ba376fcd5b94c001f9999b2cbd3d1f1e56e78d
+  GoogleAppMeasurement: 2b3a023a61239c8d002e6e4fcf4abce8eddce0e0
+  GoogleUtilities: 760ccb53b7c7f40f9c02d8c241f76f841a7a6162
+  markymark: 74f98d43f4d655178f80df6efa7023b4a9e9f0f5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Pageboy: b04cee5c1315a865fb49321129d12635e8465144
   Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
   RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
-  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   Tabman: a9be97d1c75b4b7f40eec416021f614c4ccbb670
-  TagListView: 669f7d4455003c877655875d34829731c4191528
+  TagListView: 6dafd34a61021c6db72c0c8e3a044054c9854311
 
 PODFILE CHECKSUM: 0fa9274f4d1d98da1292be5213ec67503f65e683
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
