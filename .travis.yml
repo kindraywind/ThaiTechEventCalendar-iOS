@@ -1,7 +1,7 @@
 notifications:
   email: false
 language: swift
-osx_image: xcode9.2
+osx_image: xcode10
 xcode_workspace: ThaiTechEventsCalendar.xcworkspace
 xcode_scheme: ThaiTechEventsCalendarTests
 cache:

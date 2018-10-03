@@ -32,13 +32,13 @@ extension LinkTableViewCell: Updatable {
 
     func updateUIWith(_ event: Event, _ indexPath: IndexPath) {
         let link = event.links[indexPath.row]
-        let orangeAttributes: [NSAttributedStringKey: Any] = [
+        let orangeAttributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.TTOrange(),
             .font: UIFont.systemFont(ofSize: 17.0)
         ]
         let title = NSAttributedString(string: link.title, attributes: orangeAttributes)
 
-        let plainAttributes: [NSAttributedStringKey: Any] = [
+        let plainAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: 17.0)
         ]
         let type = NSAttributedString(string: " (\(link.type))", attributes: plainAttributes)

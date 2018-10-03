@@ -24,14 +24,14 @@ class DetailTableViewCell: UITableViewCell {
             return
         }
 
-        let orangeAttributes: [NSAttributedStringKey: Any] = [
+        let orangeAttributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.TTOrange(),
             .font: UIFont.systemFont(ofSize: 17.0)
         ]
         let title = NSAttributedString(string: location.title,
                                        attributes: orangeAttributes)
 
-        let plainAttributes: [NSAttributedStringKey: Any] = [
+        let plainAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: 17.0)
         ]
 

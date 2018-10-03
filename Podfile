@@ -4,8 +4,8 @@ platform :ios, '10.0'
 def base_pods
   pod 'Alamofire', '~> 4.6'
   pod 'Alamofire-SwiftyJSON'
-  pod 'RealmSwift', '~> 3.0.2'
-  pod 'SwiftLint', '~> 0.25.0'
+  pod 'RealmSwift', '~> 3.10.0'
+  pod 'SwiftLint', '~> 0.27.0'
   pod 'SwiftyJSON', '~> 4.0.0'
 end
 
@@ -16,8 +16,8 @@ def shared_pods
   pod 'Fabric', '~> 1.7.3'
   pod 'Firebase/Core'
   pod 'Tabman', '1.6.0'
-  pod 'TagListView', '~> 1.3.0'
-  pod 'markymark'
+  pod 'TagListView', :git=> 'https://github.com/ElaWorkshop/TagListView.git', :commit => '60e799080d'
+  pod 'markymark', :git=> 'https://github.com/kindraywind/Marky-Mark.git'
 end
 
 target 'ThaiTechEventsCalendar' do
