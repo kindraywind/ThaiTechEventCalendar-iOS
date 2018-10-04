@@ -10,7 +10,7 @@ import UIKit
 import NotificationCenter
 import RealmSwift
 
-class TodayViewController: UIViewController, NCWidgetProviding {
+class TodayViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var summaryLabel: UILabel!
@@ -31,37 +31,17 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         view.addGestureRecognizer(tapRecognizer)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        calAPI.fetchCalendarFromNetwork(success: { [weak self] in
-            self?.updateUIWith(self?.getUpcomingEvent(), displayMode: .compact)
-            completionHandler(NCUpdateResult.newData)
-            }, failure: {
-                completionHandler(NCUpdateResult.failed)
-        })
-        // Perform any setup necessary in order to update the view.
-
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-
-    }
-
-    func getUpcomingEvent() -> Event? {
+    private func getUpcomingEvent() -> Event? {
         return calAPI.upcomingEvents()?.first
     }
 
-    func updateUI() {
+    private func updateUI() {
         let event = getUpcomingEvent()
         titleLabel.text = event?.title
         summaryLabel.text = event?.summary
     }
 
-    func updateUIWith(_ event: Event?, displayMode: NCWidgetDisplayMode) {
+    private func updateUIWith(_ event: Event?, displayMode: NCWidgetDisplayMode) {
         guard let event = event else {
             return
         }
@@ -88,14 +68,25 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         viewDidLayoutSubviews()
     }
 
+    @objc private func viewTapped() {
+        let url = URL(string: "ttevent://")!
+        extensionContext?.open(url, completionHandler: nil)
+    }
+}
+
+extension TodayViewController: NCWidgetProviding {
+    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
+        calAPI.fetchCalendarFromNetwork(success: { [weak self] in
+            self?.updateUIWith(self?.getUpcomingEvent(), displayMode: .compact)
+            completionHandler(NCUpdateResult.newData)
+            }, failure: {
+                completionHandler(NCUpdateResult.failed)
+        })
+    }
+
     func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
         let expanded = activeDisplayMode == .expanded
         preferredContentSize = expanded ? CGSize(width: maxSize.width, height: 200) : maxSize
         updateUIWith(getUpcomingEvent(), displayMode: activeDisplayMode)
-    }
-
-    @objc private func viewTapped() {
-        let url = URL(string: "ttevent://")!
-        extensionContext?.open(url, completionHandler: nil)
     }
 }
